@@ -1,0 +1,11 @@
+#Change the default ssh port from 22 to 5802
+sudo nano /etc/ssh/sshd_config
+
+#using sed:
+#sudo sed -i 's/Port 22/Port 5802/g' /etc/ssh/sshd_config
+
+
+
+
+
+
