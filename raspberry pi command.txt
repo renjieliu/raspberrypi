@@ -4,5 +4,10 @@ sudo nano /etc/ssh/sshd_config
 #using sed:
 #sudo sed -i 's/Port 22/Port 5802/g' /etc/ssh/sshd_config
 
+#save docker image to a .tar file, for migration
+docker save ebdf4c99a > ~/Share/raspbian_20180622_1625_zookeeper.tar
 
+#load the export docker image
+docker load raspbian_20180622_1625_zookeeper.tar
 
+#docker import, this is to import a filesystem as an image, it may or may not be an image itself
