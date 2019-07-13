@@ -1,7 +1,7 @@
 passwd;
 sudo passwd;
 sudo apt-get update; 
-sudo apt-get install -y locate mariadb-server tightvncserver cmatrix octave; 
+sudo apt-get install -y locate mariadb-server tightvncserver;
 sudo updatedb;
 sudo echo 'interface wlan0
 static ip_address=192.168.1.205/24
@@ -12,6 +12,8 @@ echo alias python='python3.7' >> ~/.bashrc;
 mkdir ~/Share; sudo chmod 777 -R ~/Share;
 sudo mkdir /mnt/sandisk; sudo chmod 777 -R /mnt/sandisk;
 sudo curl -sSL https://get.docker.com | sh;
+sudo apt-get install locate;
+sudo updatedb;
 
 
 sudo raspi-config;
