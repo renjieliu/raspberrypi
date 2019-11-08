@@ -24,3 +24,6 @@ docker save ebdf4c99a > ~/Share/raspbian_20180622_1625_zookeeper.tar
 docker load raspbian_20180622_1625_zookeeper.tar
 
 #docker import, this is to import a filesystem as an image, it may or may not be an image itself
+
+#set up the password for anydesk unattended access
+echo passwordhere | sudo anydesk --set-password
