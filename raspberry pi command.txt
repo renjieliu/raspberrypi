@@ -30,7 +30,7 @@ echo passwordhere | sudo anydesk --set-password
 
 
 #change mysql password and create new user
-
+#need to make below as 1-liner to be called from shell.
 sudo mysql -u root
 use mysql;
 update user set plugin='' where User='root';
