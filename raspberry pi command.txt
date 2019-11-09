@@ -27,3 +27,21 @@ docker load raspbian_20180622_1625_zookeeper.tar
 
 #set up the password for anydesk unattended access
 echo passwordhere | sudo anydesk --set-password
+
+
+#change mysql password and create new user
+
+sudo mysql -u root
+use mysql;
+update user set plugin='' where User='root';
+flush privileges;
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');
+create user boroger identified by 'password';
+grant all on *.* to boroger@'%' with grant option;
+
+
+
+
+
+
+
