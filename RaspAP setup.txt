@@ -1,0 +1,12 @@
+# steps to setup RaspAP on Raspberry Pi
+# check https://raspap.com/#simultaneous-ap-and-wifi-client for all the details
+#1.
+# sudo curl -sL https://install.raspap.com | bash
+#but do not install the openvpn, or run below command to ignore the openvpn
+sudo curl -sL https://install.raspap.com | bash -s -- --yes --openvpn 0 
+
+#2.Reboot, go to the http://ip, default username and password:admin/secret 
+#3.Configure hotspot > Change the wifi name, username and password --> Advanced Mode, enable the Wifi client AP mode.  
+#4.Save and try to connect to the AP to check if it's working
+#5.Reboot. and check if the AP is working and can be ssh'ed. From the client, the server ip is 192.168.50.1.
+
