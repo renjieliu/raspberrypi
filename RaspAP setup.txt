@@ -9,4 +9,13 @@ sudo curl -sL https://install.raspap.com | bash -s -- --yes --openvpn 0
 #3.Configure hotspot > Change the wifi name, username and password --> Advanced Mode, enable the Wifi client AP mode.  
 #4.Save and try to connect to the AP to check if it's working
 #5.Reboot. and check if the AP is working and can be ssh'ed. From the client, the server ip is 192.168.50.1.
+#6 Optional -- when the process is running fine, you can setup a static up IP to the raspberry pi.
+
+sudo echo 'interface wlan0
+static ip_address=192.168.1.206/24
+#static ip6_address=fd51:42f8:caae:d92e::ff/64
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
+
+
 
