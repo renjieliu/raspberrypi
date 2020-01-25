@@ -29,6 +29,9 @@ docker load raspbian_20180622_1625_zookeeper.tar
 echo passwordhere | sudo anydesk --set-password
 
 
+sudo apt-get install mariadb-server
+
+#initialize mariadb
 #change mysql password and create new user
 #need to make below as 1-liner to be called from shell.
 sudo mysql -u root
