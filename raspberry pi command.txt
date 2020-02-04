@@ -42,6 +42,14 @@ SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');
 create user boroger identified by 'password';
 grant all on *.* to boroger@'%' with grant option;
 
+########################################################################
+#install pi-hole to block all the ads
+#after install, need to change the DNS on the client (laptops,tablet) to the raspberry pi.
+
+sudo curl -sSL https://install.pi-hole.net | bash
+
+########################################################################
+
 
 
 
