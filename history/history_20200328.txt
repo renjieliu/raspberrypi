@@ -1,0 +1,57 @@
+    1  ping rpi42
+    2  exit
+    3  sudo nano  /etc/dhcpcd.conf;
+    4  sudo reboot now 
+    5  sudo apt-get install php7.3
+    6  a2enmod php7.3
+    7  sudo apt-get install libapache2-mod-php7.3
+    8  sudo service apache2 restart 
+    9  sudo apt-get install php7.3-mysql 
+   10  sudo service apache2 restart
+   11  mysql -uboroger -p
+   12  cd /var/www/
+   13  ls -al
+   14  cd wordpress/ 
+   15  ls -al
+   16  sudo nano wp-config.php
+   17  mysql -uroot -p
+   18  cd chown /var/www/ pi
+   19  cd chown pi /var/www/
+   20  sudo chown pi /var/www/
+   21  ls -al
+   22  sudo chown -r pi /var/www/
+   23  sudo chown -R pi /var/www/
+   24  ls -al
+   25  ls a-l 
+   26  ls -al
+   27  sudo chown -R pi /var/www/wordpress/.
+   28  ls -al
+   29  ls -al /var/www/wordpress/wp-content/themes
+   30  wget https://downloads.wordpress.org/theme/primer.1.8.8.zip
+   31  unzip primer.1.8.8.zip 
+   32  ls -al
+   33  sudo rm -rf primer 
+   34  sudo rm primer.1.8.8.zip 
+   35  cd wp-includes/
+   36  ls -al
+   37  cd ../wp-content
+   38  ls -al
+   39  cd themes/
+   40  ls -al
+   41  wget https://downloads.wordpress.org/theme/primer.1.8.8.zip
+   42  unzip primer.1.8.8.zip 
+   43  ls a-l
+   44  ls -al
+   45  rm primer*.zip
+   46  ls -al
+   47  ls -al primer/
+   48  wget https://downloads.wordpress.org/theme/twentyfifteen.2.5.zip
+   49  unzip twentyfifteen.2.5.zip 
+   50  ls -al
+   51  rm twentyfifteen.2.5.zi*
+   52  ls -alk
+   53  ls -alll
+   54  cd /var/
+   55  cd ~
+   56  mkdir ~/Share
+   57  history > ~/Share/history_20200328.txt

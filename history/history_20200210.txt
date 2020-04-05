@@ -1,0 +1,121 @@
+    1  ls
+    2  python
+    3  exir
+    4  exit
+    5  ls -al
+    6  sudo pip3 install jupyter
+    7  nano ~/.bashrc
+    8  source ~/.bashrc 
+    9  jupyter note --help
+   10  jupyter-notebook --help
+   11  jupyter-notebook --ip=0.0.0.0
+   12  crontab -l
+   13  crontab -e
+   14  jupyter-notebook --ip=0.0.0.0 &
+   15  history
+   16  jupyter-notebook --help
+   17  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888
+   18  sudo nohup jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &
+   19  crontab -e
+   20  sudo nohup jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   21  crontab -l
+   22  crontab -e
+   23  sudo reboot now 
+   24  sudo nohup jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   25  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   26  exit 
+   27  ps -elf|grep jupy
+   28  ls -al jupyter-notebook
+   29  ls -al /bin/jupyter-notebook
+   30  which jupyter-notebook
+   31  ls -al /usr/local/bin/jupyter-notebook
+   32  sudo chmod 777 /usr/local/bin/jupyter-notebook
+   33  sudo reboot now
+   34  sudo update-rc.d jupyter.sh remove
+   35  nano ~/.bash
+   36  nano ~/.bashrc 
+   37  source ~/.bashrc 
+   38  nano ~/.bashrc 
+   39  source ~/.bashrc 
+   40  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   41  exit
+   42  jupyter-notebook --help
+   43  jupyter-notebook password --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   44  sudo reboot now
+   45  jupyter
+   46  jupyter notebook password
+   47  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   48  exit
+   49  nano ~/.bashrc
+   50  source ~/.bashrc 
+   51  nano ~/.bashrc
+   52  source ~/.bashrc 
+   53  sudo reboot now
+   54  exit
+   55  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   56  exit
+   57  cd ~/Share/
+   58  nano time.sh
+   59  ls -al
+   60  sudo nohup ./time.sh & 
+   61  ls -al
+   62  sudo chmod 777 time.sh 
+   63  sudo nohup ./time.sh & 
+   64  ls -al
+   65  tailCPUTemp.txt
+   66  tail CPUTemp.txt
+   67  exit
+   68  uptime
+   69  exit
+   70  cd Share
+   71  ls
+   72  tail CPUTemp.txt
+   73  exit
+   74  ls -al
+   75  exit
+   76  ijupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   77  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   78  ps -elf|  grep er-noteb
+   79  sudo ps -elf | grep ijupyter-notebook
+   80  exit
+   81  curl wttr.in
+   82  curl wttr.in 10001
+   83  curl wttr.in/newyorkcity
+   84  curl wttr.in/new york city
+   85  curl wttr.in/shanghai
+   86  curl wttr.in/nyc
+   87  history 
+   88  exit
+   89  tail ~/Share/CPUTemp.txt 
+   90  exit
+   91  head ~/Share/CPUTemp.txt 
+   92  exit
+   93  ls
+   94  head ~/Share/CPUTemp.txt 
+   95  tail ~/Share/CPUTemp.txt 
+   96  exit
+   97  cd ~/Share/ 
+   98  sudo nohup ./time.sh & 
+   99  tail ~/Share/CPUTemp.txt 
+  100  ls -al
+  101  tail ~/Share/CPUTemp.txt 
+  102  exit
+  103  tail ~/Share/CPUTemp.txt 
+  104  exit
+  105  ls -al
+  106  uptime
+  107  exit
+  108  cd Share
+  109  sudo nohup ./time.sh & 
+  110  tail ~/Share/CPUTemp.txt 
+  111  exit
+  112  tail ~/Share/CPUTemp.txt 
+  113  exit
+  114  cd ~/Share/ 
+  115  sudo nohup ./time.sh & 
+  116  tail ~/Share/CPUTemp.txt 
+  117  exit
+  118  tail ~/Share/CPUTemp.txt 
+  119  exit
+  120  history
+  121  history > ~/Share/history_20200210.txt

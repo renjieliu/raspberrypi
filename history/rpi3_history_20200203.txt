@@ -1,0 +1,845 @@
+    1  passwd
+    2  sudo passwd
+    3  sudo apt-get update
+    4  sudo apt-get install mysql-server -y
+    5  msudo mysql -u root
+    6  sudo mysql -u root
+    7  sudo usermod -aG mysql pi
+    8  nano ~/.bashrc
+    9  exit 
+   10  sudo raspi-config
+   11  mysql -uroot -p
+   12  mkdir ~/Share
+   13  sudo chmod 777 ~/Share/
+   14  mysql -uroot -p
+   15  ifconfig
+   16  sudo apt-get install locate
+   17  sudo updatedb
+   18  locate mysql
+   19  locate my.cnf
+   20  sudo nano /etc/mysql/my.cnf
+   21  sudo nano /etc/mysql/mariadb.cnf
+   22  ls -al /etc/mysql/conf.d/
+   23  sudo nano /etc/mysql/mysql.cnf
+   24  sudo nano /etc/mysql/conf.d/mysql
+   25  sudo nano /etc/mysql/conf.d/mysql.cnf
+   26  sudo nano /etc/mysql/my.cnf
+   27  ls -al /etc/mysql/conf.d/
+   28  sudo nano /etc/mysql/my.cnf
+   29  locate mariadb.cnf
+   30  sudo ls -al /etc/mysql/mariadb.cnf
+   31  sudo nano /etc/mysql/mariadb.cnf
+   32  ls -al /etc/mysql/mariadb.conf.d/
+   33  cd /etc/mysql/mariadb.conf.d/
+   34  ls -al
+   35  sudo nano 50-mysql-clients.cnf
+   36  sudo nano 50-server.cnf
+   37  sudo service mysql restart
+   38  sudo nano 50-server.cnf
+   39  mysql -uroot -p
+   40  sudo service mysql restart
+   41  sudo nano 50-server.cnf
+   42  mysl -uroot -p
+   43  mysql -uroot -p
+   44  exit
+   45  uname -r 
+   46  uname 
+   47  uname -a
+   48  locate 
+   49  locate dhccpd
+   50  locate dhcpcd 
+   51  sudo nano /etc/dhcpcd.conf
+   52  ifconfig
+   53  sudo nano /etc/dhcpcd.conf
+   54  sudo reboot now 
+   55  exit
+   56  nano ~/.bashrc
+   57  ssh 192.168.1.203
+   58  ssh pi@192.168.1.101
+   59  exit
+   60  ssh root@52.14.216.14
+   61  ssh -i "renjie.pem" ubuntu@renjieliu.com
+   62  cd ~/Share/
+   63  ssh -i "renjie.pem" ubuntu@renjieliu.com
+   64  cd ~/Share/
+   65  ssh -i "aws.pem" ubuntu@ec2-18-222-195-37.us-east-2.compute.amazonaws.com
+   66  ssh -i .aws.pem ubuntu@ec2-18-222-195-37.us-east-2.compute.amazonaws.com
+   67  ssh -i "renjie.ppk" ubuntu@ec2-18-222-195-37.us-east-2.compute.amazonaws.com
+   68  ssh -i "renjie.ppk" ubuntu@ec2-52-14-216-14.us-east-2.compute.amazonaws.com
+   69  ssh -i "renjie.pem" ubuntu@ec2-52-14-216-14.us-east-2.compute.amazonaws.com
+   70  sudo chomd 700 renjie.*
+   71  sudo chmod 700 renjie.*
+   72  ls -al
+   73  ssh -i "renjie.pem" ubuntu@ec2-52-14-216-14.us-east-2.compute.amazonaws.com
+   74  ssh -i "renjie.pem" ubuntu@52.14.216.14
+   75  mysql -uroot -p -hrenjieliu.com
+   76  ssh -i "renjie.pem" ubuntu@ec2-52-14-216-14.us-east-2.compute.amazonaws.com
+   77  mysql -uroot -p -hrenjieliu.com
+   78  ssh -i "renjie.pem" ubuntu@ec2-52-14-216-14.us-east-2.compute.amazonaws.com
+   79  exit
+   80  ssh localhost
+   81  exit
+   82  ssh localhost
+   83  ping google.com
+   84  cd ~/Share/ 
+   85  ls -al
+   86  mkdir hadoop
+   87  cd hadoop/ 
+   88  wget http://mirror.olnevhost.net/pub/apache/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
+   89  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+   90  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+   91  docker 
+   92  curl -sSL https://get.docker.com | sh
+   93  docker info
+   94  docker version
+   95  sudo usermod -aG docker $USER
+   96  ls -al
+   97  tar zxvf hadoop-2.9.2.tar.gz 
+   98  mls -al
+   99  ls -al
+  100  rm hadoop-2.9.2.tar.gz 
+  101  sudo service docker restart 
+  102  docker version
+  103  sudo docker version
+  104  exit
+  105  nano ~/.bash
+  106  nano ~/.bashrc 
+  107  exit
+  108  docker version 
+  109  docker pull resin/rpi-raspbian
+  110  docker images;
+  111  docker run -ti 6e68cc6f3192
+  112  docker ps -a
+  113  docker commit 6e68cc6f3192 hadoop_data_node1
+  114  docker ps -a
+  115  docker commit 9  hadoop_data_node1
+  116  docker run -ti hadoop_data_node1
+  117  docker images; 
+  118  docker ps -a
+  119  docker rm $(docker ps -aq)
+  120  docker imagesl 
+  121  docker images;
+  122  docker rmi 6e7
+  123  docker images; 
+  124  docker rmi 6e68
+  125  docker images; 
+  126  docker pull raspbian/jessie
+  127  docker images; 
+  128  docker run -ti e8
+  129  docker images; 
+  130  docker run -ti e8ad9
+  131  docker ps -aq
+  132  docker rm 06a1326bbbc1
+  133  docker rm b
+  134  docker images;
+  135  docker rmi e8ad9f32860d
+  136  docker pull balenalib/raspberrypi3-ubuntu
+  137  docker images; 
+  138  docker run -ti 885daca176b5
+  139  docker run -ti 885da
+  140  docker ps -a
+  141  docker rm c623aad3a932
+  142  docker rm 3a0c3fc91104
+  143  docker images; 
+  144  docker rmi 885daca176b5
+  145  docker pull balenalib/raspberrypi3-debian
+  146  docker images; 
+  147  docker run -ti d3a3932174b9
+  148  docker
+  149  docker pull balenalib/raspberrypi3
+  150  docker images; 
+  151  docker rmo d3a3932174b9
+  152  docker rmi d3a3932174b9
+  153  docker rm qa
+  154  docker rm stop  qa
+  155  docker ps   qa
+  156  docker ps   -qa
+  157  docker rm d3a3932174b9
+  158  docker images
+  159  docker rmi d3a3932174b9
+  160  docker ps -a
+  161  docker rm 3 
+  162  docker rmi d3a3932174b9
+  163  docker ps -aq
+  164  docker rm 
+  165  docker ps -aq
+  166  docker rmi balenalib/raspberrypi3
+  167  docker imagesl 
+  168  docker images;
+  169  docker rm d3a393
+  170  docker rmi d3a393
+  171  docker pull balenalib/raspberrypi3
+  172  docker images; 
+  173  docker rmi d3a39
+  174  docker pull balenalib/raspberrypi3:jessie-20181207
+  175  docker images; 
+  176  docker run -ti 614084e
+  177  docker run -ti 614084e bash
+  178  docker ps -aq
+  179  docker rm e8b1683824e2
+  180  docker ps -aq b66f71c62e0f
+  181  docker rm b66f71c62e0f
+  182  docker rmi
+  183  docker images; 
+  184  docker rmi 614084e5ecb3
+  185  docker pull balenalib/raspberrypi3
+  186  docker images; 
+  187  docker run -ti d3a393 bash
+  188  docker ps -a
+  189  docker ps -aq
+  190  docker commit 1f1def5153aa hadoop_dataNode_1
+  191  docker commit 1f1def5153aa hadoop_dnode_1
+  192  docker 1f1def5153aa hadoop_dnode_2
+  193  docker commit  1f1def5153aa hadoop_dnode_2
+  194  docker images; 
+  195  sudo reboot now 
+  196  exit
+  197  docker images; 
+  198  docker run -ti 2c1e8e bash 
+  199  docker ps -a
+  200  docker commit 71f2a13be hadoop_dnode_2:hostname
+  201  docker run -ti d963384bbd bash 
+  202  docker ps -aq
+  203  docker ps -a
+  204  docker rm cf2973bb3f4a
+  205  docker rm 71f2a13be629
+  206  docker images;
+  207  docker rmi d963384bbdfe
+  208  docker images; 
+  209  docker rmi 2c1e8e
+  210  docker ps -aq
+  211  docker commit  1f1def5153aa hadoop_dnode_2
+  212  docker images; 
+  213  docker rm $(docker ps -aq)
+  214  df
+  215  docker images; 
+  216  docker run -ti 1a4dd1 bash 
+  217  docker commit d54a91 hadoop_dnode_1:pwd
+  218  docker imagesl 
+  219  docker images; 
+  220  docker run -ti 547d bash 
+  221  docker imagesl 
+  222  docker images;
+  223  docker run -ti  547de
+  224  docker ps -aq 
+  225  docker ps -a
+  226  docker commit b561a622f5d0hadoop_dnode_1:ssh
+  227  docker commit b561a622f5d0 hadoop_dnode_1:ssh
+  228  exit
+  229  docker images; 
+  230  docker run -ti 1a4dd14d375f bash
+  231  docker ps -a
+  232  docker run -ti 8cc6 bash 
+  233  exit
+  234  ssh localhost 
+  235  whoami 
+  236  su
+  237  more /etc/ssh/sshd_config 
+  238  exit
+  239  cale: LC_ALL: cannot change locale (en_US.UTF-8)
+  240  --------------------------
+  241  ---------Installed--------
+  242  --------------------------
+  243  MySQL
+  244  java
+  245  java version 
+  246  java -version
+  247  path 
+  248  cd ~/Share/ 
+  249  ls -al
+  250  cd hadoop/ 
+  251  ls -al
+  252  cd hadoop-2.9.2/
+  253  ls -al
+  254  cd etc/
+  255  ls -al
+  256  cd hadoop/
+  257  ls -al
+  258  more hadoop-env.sh
+  259  ${JAVA_HOME}
+  260  echo ${JAVA_HOME}
+  261  which java 
+  262  ls -al
+  263  sudo nano hadoop-env.sh
+  264  ls -la
+  265  cd ,,
+  266  cd ..
+  267  ls -al
+  268  cd bin 
+  269  ls -al
+  270  cd ..
+  271  ls -al
+  272  ./bin/hadoop
+  273  sudo nano etc/hadoop/core-site.xml
+  274  sudo nano etc/hadoop/hdfs-site.xml 
+  275  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+  276  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  277  ping  172.17.0.2
+  278  ssh 172.17.0.2
+  279  ssh root@172.17.0.2
+  280  docker run -tip 22:22 547de
+  281  ssh 172.17.0.2
+  282  ssh root@172.17.0.2
+  283  ls -al
+  284  ls -al ~/.ssh/authorized_keys
+  285  scp
+  286  scp /home/pi/.ssh/authorized_keys root@172.17.0.2:/home/root/.ssh/authorized_keys
+  287  scp -p /home/pi/.ssh/authorized_keys root@172.17.0.2:/home/root/.ssh/authorized_keys
+  288  scp -P /home/pi/.ssh/authorized_keys root@172.17.0.2:/home/root/.ssh/authorized_keys
+  289  scp  /home/pi/.ssh/authorized_keys root@172.17.0.2:/home/root/.ssh/authorized_keys
+  290  scp  /home/pi/.ssh/authorized_keys root@172.17.0.2:/home/root/.ssh/
+  291  scp  /home/pi/.ssh/authorized_keys root@172.17.0.2:/root/.ssh/
+  292  sudo nano  etc/hadoop/hdfs-site.xml 
+  293  ssh 172.17.0.2
+  294  su
+  295  exit 
+  296  exit
+  297  docker images;
+  298  docker run -ti hadoop_dnode_1 bash
+  299  docker rmi b3eb6357d679
+  300  docker images;
+  301  docker run -ti 547de63585c7
+  302  docker imagesl 
+  303  docker images;
+  304  docker commit 547de63585c7 hadoop_dnode_1:ssh_java
+  305  docker commit 40292  hadoop_dnode_1:ssh_java
+  306  docker images;
+  307  docker run -ti 9d79e28a0678
+  308  docker images; 
+  309  docker commit 94338  hadoop_dnode_1:ssh_key
+  310  docker run -ti 9d79e
+  311  docker rm $(docker ps -aq)
+  312  docker images; 
+  313  docker run -ti 1a4dd14d375f
+  314  docker rm $(docker ps -aq)
+  315  docker rmi 444d315d0844; docker rmi 9d79e28a0678; docker rmi 547de63585c7; docker rmi 8cc6150e78cb; docker rmi 1a4dd14d375f;
+  316  df
+  317  docker images;
+  318  docker run -ti d3a3932174b9
+  319  docker run -ti d3a3932174b9 bash 
+  320  docker rm $(docker ps -aq)
+  321  docker images;
+  322  exit 
+  323  exit
+  324  docker images;
+  325  ping 172.17.0.2
+  326  ssh 172.17.0.2
+  327  ssh-keygen -f "/home/pi/.ssh/known_hosts" -R 172.17.0.2
+  328  ssh 172.17.0.2
+  329  docker images;
+  330  top 
+  331  tree
+  332  ssh 172.17.0.2
+  333  ls -al
+  334  cd .ssh/
+  335  ls -al
+  336  rm authorized_keys
+  337  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+  338  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  339  chmod 0600 ~/.ssh/authorized_keys
+  340  scp ./authorized_keys pi@172.17.0.2:~/.ssh
+  341  ssh 172.17.0.2
+  342  cd ~/Share/ 
+  343  ls -al
+  344  docker images;
+  345  docker build -t hadoop_dnode1:initial .
+  346  docker ps -a
+  347  docker build -t hadoop_dnode1:initial .
+  348  docker images;
+  349  bash
+  350  docker build -t hadoop_dnode1:initial .
+  351  docker images; 
+  352  docker run -ti f95e8be49c
+  353  docker images; 
+  354  docker build -t hadoop_dnode1:pi .
+  355  docker rm $(docker ps -aq)
+  356  docker rmi  f95e8be49c9e
+  357  docker rmi 8e762edddbc9
+  358  docker build -t hadoop_dnode1:initial .
+  359  cd docker/
+  360  docker build -t hadoop_dnode1:initial .
+  361  docker images; 
+  362  docker build -t hadoop_dnode1:initial .
+  363  docker images; 
+  364  docker run -ti a6f7de7743e0
+  365  docker ps -a
+  366  docker commit 90a797f08189 hadoop_dnode1:java
+  367  docker images; 
+  368  docker run -ti af255ddedb85
+  369  docker ps -a
+  370  docker images; 
+  371  docker commit af255d hadoop_dnode1:ssh
+  372  docker commit f2f40  hadoop_dnode1:ssh
+  373  docker images; 
+  374  docker run -ti f2fd1a
+  375  ls -la
+  376  docker images; 
+  377  docker rm $(docker ps -a)
+  378  docker rm $(docker ps -aq)
+  379  docker rmi f2fd1a7b49e9
+  380  mkdir archive
+  381  docker images; 
+  382  FROM af255dde
+  383  RUN mkdir /home/pi/.ssh&& chmod 777 /home/pi/.ssh
+  384  docker build hadoop_dnode1:ssh .
+  385  docker build -t hadoop_dnode1:ssh .
+  386  docker images; 
+  387  docker run -ti 3c4d9
+  388  docker rm $(docker ps -aq)
+  389  docker images; 
+  390  docker run -ti 3c4d95a28
+  391  docker rm $(docker ps -aq)
+  392  docker images;
+  393  docker build -t hadoop_dnode1:ssh_v2 .
+  394  docker run -ti hadoop_dnode1:ssh_v2
+  395  docker rm $(docker ps -aq)
+  396  docker images;
+  397  docker rmi d43f26f0c4c6
+  398  docker build -t hadoop_dnode1:ssh_v2 .
+  399  docker images; 
+  400  docker run -ti 5d685
+  401  docker rm $(docker ps -aq)
+  402  docker rmi 5d68569
+  403  docker build -t hadoop_dnode1:ssh_v2 .
+  404  docker images; 
+  405  docker ru -ti 75cdc76d
+  406  docker run -ti 75cdc76d
+  407  docker rm $(docker ps -aq)
+  408  docker rmi  75cdc76d
+  409  docker build -t hadoop_dnode1:ssh_v2 .
+  410  docker images; ;
+  411  docker images;
+  412  docker run -ti d0771d52
+  413  docker ps -a
+  414  docker images; 
+  415  docker commit b39e59b hadoop_dnode1:ssh_v2
+  416  docker commit b39e59b hadoop_dnode1:ssh_v3
+  417  docker images;
+  418  docker run -ti 1bc2c23
+  419  exit
+  420  ssh 172.17.0.2
+  421  ssh pi@172.17.0.2
+  422  ssh-keygen -f "/home/pi/.ssh/known_hosts" -R 172.17.0.2
+  423  ssh pi@172.17.0.2
+  424  cd ~/Share/ 
+  425  ls -al
+  426  mkdir docker 
+  427  docker images; 
+  428  rm ~/.ssh/authorized_keys
+  429  ls -al
+  430  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+  431  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  432  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh/
+  433  ssh-keygen -f "/home/pi/.ssh/known_hosts" -R 172.17.0.2
+  434  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh/
+  435  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  436  ssh 172.17.0.2
+  437  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  438  ssh 172.17.0.2
+  439  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+  440  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  441  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  442  ssh 172.17.0.2
+  443  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  444  su
+  445  ssh pi@172.17.0.2
+  446  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  447  ssh 172.17.0.2
+  448  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  449  ssh 172.17.0.2
+  450  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  451  ssh 172.17.0.2
+  452  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  453  ssh 172.17.0.2
+  454  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  455  ssh 172.17.0.2
+  456  ssh pi@172.17.0.2
+  457  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  458  ssh pi@172.17.0.2
+  459  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  460  ssh 172.17.0.2
+  461  scp ~/.ssh/authorized_keys pi@172.17.0.2:/home/pi/.ssh
+  462  ssh 172.17.0.2
+  463  exit
+  464  docker run -ti 1bc2c2365e71
+  465  docker images; 
+  466  docker run -ti 81ec64c890c7
+  467  docker ps -a
+  468  docker commit 00012740f142 hadoop_dnode1:ssh_v3
+  469  docker images; 
+  470  docker rm $(docker ps -aq)
+  471  docker rmi 1bc2c2365e71
+  472  docker images;
+  473  docker run -ti bf004129b1d5
+  474  docker commit 0015cfc0d9ba hadoop_dnode2:ssh_v3
+  475  docker images; 
+  476  df
+  477  exit
+  478  docker images;
+  479  ssh 172.17.0.2
+  480  exit
+  481  ssh 172.17.0.2
+  482  ssh 172.17.0.3
+  483  cd ~/Share/
+  484  ls -al
+  485  cd hadoop/ 
+  486  l s-la
+  487  ls -al
+  488  cd hadoop-2.9.2/
+  489  ls -al
+  490  cd etc/
+  491  cd ..
+  492  bin/hadoop
+  493  cd etc/
+  494  ls -al
+  495  cd hadoop/
+  496  ls -al
+  497  sudo nano slaves
+  498  sudo nano master
+  499  ssh 172.17.0.2
+  500  cd ../ 
+  501  cd ..
+  502  sudo bin/hdfs namenode -format
+  503  cd bin/
+  504  sudo ./hdfs namenode -format
+  505  nano hdfs
+  506  cd /usr/lib/jvm/
+  507  ls -al
+  508  cd jdk-8-oracle-arm32-vfp-hflt
+  509  ls -al
+  510  cd -
+  511  cd --
+  512  cd cd --
+  513  cd ~/hadoop
+  514  man ln 
+  515  cd ~/Share/hadoop/hadoop-2.9.2/
+  516  ls -al
+  517  cd etc/ 
+  518  l s-al
+  519  ls -al
+  520  cd hadoop/ 
+  521  ls -al
+  522  sudo nano hadoop-env.sh 
+  523  ../../bin/hadoop
+  524  ln -s ~/Share/hadoop/hadoop-2.9.2/ ~/hadoop
+  525  ls -al ~
+  526  cd ~/hadoop/
+  527  ls -al
+  528  sudo bin/hdfs namenode -format
+  529  jps
+  530  exit 
+  531  docker images; 
+  532  docker run -ti --name node1  bf004129b1d5 
+  533  docker images;
+  534  docker ps -a 
+  535  docker commit 1da660e1f168 hadoop_dnode1:ssh_v4
+  536  docker rm $(docker ps -aq)
+  537  docker rmi hadoop_dnode2:ssh_v3
+  538  docker images; 
+  539  docker run -ti 05abade1f4b6
+  540  docker run -ti e7e66db05b66
+  541  docker images; 
+  542  docker run -ti 05abade1f4b6
+  543  exit
+  544  scp .ssh/authorized_keys  pi@192.168.1.225:/home/pi/.ssh/
+  545  ping 192.168.1.225
+  546  scp -p 5802 .ssh/authorized_keys  pi@192.168.1.225:/home/pi/.ssh/
+  547  docker images;
+  548  ssh 172.17.0.3
+  549  cd hadoop
+  550  ls -al
+  551  cd bin/ 
+  552  ls -al
+  553  sudo hdfs namenode -format
+  554  sudo ./hdfs namenode -format
+  555  exit
+  556  sch ./.ssh/authorized_keys  pi@renjieliu.com:~/.ssh/
+  557  scp ./.ssh/authorized_keys  pi@renjieliu.com:~/.ssh/
+  558  ssh renjieliu.com
+  559  exit
+  560  cd ~/hadoop
+  561  ls -al
+  562  cd etc/
+  563  ls -a;l
+  564  ls -al
+  565  cd hadoop/
+  566  ls -l
+  567  nano slaves
+  568  ssh pi@192.168.1.200
+  569  scp ./.ssh/authorized_keys  pi@192.168.1.200:~/.ssh/
+  570  ssh pi@192.168.1.200
+  571  scp ./.ssh/authorized_keys  pi@192.168.1.200:/home/pi/.ssh/
+  572  ssh 192.168.1.200
+  573  locate hosts 
+  574  sudo nano /etc/hosts
+  575  ping node2
+  576  sudo nano /etc/hosts
+  577  ping node2
+  578  ping node3
+  579  sudo nano /etc/hosts
+  580  ping node3
+  581  ping node2
+  582  sudo nano /etc/hosts
+  583  ping node3
+  584  ping renjieliu.com
+  585  ssh node3
+  586  ssh renjieliu.com
+  587  ping renjieliu.com
+  588  ping node3
+  589  sudo nano /etc/hosts
+  590  ping renjieliu.com
+  591  ping node3
+  592  exit 
+  593  cd hadoop 
+  594  ls -al
+  595  cd etc/ 
+  596  ls -a;
+  597  cd hadoop/ 
+  598  cd -la
+  599  ls -al
+  600  nano hadoop-env.sh 
+  601  more core-site.xml
+  602  more hdfs-site.xml
+  603  nano hdfs-site.xml
+  604  cd ..
+  605  cd ,,
+  606  cd ..
+  607  bin/hdfs namenode -format
+  608  sudo bin/hdfs namenode -format
+  609  jps
+  610  sudo jps
+  611  ls -al /var/log
+  612  ls -alrt /var/log
+  613  tail /var/log/auth.log
+  614  sudo bin/hdfs namenode -format
+  615  tail /var/log/auth.log
+  616  bin/hdfs namenode -format
+  617  tail /var/log/auth.log
+  618  ls -al
+  619  cd etc/
+  620  l s-al
+  621  ls -al
+  622  cd hadoop/
+  623  ls -al
+  624  cd ..
+  625  ls -alrt /var
+  626  ls -alrt /var/log/
+  627  exit
+  628  ls -al
+  629  cd hadoop
+  630  ls -al
+  631  mkdir data
+  632  pwd
+  633  cd data/
+  634  ls -al
+  635  pwd
+  636  exit
+  637  cd ~/hadoop
+  638  ls -al
+  639  cd etc/
+  640  ls -al
+  641  cd hadoop/
+  642  ls -al
+  643  nano core-site.xml 
+  644  nano hdfs-site.xml
+  645  nano slaves 
+  646  ls -la
+  647  nano masters
+  648  ls -al
+  649  ssh node2
+  650  ssh renjieliu.com
+  651  ls ..
+  652  ls -al
+  653  cd ..
+  654  ls -al
+  655  cd etc/ 
+  656  ls -al
+  657  cd hadoop/
+  658  cd ../
+  659  scp ./etc/* pi@192.168.1.200:/home/pi/hadoop/etc/
+  660  scp ./etc/hadoop/* pi@192.168.1.200:/home/pi/hadoop/etc/hadoop/
+  661  scp ./etc/hadoop/* pi@renjieliu.com:/home/pi/hadoop/etc/hadoop/
+  662  ls -al
+  663  cd bin/ 
+  664  ls -al
+  665  ./hadoop namenode -format
+  666  nano ../etc/hadoop/core-site.xml 
+  667  scp ../etc/hadoop/* pi@192.168.1.200:/home/pi/hadoop/etc/hadoop/
+  668  scp ../etc/hadoop/* pi@renjieliu.com:/home/pi/hadoop/etc/hadoop/
+  669  ./hadoop namenode -format
+  670  ls -al
+  671  cd ..
+  672  cd s 
+  673  cd sbin/
+  674  ls -al
+  675  sbin/start-dfs.sh
+  676  ./start-dfs.sh
+  677  jpd
+  678  jps
+  679  cd ../
+  680  ls -al
+  681  cd etc/
+  682  ls -al
+  683  cd hadoop/
+  684  ls -al
+  685  nano hdfs-site.xml
+  686  cd ../.. 
+  687  ls -al
+  688  cd sbin/ 
+  689  ls -al
+  690  sudo start-all.sh
+  691  sudo ./start-all.sh
+  692  sudo ./start-dfs.sh 
+  693  ./start-dfs.sh 
+  694  jps
+  695  scp ../etc/hadoop/* pi@192.168.1.200:/home/pi/hadoop/etc/hadoop/
+  696  scp ../etc/hadoop/* pi@renjieliu.com:/home/pi/hadoop/etc/hadoop/
+  697  ./start-dfs.sh 
+  698  exit
+  699  uname -a
+  700  docker images;
+  701  docker run -ti05abade1f4b6
+  702  docker run -ti 05abade1f4b6
+  703  docker images; 
+  704  docker ps -a
+  705  docker commit 35d65ac68165 hadoop_dnode1:hadoop
+  706  docker rm $(docker ps -aq)
+  707  docker images;
+  708  df
+  709  exit
+  710  ssh 172.17.0.3
+  711  cd hadoop
+  712  ls -al
+  713  scp
+  714  ls -al
+  715  cd hadoop/ 
+  716  ls -al
+  717  nano slaves 
+  718  scp -r /home/pi/Share/hadoop pi@172.17.0.3:/home/pi/Share/hadoop
+  719  pwd
+  720  cd ~/Share/hadoop/hadoop-2.9.2/
+  721  ls -al
+  722  pwd
+  723  scp -r ./*  pi@172.17.0.3:/home/pi/Share/hadoop/hadoop-2.9.2/
+  724  sudo scp -r ./*  pi@172.17.0.3:/home/pi/Share/hadoop/hadoop-2.9.2/
+  725  scp /home/pi/Share/hadoop/hadoop-2.9.2/etc pi@172.17.0.3:/home/pi/Share/hadoop/hadoop-2.9.2/etc
+  726  scp -r /home/pi/Share/hadoop/hadoop-2.9.2/etc pi@172.17.0.3:/home/pi/Share/hadoop/hadoop-2.9.2/etc
+  727  cd etc/
+  728  ls -al
+  729  cd hadoop/
+  730  ls -al
+  731  cd ..
+  732  ./bin/hdfs namenode -format
+  733  sudo rm -rf /opt/hadoop
+  734  ./bin/hdfs namenode -format
+  735  sudo ./bin/hdfs namenode -format
+  736  ./sbin/start-dfs.sh
+  737  jps
+  738  ./sbin/start-dfs.sh
+  739  jps
+  740  sudo jps
+  741  execstack -c /home/pi/Share/hadoop/hadoop-2.9.2/lib/native/libhadoop.so.1.0.0
+  742  jps
+  743  exit
+  744  sudo apt-get install mongodb-server 
+  745  nano ~/.bashrc 
+  746  mongod --vesion 
+  747  mongod --version 
+  748  exit
+  749  python
+  750  pip3
+  751  pip install jupyter
+  752  exit
+  753  cd ~/Share/ 
+  754  ls -al
+  755  nano  file.txt
+  756  head -10 file.txt | tail -1
+  757  wc -l file.txt 
+  758  awk '{ if(NR <10) print "" else system("head -10 file.txt | tail -1") }' file 
+  759  awk '{ if(NR <10) print ""; else system("head -10 file.txt | tail -1"); }' file.txt 
+  760  awk '{if(NR <10) print "hello"; else system("head -10 file.txt | tail -1"); }' file.txt
+  761  awk '{if(NR <10) print "hello"; break; else system("head -10 file.txt | tail -1"); }' file.txt
+  762  awk '{if(NR <10) print "hello"; exit; else system("head -10 file.txt | tail -1"); }' file.txt
+  763  awk '{if(NR <10) print "hello"  exit; else system("head -10 file.txt | tail -1"); }' file.txt
+  764  wc -l file.txt |  cut -d ' ' | awk '{if(NR <10) print "hello"; exit; else system("head -10 file.txt | tail -1"); }'
+  765  wc -l file.txt |  cut -d ' ' | awk '{if(NR <10) print "hello";  else system("head -10 file.txt | tail -1"); }'
+  766  wc -l file.txt
+  767  wc -l file.txt | awk '{print $1}'
+  768  wc -l file.txt | awk '{if ($1 <10) print "hello"; else system("head -10 file.txt | tail -1"); }'
+  769  nano file.txt 
+  770  wc -l file.txt | awk '{if ($1 <10) print ""; else system("head -10 file.txt | tail -1"); }'
+  771  exit
+  772  wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+  773  curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
+  774  vncserver :1
+  775  sudo apt-get purge code-oss 
+  776  sudo apt-get install geany
+  777  nano ~/.bashrc  
+  778  exit
+  779  sudo apt-get install googler
+  780  googler 
+  781  googler ip
+  782  googler --count 4 --time h5 hamsters
+  783  Please set a UTF-8 locale (e.g., en_US.UTF-8) or set PYTHONIOENCODING to utf-8.
+  784  echo $PYTHONIOENCODING
+  785  exit
+  786  uname -a
+  787  cat /proc/cpuinfo
+  788  exit 
+  789  locate hadoop
+  790  exit 
+  791  nano ~/.bashrc
+  792  cd ~/Share/
+  793  ls -al
+  794  mkdir nifi
+  795  cd nifi/
+  796  df
+  797  unzip
+  798  wget http://archive.apache.org/dist/nifi/1.9.2/nifi-1.9.2-bin.tar.gz
+  799  ls -al
+  800  tar -xzvf nifi-1.9.2-bin.tar.gz 
+  801  ls -al
+  802  rm nifi-1.9.2-bin.tar.gz 
+  803  df
+  804  mv  nifi-1.9.2 ..
+  805  ls -al
+  806  cd ..
+  807  ls -al
+  808  rm -r  nifi
+  809  mv nifi-1.9.2/ nifi
+  810  ls -al
+  811  cd nifi/
+  812  ls -la
+  813  cd bin/ 
+  814  ls -al
+  815  sudo sh ./nifi.sh install 
+  816  sudo sh ./nifi.sh start
+  817  ssh pi@192.168.1.205
+  818  sudo lsof -i -P -n | grep LISTEN
+  819  sudo service nifi start
+  820  sudo reboot now 
+  821  ping 192.168.1.204
+  822  exit
+  823  ls -al
+  824  nano fib.py 
+  825  python fib.py 
+  826  exit
+  827  /usr/bin/python3 -m pip install -U pylint --user
+  828  /usr/bin/python3 /home/pi/Share/fib.py
+  829  /usr/bin/python /home/pi/.vscode-server/extensions/ms-python.python-2019.11.50794/pythonFiles/lib/python/new_ptvsd/no_wheels/ptvsd/launcher /home/pi/Share/fib.py 
+  830  ls -aenv PTVSD_SESSION_ID=1 PTVSD_LAUNCHER_PORT=34775 /usr/bin/python3 /home/pi/.vscode-server/extensions/ms-python.python-2019.11.50794/pythonFiles/lib/python/new_ptvsd/no_wheels/ptvsd/launcher /home/pi/Share/fib.py 
+  831  exit
+  832  uptime
+  833  nano ~/.bashrc 
+  834  source ~/.bash
+  835  source ~/.bashrc 
+  836  sudo curl -sSL https://install.pi-hole.net | bash
+  837  history
+  838  ls -al ~/
+  839  nano .bash_history
+  840  nano ~/.bash_history
+  841  nano ~/.config
+  842  cd ~
+  843  nano .config/
+  844  nano .bashrc
+  845  history > ~/Share/rpi3_history_20200203.txt

@@ -1,0 +1,642 @@
+    1  passwd
+    2  su passwd
+    3  sudo passed
+    4  sudo passwd
+    5  sudo rasp-config
+    6  sudo raspi-config
+    7  sudo apt-get update; 
+    8  sudo apt-get install -y locate mariadb-server tightvncserver;
+    9  mysql -uroot -p
+   10  sudo mysql -root
+   11  mysql -uroot -p
+   12  mysql -uboroger -p
+   13  sudo mysql -u root
+   14  sudo usermod -aG mysql pi
+   15  mysql -uroot -p
+   16  mysql -uboroger -p
+   17  mysql -uroot -p
+   18  sudo apt-get install apache2 php7.3 php7.3-mysql -y
+   19  sudo updatedb
+   20  locate my.
+   21  sudo cp /etc/mysql/my.cnf /etc/mysql/my.cnf.20191108
+   22  sudo nano /etc/mysql/my.cnf 
+   23  sudo rm /etc/mysql/my.cnf.20191108
+   24  more  /etc/mysql/my.cnf
+   25  cd /etc/mysql/mariadb.conf.d/
+   26  ls -al
+   27  more 50-server.cnf 
+   28  sudo cp 50-server.cnf 50-server.cnf.20191108
+   29  sudo nao  50-server.cnf 
+   30  sudo nano 50-server.cnf 
+   31  sudo service mysql restart
+   32  sudo service apache2 start 
+   33  sudo cd /var/log/
+   34  ls -al
+   35  cd /var/log/
+   36  ls -al
+   37  cd apache2/ 
+   38  ls -al
+   39  tail error.log 
+   40  sudo reboot now 
+   41  python
+   42  nano ~/.bashrc 
+   43  sudo echo 'interface wlan0
+   44  static ip_address=192.168.1.204/24
+   45  #static ip6_address=fd51:42f8:caae:d92e::ff/64
+   46  static routers=192.168.1.1
+   47  static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
+   48  echo alias python='python3.7' >> ~/.bashrc;
+   49  mkdir ~/Share; sudo chmod 777 -R ~/Share;
+   50  sudo mkdir /mnt/sandisk; sudo chmod 777 -R /mnt/sandisk;
+   51  nano ~/.bashrc 
+   52  sudo reboot now 
+   53  nano /etc/dhcpcd.conf
+   54  sudo reboot now 
+   55  df
+   56  top
+   57  sudo apt-get install ssmtp 
+   58  sudo updatedb
+   59  locate ssmtp 
+   60  sudo cp /etc/ssmtp/ssmtp.conf /etc/ssmtp/ssmtp.conf.20191108
+   61  sudo nano /etc/ssmtp/ssmtp.conf
+   62  mail -s "Test mail from rpi4-2g" anlrj@qq.com
+   63  sudo apt-get install mailx
+   64  apt-cache search mail
+   65  apt-cache search mail | grep mailx
+   66  sudo apt-get install bsd-mailx 
+   67  man mail
+   68  mail -s "hello" anlrj@qq.com
+   69  sudo apt-get purge bsd-mailx
+   70  sudo apt-get install sendmail
+   71  sudo apt-get purge sendmail
+   72  sudo apt-get autoclean
+   73  /opt/vc/bin/vcgencmd measure_temp
+   74  sudo apt-get install mailutils
+   75  ps -elf 
+   76  mysql -uroot -p
+   77  sudo apt-get install mailutils
+   78  exit
+   79  locate default
+   80  locate default | grep apache 
+   81  cd /etc/apache2/sites-available/
+   82  ls -al
+   83  cd /etc/apache2/sites-enabled/
+   84  ls -al
+   85  cd ..
+   86  ls -al
+   87  cd conf-available
+   88  ls -al
+   89  cd ..
+   90  ls -al
+   91  cd sites-available
+   92  ls al
+   93  ls -al
+   94  cd ..
+   95  cd sites-enabled
+   96  ls -al
+   97  sudo nano ../sites-available/000-default.conf
+   98  cd ..
+   99  ls -al
+  100  cd sites-available
+  101  ls -al
+  102  sudo nano ../sites-available/000-default.conf
+  103  ls -al
+  104  sudo cp 000-default.conf 000-default.conf.20191108
+  105  sudo nano 000-default.conf
+  106  cd ~/
+  107  cd Share/
+  108  ls -al
+  109  cd ..
+  110  ls -al
+  111  cd ~/Share/
+  112  scp pi@192.168.1.101:/home/pi/Share/
+  113  pi@rpi4-2g:~/Share $ scp pi@192.168.1.101:/home/pi/Share/
+  114  scp pi@192.168.1.101:/home/pi/Share/Rpi_www_Backup.tar.gz ./
+  115  ls -al
+  116  tar zxvf Rpi_www_Backup.tar.gz 
+  117  ls -al
+  118  cd var/
+  119  cd www
+  120  cd ..
+  121  ls -al /var/www/
+  122  mv ./www/* /var/www/
+  123  sudo mv ./www/* /var/www/
+  124  ls -al
+  125  ls  www/
+  126  ls -al /var/www/
+  127  sudo service apache2 restart
+  128  cd www/
+  129  ls -al
+  130  cd /var/
+  131  cd www/
+  132  ls -al
+  133  cd beta/
+  134  ls -al
+  135  nano index.php 
+  136  cd .
+  137  cd ..
+  138  nano test.php
+  139  ls -al
+  140  cd files
+  141  ls -al
+  142  cd ..
+  143  cd ../
+  144  ls -al
+  145  sudo chown www pi
+  146  sudo chown pi ./www
+  147  ls -al
+  148  sudo chgrp pi ./www
+  149  ls -al
+  150  cd www
+  151  ls -al
+  152  nano test.php
+  153  mroe demo.php
+  154  more demo.php
+  155  cd ~/Share/
+  156  cdh
+  157  scp pi@192.168.1.101:/home/pi/Share/POC_DB.dump ./
+  158  tail 100 /var/log/apache2/error.log 
+  159  locate php.ini
+  160  sudo nano /etc/php/7.3/apache2/php.ini
+  161  sudo apt list --installed
+  162  tail 100 /var/log/apache2/error.log 
+  163  cd /var/www/
+  164  ls -al
+  165  nano demo.php
+  166  tail 100 /var/log/apache2/error.log 
+  167  mysql -uroot -p
+  168  mysql -uroot -p POC < ~/Share/POC_DB.dump
+  169  mysql -uroot -p
+  170  sudo reboot now 
+  171  sudo apt-get purge sendmail 
+  172  sudo apt-get install mailutils
+  173  mail
+  174  man mail 
+  175  mail -s "Hello from Rpi4-2g" anlrj@qq.com
+  176  sudo apt-get purge mailutils
+  177  sudo apt-get autoclean
+  178  echo "hello from rpi4-2g" | mail -s anlrj@qq.com
+  179  sudo apt-get install mailutils
+  180  echo "hello from rpi4-2g" | mail -s anlrj@qq.com
+  181  echo "hello from rpi4-2g" | mail -s anlrj@qq.com;
+  182  sudo apt-get purge mailutils
+  183  mail 
+  184  sudo apt-get install mailx
+  185  sudo apt-get install bsd-mailx
+  186  echo "hello from rpi4-2g" | mail -s anlrj@qq.com;
+  187  echo "hello from rpi4-2g" | mail -s "Hello" anlrj@qq.com;
+  188  sudo apt-get purge guile-2.2-libs libgc1c2 libgsasl7 libkyotocabinet16v5 liblzo2-2 libmailutils5 libntlm0 mailutils-common
+  189  mail
+  190  which mail
+  191  man mail
+  192  sudo apt-get purge bsd-mailx 
+  193  mail
+  194  sudo apt-cache search heirloom
+  195  sudo apt-get install s-nail 
+  196  mail
+  197  sudo apt-get purge s-nail 
+  198  sudo apt-get install mailx
+  199  sudo apt-get installl mailutils
+  200  sudo apt-get install mailutils
+  201  mail
+  202  man mail
+  203  mail -s "hello" anlrj@qq.com;
+  204  echo "Rpi101 Backup /mnt/sandisk/Rpi101_Backup_${time}.img completed!" | mail -s "Rpi101 Backup /mnt/sandisk/Rpi101_Backup_${time}.img completed!" anlrj@qq.com;
+  205  echo "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" | mail -s "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" anlrj@qq.com;
+  206  sudo apt-get purge guile-2.2-libs libgc1c2 libgsasl7 libkyotocabinet16v5 liblzo2-2 libmailutils5 libntlm0 mailutils-common
+  207  sudo apt-get purge mailutils
+  208  mail
+  209  sudo apt-get install bsd-mailx
+  210  man mail
+  211  echo "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" | mail -s "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" anlrj@qq.com;
+  212  sudo apt-ger purge bsd-mailx
+  213  sudo apt-get purge bsd-mailx
+  214  cd ~/Share/ 
+  215  ls -al
+  216  rm *
+  217  rm -rf *
+  218  ls -al
+  219  scp pi@192.168.1.101:/home/pi/Share/* ./
+  220  ls -al
+  221  rm -rf  *; scp -r pi@192.168.1.101:/home/pi/Share/* ./
+  222  ls -al
+  223  sudo apt-get install mailutils
+  224  history 
+  225  ls -al ~/
+  226  sudo nano .bash_history
+  227  ls -al
+  228  sudo nano ~/.bash_history
+  229  ls -al ~/
+  230  sudo nano .bashrc
+  231  sudo nano ~/.bashrc
+  232  mail
+  233  history
+  234  echo "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" | mail -s "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" anlrj@qq.com;
+  235  man mail 
+  236  mailx 
+  237  echo "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" | mailx -s "Rpi101 Backup /mnt/sandisk/Rpi101_Backup.img completed!" anlrj@qq.com;
+  238  sudo nano /etc/ssmtp/
+  239  sudo nano /etc/ssmtp/ssmtp.conf
+  240  echo "Testing...1...2...3" | ssmtp myusername@gmail.com
+  241  sudo apt-get purge guile-2.2-libs libgc1c2 libgsasl7 libkyotocabinet16v5 liblzo2-2 libmailutils5 libntlm0 mailutils-common mailutils
+  242  sudo apt-get install mutt
+  243  echo "hello" |  mutt -s "hello from rpi4-2g" anlrj@qq.com
+  244  sudo apt-get purge mutt
+  245  sudo apt-get install ssmtp mailutils mpack
+  246  sudo nano /etc/ssmtp/ssmtp.conf
+  247  echo "This is sending from my Raspberry Pi4  Mail Body" | mail s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  248  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  249  echo $?
+  250  nano /etc/hostname
+  251  nano /etc/hosts
+  252  nano /etc/hostname
+  253  nano /etc/hosts
+  254  sudo nano /etc/hosts
+  255  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  256  echo $?
+  257  sudo nano /etc/ssmtp/
+  258  sudo nano /etc/ssmtp/ssmtp.conf
+  259  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  260  sudo reboot now 
+  261  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  262  sudo updatedb
+  263  locate mail.log
+  264  more /var/log/mail.log
+  265  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  266  sudo service sendmail stop
+  267  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  268  sudo apt-get install postfix
+  269  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  270  more /var/log/mail.err
+  271  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  272  more /var/log/mail.err
+  273  sudo chmod 755 /etc/postfix
+  274  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  275  more /var/log/mail.err
+  276  ls -al /etc/postfix/
+  277  sudo apt-get purge postfix 
+  278  more /etc/hosts
+  279  more /etc/hostname
+  280  tail /var/log/syslog
+  281  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  282  tail /var/log/syslog
+  283  exit
+  284  sudo shutdown now 
+  285  echo "This is sending from my Raspberry Pi4  Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  286  history
+  287  sudo apt-get purge ssmtp guile-2.2-libs libgc1c2 libgsasl7 libkyotocabinet16v5 liblzo2-2 libmailutils5 libntlm0 mailutils-common mailutils;
+  288  mail 
+  289  sudo updatedb
+  290  locate mail
+  291  locate ssmtp
+  292  sudo apt-get update
+  293  sudo apt-get install mailutils
+  294  mail 
+  295  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  296  mail
+  297  man mail
+  298  sudo apt-get install ssmtp 
+  299  sudo nano /etc/ssmtp/ssmtp.conf 
+  300  sudo cp /etc/ssmtp/ssmtp.conf  /etc/ssmtp/ssmtp.conf.20191109
+  301  sudo nano /etc/ssmtp/ssmtp.conf 
+  302  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  303  sudo nano /etc/ssmtp/ssmtp.conf.20191109
+  304  sudo apt-get purge ssmtp
+  305  sudo nano /etc/ssmtp/ssmtp.conf.20191109
+  306  sudo nano /etc/ssmtp/ssmtp.conf
+  307  sudo apt-get install ssmtp
+  308  sudo cp /etc/ssmtp/ssmtp.conf /etc/ssmtp/ssmtp.conf.20191109
+  309  hostname
+  310  sudo nano /etc/ssmtp/ssmtp.conf
+  311  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  312  ls -al /var/log/
+  313  tail /var/log/mail.err
+  314  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  315  tail /var/log/mail.err
+  316  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  317  ech $
+  318  echo $?
+  319  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  320  echo $?
+  321  hostname
+  322  more /etc/hosts
+  323  ping 127.0.1.1
+  324  sudo nano /etc/hostname 
+  325  sudo nano /etc/hosts
+  326  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com;
+  327  nano ~/.mailrc
+  328  locate mailtc
+  329  locate mailrc
+  330  ls /var/mail/pi 
+  331  cd /var/mail/pi 
+  332  nano  /var/mail/pi 
+  333  nano  /var/log/mail.log 
+  334  sudo service --status-all
+  335  sendmail
+  336  sudo nano /etc/ssmtp/ssmtp.conf
+  337  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  338  $?
+  339  echo $?
+  340  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  341  echo $?
+  342  more /var/log/mail.err
+  343  sudo nano /etc/ssmtp/ssmtp.conf
+  344  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  345  sudo nano /var/log/mail.log
+  346  sudo apt-get install postfix
+  347  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  348  mail
+  349  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" liurenjiemobile@gmail.com
+  350  tail /var/log/mail.err 
+  351  sudo nano /etc/ssmtp
+  352  sudo apt-get purge postfix 
+  353  sudo apt autoremove
+  354  mail
+  355  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" liurenjiemobile@gmail.com
+  356  sudo apt list --installed 
+  357  man mail 
+  358  sudo apt-get purge guile-2.2-libs libgc1c2 libgsasl7 libkyotocabinet16v5 liblzo2-2 libmailutils5 libntlm0 mailutils-common mailutils
+  359  df
+  360  sudo apt-get install heirloom-mailx
+  361  sudo apt-get clean 
+  362  mailx 
+  363  sudo apt-cache search mailx
+  364  sudo apt-get install bsd-mailx
+  365  mail
+  366  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  367  mail
+  368  sudo nano /etc/ssmtp/ssmtp.conf
+  369  sudo apt-get install postfix
+  370  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  371  mail
+  372  locate Exim
+  373  ls -al ~
+  374  ls -al /var/log/
+  375  tail  /var/log/mail.log
+  376  cd /etc/postfix
+  377  ls -al
+  378  sudo apt-get purge postfix
+  379  sudo apt-get autoclean 
+  380  sudo apt-get install ssmtep
+  381  sudo apt-get install ssmtp
+  382  m4
+  383  sudo cp /etc/ssmtp/ssmtp.conf /etc/ssmtp/ssmtp.conf.20191109
+  384  sudo nano /etc/ssmtp/ssmtp.conf
+  385  ls -al /etc/ssmtp/ssmtp.conf
+  386  echo "This is a test" | ssmtp anlrj@qq.com
+  387  sudo nano /etc/ssmtp/ssmtp.conf
+  388  cd ~/Share/
+  389  ls -al
+  390  sh generate_cpu_stat.sh
+  391  sudo nohup ./generate_cpu_stat.sh &
+  392  ls -al
+  393  /opt/vc/bin/vcgencmd measure_temp
+  394  sensors
+  395  sudo apt install lm-sensors
+  396  sensors
+  397  sudo sensors-detect
+  398  sudo apt install lm-sensors hddtemp
+  399  sensors
+  400  echo "Test" | mutt  -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  401  sudo apt-get install mutt
+  402  echo "Test" | mutt  -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  403  ls -al /var/log/
+  404  sudo tail /var/log/mail.err
+  405  sudo tail /var/log/mail.log 
+  406  sudo tail /var/log/mail.warn 
+  407  sudo apt-get purge guile-2.2-libs libgc1c2 libgsasl7 libkyotocabinet16v5 liblzo2-2 libmailutils5 libntlm0 mailutils-common mailutils ssmtp;
+  408  sudo apt-get purge postfix 
+  409  sudo apt-get install libsasl2-modules postfix
+  410  sudo nano /etc/postfix/sasl/sasl_passwd
+  411  sudo updatedb 
+  412  locate sas
+  413  locate sasl
+  414  cd /etc/postfix/sasl
+  415  ls a-l
+  416  ls -al
+  417  sudo nano /etc/postfix/sasl/sasl_passwd
+  418  sudo postmap /etc/postfix/sasl/sasl_passwd
+  419  ls -al
+  420  sudo nano /etc/postfix/main.cf
+  421  sudo service postfix restart 
+  422  mail
+  423  sudo apt-get install mailutils
+  424  echo "This is sending from my Raspberry Pi4 Mail Body" | mail -s "This is sending from my Raspberry Pi4 Mail subject" anlrj@qq.com
+  425  ls ~/Share/
+  426  ls -al
+  427  alias cds="cd ~/Share"
+  428  cds
+  429  ls -al
+  430  nano mailUSDays.sh
+  431  nano send_ip.sh
+  432  crontab -e
+  433  cp ./generate_cpu_stat.sh /etc/init.d/
+  434  sudo cp ./generate_cpu_stat.sh /etc/init.d/
+  435  sudo chmod +x /etc/init.d/generate_cpu_stat.sh 
+  436  sudo update-rc.d /etc/init.d/generate_cpu_stat.sh defaults
+  437  ls -al /etc/init.d/generate_cpu_stat.sh
+  438  sudo update-rc.d generate_cpu_stat.sh defaults
+  439  sudo reboot now 
+  440  top -1
+  441  sudo ps -elf | grep gene
+  442  ls -al /etc/init.d/
+  443  sudo service generate_cpu_stat.sh  start
+  444  sudo update-rc.d generate_cpu_stat.sh defaults
+  445  ls -al  /etc/init.d/generate_cpu_stat.sh 
+  446  sudo chmod 777  /etc/init.d/generate_cpu_stat.sh 
+  447  ln -s /etc/init.d/etc/init.d/generate_cpu_stat.sh /etc/rc.d/
+  448  sudo update-rc.d generate_cpu_stat.sh defaults 100
+  449  sudo reboot now 
+  450  ls -al
+  451  cds
+  452  cd Share/
+  453  ls -al
+  454  chmod +x generate_cpu_stat.sh  
+  455  ls -al
+  456  crontab -e
+  457  sudo reboot now
+  458  sudo update-rc.d -f generate_cpu_stat.sh remove
+  459  sudo reboot now 
+  460  sudo a2enmod cgi
+  461  sudo service apache2 restart
+  462  cd /var/www
+  463  ls -al
+  464  echo "hello world" | mail -s "hello from rpi4-2g" anlrj@qq.com
+  465  echo "hello world" | mail -s "hello from rpi4-2g" -a FROM:root anlrj@qq.com
+  466  locate mods-ava
+  467  cd mapserver/
+  468  ls -al
+  469  cd cgi-bin/ 
+  470  ls -al
+  471  locate apache | grep available
+  472  sudo nano /etc/apache2/sites-available/000-default.conf
+  473  locate cgi
+  474  sudo nano /etc/apache2/sites-available/000-default.conf
+  475  sudo nano /etc/apache2/conf-enabled/serve-cgi-bin.conf
+  476  sudo cp /etc/apache2/conf-enabled/serve-cgi-bin.conf /etc/apache2/conf-enabled/serve-cgi-bin.conf.20191109
+  477  sudo nano /etc/apache2/conf-enabled/serve-cgi-bin.conf
+  478  sudo service apache2 restart 
+  479  sudo nano /etc/apache2/conf-enabled/serve-cgi-bin.conf
+  480  sudo service apache2 restart
+  481  locate apache2.conf
+  482  sudo anno /etc/apache2/apache2.conf
+  483  sudo nano /etc/apache2/apache2.conf
+  484  sudo service apache2 restart
+  485  cd ../
+  486  ls -al
+  487  cd ../
+  488  ls -al
+  489  cd home
+  490  ls -al
+  491  cd ..
+  492  ls -al
+  493  cd mapserver/ 
+  494  ls -al
+  495  cd symbol/
+  496  ls -al
+  497  cd htdocs/ 
+  498  ls -al
+  499  nano head.html 
+  500  exit 
+  501  exit
+  502  cd /var/lo 
+  503  cd /var/lo
+  504  cd /var/log/
+  505  ls -al
+  506  cd apache2
+  507  ls -al
+  508  tail access.log 
+  509  cd /var/www/
+  510  ls -al
+  511  cd mapserver/
+  512  ls -al
+  513  cd /var/log/
+  514  ls -al
+  515  cd apache2
+  516  ls -al
+  517  tail error.log
+  518  tail 100 error.log
+  519  tail -n 100 error.log
+  520  exit
+  521  cd /var/log
+  522  ls -al
+  523  cd apache2/
+  524  ls -al
+  525  tail error.log
+  526  tail 1000error.log
+  527  more error.log
+  528  locate libgd.so.2
+  529  sudo updatedb 
+  530  locate libgd.so.2
+  531  locate libgd
+  532  cd /var/www
+  533  cd mapserver/ 
+  534  ls -al
+  535  cd ..
+  536  ls -al
+  537  cd mapserver/
+  538  mkdir dependancies
+  539  cd dependancies/ 
+  540  wget https://src.fedoraproject.org/lookaside/extras/gd/gd-2.0.33.tar.gz/be0a6d326cd8567e736fbc75df0a5c45/gd-2.0.33.tar.gz
+  541  ls -al
+  542  tar zxvf gd-2.0.33.tar.gz 
+  543  ls -al
+  544  cd gd-2.0.33/
+  545  l s-al
+  546  ls -al
+  547  sudo ./configure
+  548  cd ..
+  549  rm -rf dependancies/
+  550  sudo rm -rf dependancies/
+  551  ls -al
+  552  cd /var/log/
+  553  cd apache2/
+  554  ls -al
+  555  tail error.log
+  556  locate mapserv
+  557  /usr/bin/mapserv 
+  558  tail error.log
+  559  sudo cp /var/www/mapserver/symbol/etc/symbol/symbol.sym /var/www/mapserver/symbol/etc/symbol/symbol.sym.20191110
+  560  tail error.log
+  561  ls -al /var/www/mapserver/thematic/htdocs
+  562  exit
+  563  sudo a2enmod cgi
+  564  sudo nano /etc/apache2/apache2.conf
+  565  locate cgi-bin
+  566  sudo nano /etc/apache2/conf-enabled/serve-cgi-bin.conf
+  567  sudo apache2 restart 
+  568  sudo service apache2 restart 
+  569  sudo apt-cache search gd | grep php
+  570  sudo apt-get install php7.3-gd
+  571  sudo service apache2 restart 
+  572  sudo apt-cache search gd
+  573  sudo apt-cache search gd-
+  574  locate gdal
+  575  sudo apt-get install mapserver-bin 
+  576  sudo updatedb 
+  577  locate mapsev | grep cgi
+  578  locate mapserv | grep cgi
+  579  locate mapserver 
+  580  locate mapserver-bin
+  581  mapserver 
+  582  cd /var/www/mapserver/cgi-bin
+  583  ln -s mapserv.cgi /usr/bin/mapserv
+  584  ln -s /usr/bin/mapserv mapserv.cgi
+  585  ls -al
+  586  /usr/bin/mapserv
+  587  ls -al /usr/bin/mapserv
+  588  rm mapserv.cgi 
+  589  cp /usr/bin/mapserv .
+  590  ls -al
+  591  mv mapserv  mapserv.cgi
+  592  cd ..
+  593  ls -al
+  594  cd symbol/
+  595  ls -al
+  596  cd tmp
+  597  cd ..
+  598  cd tmp/
+  599  ls -al
+  600  cd ..
+  601  sudo chmod 777 tmp/
+  602  ls -al
+  603  mapserv 
+  604  man mapserv 
+  605  mapserv -v
+  606  cd /var/www/mapserver/symbol/htdocs
+  607  mkdir mapFILE_OLD
+  608  exit
+  609  ls -al
+  610  exit
+  611  cd ~/
+  612  ls -al
+  613  cd .config/
+  614  ls -al
+  615  locate chromium 
+  616  locate snap
+  617  cd /etc/ 
+  618  ls -al
+  619  more /etc/resolv.conf
+  620  exit
+  621  locate swapiness
+  622  locate swappiness
+  623  cd /proc/sys/vm/
+  624  cat swappiness
+  625  locate swappiness
+  626  exit
+  627  uname -r
+  628  exit
+  629  ls -al /boot/
+  630  ls -al /dev/
+  631  exit 
+  632  ls -al /boot/
+  633  exit 
+  634  uname -r
+  635  cd Share/ 
+  636  tee a at.txt
+  637  more at.txt 
+  638  rm at.txt 
+  639  exit
+  640  crontab -l
+  641  history 
+  642  history  > ~/Share/history_20200202.txt
