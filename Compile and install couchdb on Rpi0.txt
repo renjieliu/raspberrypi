@@ -1,0 +1,103 @@
+mkdir couchdb
+cd couchdb/
+wget http://packages.erlang-solutions.com/debian/erlang_solutions.asc
+sudo apt-key add erlang_solutions.asc
+sudo apt update --allow-releaseinfo-change
+sudo apt-get update
+sudo apt-get --no-install-recommends -y install build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
+sudo useradd -d /home/couchdb couchdb
+sudo mkdir /home/couchdb
+sudo chown couchdb:couchdb /home/couchdb
+wget https://mirrors.sonic.net/apache/couchdb/source/3.1.0/apache-couchdb-3.1.0.tar.gz
+tar zxvf apache-couchdb-3.1.0.tar.gz
+cd apache-couchdb-3.1.0/
+./configure
+make release
+cd ./rel/couchdb/
+sudo cp -Rp * /home/couchdb
+sudo chown -R couchdb:couchdb /home/couchdb
+cd /home/couchdb/etc/
+sudo nano local.ini
+
+--change bind address and change admin password 
+
+
+sudo -i -u couchdb /home/couchdb/bin/couchdb 
+
+
+sudo mkdir /var/log/couchdb/
+sudo chown couchdb:couchdb /var/log/couchdb
+
+
+http://127.0.0.1:5984/_utils/#/_config
+
+
+option  --> 
+add log  --Section
+add file --Name
+/var/log/couchdb/couch.log --Value
+
+
+
+sudo nano /lib/systemd/system/couchdb.service
+[Unit]
+Description=CouchDB Service
+After=network.target
+  
+[Service]
+Type=idle
+User=couchdb
+Restart=always
+ExecStart=/home/couchdb/bin/couchdb
+  
+[Install]
+WantedBy=default.target
+
+
+
+sudo chmod 644 /lib/systemd/system/couchdb.service
+
+
+sudo systemctl daemon-reload
+sudo systemctl enable couchdb.service
+
+sudo systemctl status couchdb.service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
