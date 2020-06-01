@@ -27,7 +27,13 @@ passwd;
 sudo passwd;
 nano ~/.bashrc;
 
+###############################################
 #add below lines to the end of the file
+#and change below settings - 
+
+#HISTSIZE=100000
+#HISTFILESIZE=20000000
+
 alias python='python3.7';
 cd /home/pi/Share;
 
@@ -46,6 +52,7 @@ echo 'run "jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
 echo 'run "jupyter notebook password" to set up password'
 echo 'current pwd: p!'
 
+###############################################
 
 source ~/.bashrc ;
 sudo updatedb;
