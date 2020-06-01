@@ -4,7 +4,7 @@
 
 mkdir Share;
 mkdir Share/jupyter;
-sudo apt-get update && sudo apt-get install locate -y;
+sudo apt-get update && sudo apt-get install locate gnupg2 pass -y;
 
 
 curl -sSL https://get.docker.com | sh ;
