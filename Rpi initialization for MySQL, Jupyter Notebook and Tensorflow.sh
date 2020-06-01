@@ -31,8 +31,10 @@ alias python='python3.7';
 cd /home/pi/Share;
 
 
-echo 'Rpi0_lime_AP -- 192.168.10.1'
+#echo 'Rpi0_lime_AP -- 192.168.10.1'
 echo 'Jupyter Notebook'
+echo 'Tensorflow 2.1'
+echo 'MariaDB 10.3'
 
 
 echo '---------Notes---------'
