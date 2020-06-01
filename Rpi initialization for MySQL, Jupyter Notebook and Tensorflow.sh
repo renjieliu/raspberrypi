@@ -5,6 +5,7 @@
 mkdir Share;
 mkdir Share/jupyter;
 sudo apt-get update && sudo apt-get install locate gnupg2 pass -y;
+sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
 
 
 curl -sSL https://get.docker.com | sh ;
