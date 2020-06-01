@@ -10,9 +10,9 @@ sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login pa
 
 curl -sSL https://get.docker.com | sh ;
 sudo usermod -aG docker pi ;
-sudo apt-get install docker-compose ;
+sudo apt-get install docker-compose -y;
 
-sudo apt-get install mariadb-server-10.3 ;
+sudo apt-get install mariadb-server-10.3 -y;
 
 cd /home/pi/Share/jupyter/;
 sudo pip3 install jupyter;
