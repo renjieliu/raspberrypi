@@ -6,7 +6,7 @@
 # the image does not have any existing C / C++ compiler, we need to install them first, in order to compile and build GCC-9
 
 apt-get update;
-apt-get install -y git wget gcc g++ make;
+apt-get install -y git wget gcc g++ make build-essential;
 mkdir gcc;
 cd gcc;
 export GCC_VERSION=9.3.0; #The version can be changed here, as needed
