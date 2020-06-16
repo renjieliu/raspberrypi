@@ -6,7 +6,7 @@
 # the image does not have any existing C / C++ compiler, we need to install them first, in order to compile and build GCC-9
 
 apt-get update;
-apt-get install -y git wget gcc-8 g++-8 make build-essential libmpc-dev;
+apt-get install -y nano git wget gcc-8 g++-8 make build-essential libmpc-dev;
 mkdir gcc;
 cd gcc;
 export GCC_VERSION=9.3.0; #The version can be changed here, as needed
