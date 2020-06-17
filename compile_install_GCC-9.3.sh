@@ -20,6 +20,6 @@ cd ../obj.gcc-${GCC_VERSION};
 ../gcc-${GCC_VERSION}/configure --disable-multilib --enable-languages=c,c++ --disable-lto;
 make -j $(nproc);
 make install ;
-echo 'GCC-${GCC_VERSION} has been installed';
+echo 'GCC has been installed';
 
 
