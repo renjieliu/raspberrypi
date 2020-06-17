@@ -7,6 +7,7 @@
 
 apt-get update;
 apt-get install -y nano git wget gcc-8 g++-8 make build-essential libmpc-dev;
+apt-get install -y gcc-multilib g++-multilib;
 mkdir gcc;
 cd gcc;
 export GCC_VERSION=9.3.0; #The version can be changed here, as needed
