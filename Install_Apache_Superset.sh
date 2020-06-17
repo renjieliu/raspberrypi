@@ -29,7 +29,7 @@ virtualenv pyarrow;
 source ./pyarrow/bin/activate;
 
 pip3 install -r ./python/requirements-build.txt;
-pip3 install -r ./python/requirements-test.txt;
+#pip3 install -r ./python/requirements-test.txt;
 
 pip3 install hypothesis;
 pip3 install pytest pickle5 pytest-lazy-fixture pytz scikit-build;
