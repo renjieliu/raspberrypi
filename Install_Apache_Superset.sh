@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# The script need to be run within a ubuntu docker image
+
 apt-get update;
 apt-get install -y nano locate wget git ;
 apt-get install -y gcc-8 g++-8 ;
@@ -177,52 +180,46 @@ zipp==3.1.0               # via importlib-metadata
 pip3 install apache-superset==0.36.0 --no-deps pyarrow -r requirements.txt ;
 
 
-################export LC_ALL=C.UTF-8
-################export LANG=C.UTF-8
-################
-################
-################superset db upgrade
-################
-################# Create an admin user (you will be prompted to set a username, first and last name before setting a password)
-################$ export FLASK_APP=superset
-################superset fab create-admin
-################
-################# Load some data to play with
-################superset load_examples
-################
-################# Create default roles and permissions
-################superset init
-################
-################# To start a development web server on port 8088, use -p to bind to another port
-################superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0
-################
-################
-################
-################
-########################script to start the docker container
-#################docker run -tidp 8088:8088 683ac777814c bash -c 'cd repos/arrow/ && virtualenv pyarrow && source ./pyarrow/bin/activate && export LD_LIBRARY_PATH=/repos/arrow/dist/lib/:$LD_LIBRARY_PATH && export FLASK_APP=superset && export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0'
-################
-################
-################
-########################to run when start the docker container
-################cd repos/arrow/
-################virtualenv pyarrow
-################source ./pyarrow/bin/activate
-################export LD_LIBRARY_PATH=/Share/arrow/arrow/dist/lib/:/repos/arrow/dist/lib/:$LD_LIBRARY_PATH
-################export FLASK_APP=superset
-################export LC_ALL=C.UTF-8
-################export LANG=C.UTF-8
-################superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0
+###############################
+# when above finished running, run below command to initialize the superset repository
+###############################
+
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+
+superset db upgrade
+
+# Create an admin user (you will be prompted to set a username, first and last name before setting a password)
+export FLASK_APP=superset
+superset fab create-admin
+
+# Load some data to play with
+superset load_examples
+
+# Create default roles and permissions
+superset init
+
+# To start a development web server on port 8088, use -p to bind to another port
+# superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0
 
 
 
+###############################
+########to run when start the docker container
+########put into CMD section of a Dockerile, to start automatically when run the docker image.
+###############################
+cd /arrow/
+virtualenv pyarrow
+source ./pyarrow/bin/activate
+export LD_LIBRARY_PATH=/arrow/dist/lib/:/Share/arrow/arrow/dist/lib/:/repos/arrow/dist/lib/:$LD_LIBRARY_PATH
+export FLASK_APP=superset
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0
 
 
-
-
-
-
-
+########script to start the docker container
+#docker run -tidp 8088:8088 683ac777814c bash -c 'cd repos/arrow/ && virtualenv pyarrow && source ./pyarrow/bin/activate && export LD_LIBRARY_PATH=/repos/arrow/dist/lib/:$LD_LIBRARY_PATH && export FLASK_APP=superset && export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0'
 
 
 
