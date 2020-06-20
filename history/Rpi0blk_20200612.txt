@@ -1,0 +1,72 @@
+    1  passwd
+    2  sudu passed
+    3  sudu passwd
+    4  sudo passwd
+    5  sudo raspi-config
+    6  sudo apt-get update && sudo apt-get install -y locate && sudo updatedb
+    7  sudo reboot now
+    8  free -h
+    9  exit
+   10  history
+   11  sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
+   12  curl -sSL https://get.docker.com | sh ;
+   13  sudo usermod -aG docker pi ;
+   14  sudo apt-get install docker-compose -y;
+   15  docker login
+   16  sudo reboot now 
+   17  docker login
+   18  vncserver :1
+   19  exit
+   20  cd Share/ 
+   21  ls -al 
+   22  nano ~/.bashrc
+   23  history
+   24  nano ~/.bashrc
+   25  source ~/.bashrc
+   26  tar zxvf hadoop-2.10.0.tar.gz
+   27  ls -al
+   28  sudo rm -rf hadoop-2.10.0
+   29  tar zxvf hadoop-2.10.0.tar.gz
+   30  ifconfig
+   31  cd  -
+   32  cd Share/hadoop-2.10.0/
+   33  mkdir data
+   34  mkdir data/datanode
+   35  mv data ..
+   36  ls -al
+   37  cd ..
+   38  ls -al
+   39  sudo rm -rf hadoop-2.10.0
+   40  sudo apt-get install openjdk-11-jdk
+   41  sudo apt-get install openjdk-9-jdk
+   42  java
+   43  sudo apt-get install -y openjdk-8-jre-zero
+   44  sudo updatedb
+   45  locate java 
+   46  df
+   47  nano ~/.bashrc 
+   48  source ~/.bashrc 
+   49  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-armhf
+   50  cd hadoop-2.10.0/
+   51  ls -al
+   52  cd etc
+   53  ls -al
+   54  nano hadoop-2.10.0/etc/hadoop/hadoop-env.sh
+   55  nano hadoop/hadoop-env.sh 
+   56  cd hadoop/
+   57  ls -al
+   58  cd ..
+   59  ls -al
+   60  ./bin/hdfs dfsadmin -report
+   61  exit
+   62  sudo apt-get autoremove openjdk-11-jdk openjdk-9-jdk 
+   63  sudo apt-get autoclean 
+   64  df
+   65  exit
+   66  sudo apt-get install cmatrix
+   67  cmatrix
+   68  exit
+   69  history > rpi0blk_20200606.txt
+   70  exit
+   71  history
+   72  history > Rpi0blk_20200612.txt

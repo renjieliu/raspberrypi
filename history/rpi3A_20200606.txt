@@ -1,0 +1,168 @@
+    1  mkdir Share;
+    2  mkdir Share/jupyter;
+    3  sudo apt-get update && sudo apt-get install locate gnupg2 pass -y;
+    4  curl -sSL https://get.docker.com | sh ;
+    5  sudo usermod -aG docker pi ;
+    6  sudo apt-get install docker-compose ;
+    7  sudo apt-get install docker-compose -y;
+    8  sudo apt-get install mariadb-server-10.3 -y;
+    9  sudo raspi-config;
+   10  passwd
+   11  sudo passwd
+   12  nano ~/.bashrc;
+   13  source ~/.bashrc ;
+   14  sudo updatedb;
+   15  docker version 
+   16  docker run hello-world;
+   17  sudo usermod -aG docker pi ;
+   18  docker run hello-world;
+   19  sudo mysql;
+   20  sudo reboot now 
+   21  vncserver :1
+   22  exit
+   23  nano ~/.bashrc 
+   24  exit
+   25  free -h 
+   26  docker login
+   27  df
+   28  docker pull liurenjie/raspbian_hadoop_master_20170808_2353:hive
+   29  df
+   30  docker image ls -al
+   31  docker image ls -a
+   32  docker run -ti 267fe7a9416e
+   33  docker images;
+   34  docker run -ti 6bff61
+   35  exit
+   36  docker pull liurenjie/raspbian_hadoop_slave1_20170731_2333:latest
+   37  exit
+   38  history
+   39  sudo fdisk -l
+   40  sudo fdisk /dev/sda
+   41  ls -ld
+   42  ls -ld /dev/sda
+   43  hdparm 
+   44  sudo apt-get install hdparm 
+   45  fdisk -l
+   46  sudo fdisk -l
+   47  sudo hdparm -r0 /dev/sda
+   48  ls -al
+   49  sudo hdparm -r0 /dev/sda1
+   50  sudo hdparm -r0 /dev/sda2
+   51  sudo fdisk /dev/sda
+   52  sudo mkfs -t vfat /dev/sda
+   53  sudo hdparm /dev/sda
+   54  sudo hdparm -r1 /dev/sda2
+   55  sudo hdparm -r1 /dev/sda
+   56  sudo hdparm -r0 /dev/sda
+   57  sudo hdparm -r0 /dev/sda1
+   58  sudo hdparm -r0 /dev/sda2
+   59  sudo mkfs -t vfat /dev/sda
+   60  cfdisk /dev/sda
+   61  sudo cfdisk /dev/sda
+   62  man cfdisk
+   63  ls -al/dev/sda
+   64  ls -al /dev/sda
+   65  dd if=/dev/zero of=/dev/sda bs=64M
+   66  sudo dd if=/dev/zero of=/dev/sda bs=64M
+   67  sudo apt-get install gparted
+   68  vncserver :1
+   69  exit
+   70  sudo fdisk -l
+   71  sudo badblocks /dev/sdb
+   72  sudo badblocks -nv  /dev/sdb
+   73  sudo badblocks -n -v  /dev/sdb
+   74  sudo badblocks -n -v /dev/sdb
+   75  sudo reboot now 
+   76  sudo badblocks -n -v /dev/sdb
+   77  sudo badblocks /dev/sdb
+   78  sudo fdisk -l
+   79  man badblocks 
+   80  sudo badblocks -v /dev/sdb
+   81  sudo badblocks -v -n /dev/sdb
+   82  man badblocks 
+   83  sudo badblocks -v -n -f /dev/sdb
+   84  sudo badblocks -v /dev/sdb
+   85  docker images;
+   86  exit
+   87  wget http://apache.mirrors.hoobly.com/hadoop/common/hadoop-2.10.0/hadoop-2.10.0.tar.gz
+   88  tar zxvf hadoop-2.10.0.tar.gz 
+   89  exi
+   90  exit
+   91  ls -al
+   92  ifconfig
+   93  cd ~/Share/hadoop-2.10.0
+   94  ls -al
+   95  mkdir data
+   96  mkdir data/datanode
+   97  mv data ..
+   98  ls -al
+   99  cd ..
+  100  ls -al
+  101  sudo rm -rf hadoop-2.10.0
+  102  ls-al
+  103  ls -al
+  104  ls hadoop-2.10.0/share/hadoop/yarn/
+  105  ls -al
+  106  ls -al hadoop-2.10.0
+  107  mv hadoop-2.10.0 h1
+  108  ls -al
+  109  cd h1/
+  110  ls -al
+  111  mv hadoop-2.10.0/ ..
+  112  cd ..
+  113  ls -al
+  114  sudo rm -rf h1 
+  115  ls -al hadoop-2.10.0
+  116  ls -al hadoop-2.10.0/share/hadoop/yarn/
+  117  ls -al /home/pi/Share/data/datanode
+  118  sudo apt list --installed
+  119  sudo apt-get install openjdk-11-jdk -y
+  120  nano ~/.bashrc
+  121  ls -al /usr/lib/jvm/java-11-openjdk-armh
+  122  ls -al /usr/lib/jvm/java-11-openjdk-armhf
+  123  source ~/.bashrc 
+  124  print $JAVA_HOME
+  125  echo  $JAVA_HOME
+  126  export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-armhf
+  127  nano hadoop-2.10.0/etc/hadoop/hadoop-env.sh 
+  128  exit
+  129  free -h
+  130  sudo apt-get update
+  131  sudo apt-get install npm
+  132  sudo apt-get install libfontconfig r-base-dev r-cran-evaluate -y
+  133  wget https://apache.osuosl.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+  134  sudo tar -zxf apache-maven-3.6.3-bin.tar.gz -C /usr/local/
+  135  sudo ln -s /usr/local/apache-maven-3.6.3/bin/mvn /usr/local/bin/mvn
+  136  mvn version 
+  137  mvn -version 
+  138  node --version
+  139  mkdir zeppelin
+  140  cd zeppelin/
+  141  git clone https://github.com/apache/zeppelin.git
+  142  ls -al
+  143  cd zeppelin/
+  144  ls -al
+  145  ./dev/change_scala_version.sh 2.11
+  146  mvn clean package -DskipTests -Pspark-2.0 -Phadoop-2.4 -Pr -Pscala-2.11
+  147  sudo apt-cache search scala
+  148  sudo apt-get install scala
+  149  scala -version 
+  150  mvn clean package -DskipTests -Pspark-2
+  151  mvn clean package -DskipTests
+  152  scala -version
+  153  ./dev/change_scala_version.sh 2.11.12
+  154  ./dev/change_scala_version.sh 2.11
+  155  mvn clean package -DskipTests -Pscala-2.11
+  156  exit
+  157  mvn clean package -DskipTests -Pscala-2.11
+  158  cleasr
+  159  clear
+  160  cd zeppelin/
+  161  ls -al
+  162  cd zeppelin/ 
+  163  ls -al
+  164  mvn clean package -DskipTests -Pscala-2.11
+  165  exit 
+  166  history
+  167  exit
+  168  history > rpi3A_20200606.txt

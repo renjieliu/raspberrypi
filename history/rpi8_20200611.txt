@@ -1,0 +1,488 @@
+    1  passwd
+    2  cd gcc/
+    3  ls -al
+    4  history
+    5  cd sg
+    6  history 
+    7  sudo fdisk -l
+    8  cd gcc/
+    9  ls -al
+   10  tar zxvf gcc-10.1.0.tar.gz 
+   11  cd gcc-10.1.0/
+   12  ls -al
+   13  cd contrib
+   14  ls -al
+   15  cat download_prerequisites
+   16  cd ..
+   17  contrib/download_prerequisites
+   18  history
+   19  ls -al
+   20  mkdir build && cd build
+   21  cd ..
+   22  rm -rf build/
+   23  cd ..
+   24  mkdir build && cd build
+   25  uname -a
+   26  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-arch=cpu --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+   27  ls a-l
+   28  ls 
+   29  act config.log
+   30  cat config.log 
+   31  sudo pip3 install apache-superset
+   32  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-arch=cpu --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+   33  sudo apt-get install --reinstall build-essential
+   34  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-arch=cpu --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+   35  sudo apt install gobjc++
+   36  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-arch=cpu --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+   37  gcc
+   38  nano ~/.bashrc 
+   39  source ~/.bashrc 
+   40  cd ~/Share/gcc/build
+   41  ls -al
+   42  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-arch=cpu --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+   43  gcc
+   44  source ~/.bashrc 
+   45  nano ~/.bashrc 
+   46  exit
+   47  history
+   48  gcc
+   49  gcc -v
+   50  cd -
+   51  cd ~/Share/gcc/build
+   52  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-arch=cpu --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+   53  make -j 4
+   54  uname -a 
+   55  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0  --with-fpu=vfp --with-float=har
+   56  make -j 4
+   57  ls -al 
+   58  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-fpu=vfp --with-float=hard
+   59  make -j 4
+   60  make distclean
+   61  make -j 4
+   62  ls -al
+   63  rm -rf *
+   64  ls -al
+   65  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0 --with-fpu=vfp --with-float=hard
+   66  make -j 4
+   67  rm -rf *
+   68  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0
+   69  make -j 4
+   70  vncserver :1
+   71  sudo apt-get install realvnc-vnc-server 
+   72  vncserver :1
+   73  exit
+   74  cat /sys/class/thermal/thermal_zone0/temp
+   75  exit 
+   76  cat /sys/class/thermal/thermal_zone0/temp
+   77  exit
+   78  cat /sys/class/thermal/thermal_zone0/temp
+   79  exit
+   80  cd gcc/build/
+   81  ls -al
+   82  rm -rf *
+   83  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0
+   84  make -j 4
+   85  df
+   86  du -sh *
+   87  du -Sh
+   88  du -Sh ../build/
+   89  du -sh ../build
+   90  df
+   91  du -sh ..
+   92  du ~/Share/
+   93  du ~/Share
+   94  du -sh ~/Share
+   95  cd /S 
+   96  cd ~/Share/
+   97  ls -al
+   98  exit
+   99  cd clickhouse/
+  100  du -sh 
+  101  sudo rm -rf *
+  102  cd ..
+  103  cd gcc/build/
+  104  sudo rm rf *
+  105  sudo rm -rf *
+  106  df
+  107  history
+  108  ../gcc-10.1.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-10.1.0 --program-suffix=-10.1.0
+  109  exit
+  110  cat /sys/class/thermal/thermal_zone0/temp
+  111  cd gcc/
+  112  ls -al build/
+  113  cd gcc
+  114  cd build/g
+  115  cd build/gcc/
+  116  ls -al
+  117  exit
+  118  top
+  119  cd /mnt/samsung/
+  120  ls -al
+  121  cd gcc/
+  122  ls -al
+  123  cd build/ 
+  124  ls -al
+  125  cd ..
+  126  du -sh gcc/
+  127  du -s gcc/
+  128  sudo rm -rf gcc/
+  129  l s-al
+  130  ls -al
+  131  du -s gcc/
+  132  df
+  133  exit
+  134  cd gcc/build/
+  135  ls -al
+  136  make -j 4
+  137  ls -al 
+  138  cd gcc 
+  139  ls -al
+  140  cd .. 
+  141  ls -al
+  142  cd gcc/
+  143  ls -al
+  144  cd gcc-10.1.0/
+  145  cd ..
+  146  cd build/ 
+  147  ls -al
+  148  df
+  149  cd aarch64-unknown-linux-gnu
+  150  ls -al
+  151  cd ..
+  152  ls -al
+  153  make install
+  154  sudo make install 
+  155  ls -al
+  156  sudo updatedb
+  157  find / -iname gcc-10
+  158  sudo find / -iname gcc-10
+  159  sudo find / -iname gcc-10*
+  160  /usr/local/gcc-10.1.0/bin/gcc-10.1.0
+  161  /usr/local/gcc-10.1.0/bin/gcc-10.1.0 -v
+  162  df
+  163  find / -size +100M
+  164  sudo find / -size +100M
+  165  du -sh ~/gcc
+  166  du -sh ~/Share/gcc
+  167  sudo lsusb
+  168  sudo fdisk -l
+  169  mkdir /mnt/samsung 
+  170  sudo mkdir /mnt/samsung 
+  171  sudo mount -t ntfs-3g /dev/sda1 /mnt/samsung
+  172  sudo apt-get install ntfs-3g
+  173  sudo fdisk -l
+  174  sudo mount -t ntfs-3g /dev/sda1 /mnt/samsung
+  175  sudo fdisk -l
+  176  sudo mount -t ntfs-3g /dev/sda1 /mnt/samsung
+  177  cd ..
+  178  ls -al /mnt
+  179  mkdir /mnt/samsung/
+  180  cd ..
+  181  cp gcc/ /mnt/samsung/gcc/
+  182  cp -r gcc/ /mnt/samsung/gcc/
+  183  du -s gcc/
+  184  cp -r gcc/ /mnt/samsung/gcc/
+  185  du -s gcc/
+  186  ls -r gcc/
+  187  ls -alr gcc/*
+  188  ls -R | wc -l
+  189  sudo reboot now
+  190  cd gcc/
+  191  ls -al
+  192  ls -R . | wc 
+  193  ls -R . | wc -l
+  194  ls -R ../gcc/ | wc -l
+  195  du -s  ../gcc
+  196  find / -iname gcc-10*
+  197  sudo find / -iname gcc-10*
+  198  sudo find / -iname gcc-10
+  199  sudo find / -iname gcc*
+  200  history | grep find 
+  201  sudo find / -iname gcc-10*
+  202  cd ~
+  203  sudo find / -iname gcc-10*
+  204  gcc -v 
+  205  cd ~/Share/
+  206  ls -al
+  207  cd gcc/
+  208  ls -al
+  209  sudo rm -rf build/
+  210  df
+  211  cd ..
+  212  cd clickhouse/
+  213  /usr/local/gcc-10.1.0 -v
+  214  /usr/local/gcc-10.1.0/bin/gcc-10.1.0 -v
+  215  ls -al
+  216  sudo apt-get install ninja-build
+  217  export CC=gcc-10.1.0
+  218  ls -al /usr/local/gcc-10.1.0/bin/
+  219  export CXX=g++-10.1.0
+  220  nano ~/.bashrc 
+  221  ls -al /usr/local/gcc-10.1.0/lib
+  222  source ~/.bashrc 
+  223  cd clickhouse/
+  224  CC
+  225  nano ~/.bashrc 
+  226  CC
+  227  source ~/.bashrc 
+  228  CC
+  229  CXX
+  230  echo $CXX
+  231  echo $CC
+  232  cd clickhouse/ 
+  233  git clone --recursive https://github.com/ClickHouse/ClickHouse.git
+  234  ls -al
+  235  cd ClickHouse
+  236  mkdir build
+  237  cd build
+  238  cmake ..
+  239  ninja clickhouse
+  240  cd ~
+  241  cd Share/
+  242  ls -al
+  243  mkdir superset
+  244  cd superset/
+  245  sudo pip3 install pyarrow
+  246  $(lsb_release --codename --short)
+  247  lsb_release --codename --short
+  248  mkdir arrow
+  249  mkdir build
+  250  cd build
+  251  wget https://github.com/apache/arrow/archive/apache-arrow-0.15.1.zip
+  252  unzip arrow-apache-arrow-0.15.1.zip
+  253  cd arrow-apache-arrow-0.15.1/cpp
+  254  mkdir release
+  255  cd release
+  256  export ARROW_HOME=/usr/local/lib
+  257  cd ..
+  258  rm -rf arrow build
+  259  mkdir arrow
+  260  cd arrow/
+  261  mkdir build
+  262  cd build
+  263  wget https://github.com/apache/arrow/archive/apache-arrow-0.15.1.zip
+  264  unzip apache-arrow-0.15.1.zip
+  265  cd apache-arrow-0.15.1/cpp
+  266  mkdir release
+  267  cd release
+  268  export ARROW_HOME=/usr/local/lib
+  269  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+  270  sudo apt-get install libjemalloc-dev libboost-dev libboost-filesystem-dev libboost-system-dev libboost-regex-dev python3-dev autoconf flex bison libssl-dev curl cmake
+  271  pip3 install six numpy pandas cython pytest psutil
+  272  ls -al
+  273  ls -al ..
+  274  ls -al
+  275  cd ..
+  276  ls -al
+  277  cd build/
+  278  cd arrow-apache-arrow-0.15.1/
+  279  mkdir release
+  280  cd release
+  281  ls -al ..
+  282  cmake ..
+  283  ls -al
+  284  cd ..
+  285  rmdir release/
+  286  cd cpp/
+  287  mkdir release 
+  288  cd release/
+  289  ls -al
+  290  cmake ..
+  291  make -j 4
+  292  apt-get install libstdc++6
+  293  sudo apt-get install libstdc++6
+  294  sudo apt-get upgrade libstdc++6
+  295  strings /usr/lib/arm-linux-gnueabihf/libstdc++.so.6 | grep GLIBCXX
+  296  find / -iname libstdc++.so.6
+  297  export LD_LIBRARY_PATH=/usr/local/gcc-10.1.0/lib64/:/usr/lib/aarch64-linux-gnu/:/usr/local/lib:$LD_LIBRARY_PATH
+  298  make -j 4
+  299  cd 
+  300  cd ~/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/cpp/
+  301  ls -al
+  302  cd ..
+  303  ls -al
+  304  cd python/
+  305  ls -al
+  306  nano requirements.txt
+  307  sudo pip3 install -r requirements.txt
+  308  export PYARROW_WITH_FLIGHT=1
+  309  export PYARROW_WITH_GANDIVA=1
+  310  export PYARROW_WITH_ORC=1
+  311  export PYARROW_WITH_PARQUET=1
+  312  export PYARROW_WITH_CUDA=1
+  313  export PYARROW_WITH_PLASMA=1
+  314  exit 
+  315  cd ~/Share/superset/arrow/arrow-apache-arrow-0.16.0/python/
+  316  python setup.py build_ext --inplace
+  317  sudo -E python setup.py install
+  318  history
+  319  sudo -E python setup.py install
+  320  exit
+  321  cd ~/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/python
+  322  python
+  323  python setup.py build_ext --inplace
+  324  cd ../cpp/
+  325  cd release/
+  326  sudo make install 
+  327  cd ../../python/
+  328  python setup.py build_ext --inplace
+  329  find / -iname platform.h
+  330  sudo find / -iname platform.h
+  331  ls -la
+  332  cat setup.py
+  333  python setup.py build_ext --inplace
+  334  sudo find / -iname platform.h | grep python
+  335  cd /home/pi/Share/clickhouse/ClickHouse/contrib/arrow/cpp/src/arrow/
+  336  ls -al
+  337  cd python/
+  338  ls -al
+  339  cd - 
+  340  sudo find / -iname requirements.txt | grep python
+  341  nano /home/pi/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/python/build/temp.linux-aarch64-3.7/_json.cpp
+  342  ls -al
+  343  nano /home/pi/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/python/build/temp.linux-aarch64-3.7/_json.cpp
+  344  clear
+  345  cd ~
+  346  find / -iname platform | grep python
+  347  sudo find / -iname platform | grep python
+  348  sudo find / -iname platform.* | grep python
+  349  ls -al /home/pi/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/cpp/src/
+  350  ls -al /home/pi/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/python/
+  351  nano /home/pi/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/python/build/temp.linux-aarch64-3.7/_json.cpp
+  352  find / -iname  numpy/halffloat.h
+  353  clear
+  354  find / -iname halffloat.h | grep numpy
+  355  clear
+  356  sudo clear
+  357  sudo find / -iname halffloat.h | grep numpy
+  358  sudo find / -iname platform.h | grep python
+  359  cd /home/pi/Share/superset/arrow/build/arrow-apache-arrow-0.15.1/python/
+  360  python setup.py build_ext --inplace
+  361  cd ../cpp/release/
+  362  ls -al
+  363  sudo rm -rf *
+  364  cmake -DARROW_PYTHON=ON ..
+  365  make -j 4
+  366  echo $LD_LIBRARY_PATH
+  367  export LD_LIBRARY_PATH=/usr/local/gcc-10.1.0/lib64/:/usr/lib/aarch64-linux-gnu/:/usr/local/lib:$LD_LIBRARY_PATH
+  368  make -j 4
+  369  sudo make install 
+  370  cd ../../python/
+  371  ls -al
+  372  python setup.py build_ext --inplace
+  373  sudo -E python3 setup.py install
+  374  sudo pip3 install apache-superset
+  375  cd ~/Share/superset/arrow/
+  376  sudo rm -rf *
+  377  wget https://github.com/apache/arrow/archive/apache-arrow-0.17.1.tar.gz
+  378  tar zxvf apache-arrow-0.17.1.tar.gz 
+  379  ls -al
+  380  cd arrow-apache-arrow-0.17.1/ 
+  381  ls -al
+  382  cd cpp/
+  383  mkdir release
+  384  cd release
+  385  export ARROW_HOME=/usr/local/lib
+  386  export LD_LIBRARY_PATH=/usr/local/gcc-10.1.0/lib64/:/usr/lib/aarch64-linux-gnu/:/usr/local/lib:$LD_LIBRARY_PATH
+  387  cmake -DARROW_PYTHON=ON -DARROW_PARQUET=ON -DARROW_PYTHON=ON -DARROW_PLASMA=ON -DARROW_CUDA=ON ..
+  388  cmake -DARROW_PYTHON=ON -DARROW_PARQUET=ON -DARROW_FLIGHT=ON -DARROW_GANDIVA=ON -DARROW_ORC=ON ..
+  389  ls -al
+  390  sudo rm -rf *
+  391  cmake -DARROW_PYTHON=ON -DARROW_PARQUET=ON -DARROW_FLIGHT=ON -DARROW_GANDIVA=ON -DARROW_ORC=ON ..
+  392  cmake -DARROW_PYTHON=ON ..
+  393  sudo rm -rf *
+  394  cmake -DARROW_PYTHON=ON ..
+  395  make -j 4
+  396  sudo make install 
+  397  cd ../../python/
+  398  ls -al
+  399  python setup.py build_ext --inplace
+  400  which cmake
+  401  history
+  402  export CC=gcc-10.1.0
+  403  python setup.py build_ext --inplace
+  404  cd /usr/local/gcc-10.1.0/
+  405  ls -al
+  406  cd bin/
+  407  ls -al
+  408  cd -
+  409  cd --
+  410  cd Share/superset/arrow/
+  411  ls -al
+  412  sudo rm -rf *
+  413  wget https://github.com/apache/arrow/archive/apache-arrow-0.16.0.tar.gz
+  414  tar zxvf apache-arrow-0.16.0.tar.gz 
+  415  cd arrow-apache-arrow-0.16.0/
+  416  ls -al
+  417  cd cpp/
+  418  mkdir release
+  419  cd release
+  420  export ARROW_HOME=/usr/local/lib
+  421  export LD_LIBRARY_PATH=/usr/local/gcc-10.1.0/lib64/:/usr/lib/aarch64-linux-gnu/:/usr/local/lib:$LD_LIBRARY_PATH
+  422  cmake -DARROW_PYTHON=ON ..
+  423  make -j 4
+  424  sudo make install
+  425  cd ../../python/
+  426  history
+  427  pip3 install -r requirements.txt
+  428  python setup.py build_ext --inplace
+  429  arrow
+  430  sudo find / -iname arrow*
+  431  echo $ARROW_HOME
+  432  cd - 
+  433  ls-al
+  434  ls -al
+  435  sudo make install l
+  436  sudo apt list --installed
+  437  sudo make reinstall
+  438  sudo make deinstall
+  439  sudo make install 
+  440  cd ~/Share/superset/arrow/arrow-apache-arrow-0.16.0/python 
+  441  ls a-l
+  442  ls -al
+  443  No module named Cython.Distutils
+  444  sudo -E python setup.py install
+  445  history | grep export
+  446  export ARROW_HOME=/usr/local/lib
+  447  export LD_LIBRARY_PATH=/usr/local/gcc-10.1.0/lib64/:/usr/lib/aarch64-linux-gnu/:/usr/local/lib:$LD_LIBRARY_PATH
+  448  sudo -E python setup.py install
+  449  sudo pip3 install cython
+  450  sudo pip3 install six numpy pandas cython pytest psutil
+  451  sudo -E python setup.py install
+  452  $PATH
+  453  echo $PATH
+  454  sudo find / -name Distutils
+  455  python
+  456  sudo -E python3.7 setup.py install
+  457  cd ../cpp/release/
+  458  sudo make install
+  459  cd -
+  460  sudo -E python3.7 setup.py install
+  461  sudo find / -iname arrow*
+  462  nano ~/.bashrc 
+  463  source ~/.bashrc 
+  464  sudo -E python3.7 setup.py install
+  465  sudo pip3 install pyarrow
+  466  sudo pip3 uninstall pyarrow
+  467  cd ../cpp/
+  468  sudo make install 
+  469  cd release/
+  470  sudo make install
+  471  cd ../../python/
+  472  python setup.py build_ext --inplace
+  473  sudo pip3 install pyarrow
+  474  python setup.py build_ext --inplace
+  475  sudo python setup.py build_ext --inplace
+  476  python setup.py build_ext --inplace
+  477  ls /home/pi/Share/superset/arrow/arrow-apache-arrow-0.16.0/python/build/temp.linux-aarch64-3.7/CMakeFiles/
+  478  rm /home/pi/Share/superset/arrow/arrow-apache-arrow-0.16.0/python/build/temp.linux-aarch64-3.7/CMakeFiles/CMakeOutput.log
+  479  rm /home/pi/Share/superset/arrow/arrow-apache-arrow-0.16.0/python/build/temp.linux-aarch64-3.7/CMakeFiles/CMakeError.log
+  480  python setup.py build_ext --inplace
+  481  cd ~
+  482  mkdir arrow
+  483  cd arrow/
+  484  nano install.sh
+  485  bash ./install.sh 
+  486  E: Unable to locate package libparquet-glib-dev
+  487  exit
+  488  history > ~/Share/rpi8_20200611.txt

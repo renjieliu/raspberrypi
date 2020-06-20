@@ -1,0 +1,142 @@
+    1  df
+    2  passwd
+    3  sudo passwd
+    4  sudo raspi-config
+    5  sudo apt-get update
+    6  curl -sSL https://get.docker.com | sh ;
+    7  sudo usermod -aG docker pi ;
+    8  sudo apt-get install docker-compose -y;
+    9  sudo apt-get install locate
+   10  nano ~/.bashrc 
+   11  sudo nano  /etc/dhcpcd.conf
+   12  sudo reboot now 
+   13  mkdir Share
+   14  cd Share/
+   15  docker login
+   16  sudo apt-get install locate gnupg2 pass -y;
+   17  docker login
+   18  docker pull ubuntu
+   19  docker images;
+   20  docker run -ti d70ce3
+   21  docker container ps -a
+   22  docker commit ad1d67c199b7 arrow:os_base
+   23  docker container rm ad1d67c199b7 8ec9944e0f47
+   24  docker images;
+   25  docker run -ti ce1f58a4a5db
+   26  docker images;
+   27  docker run -ti d70ce34baa49
+   28  docker container ls -a
+   29  docker container start 0fc97ec3f4ae
+   30  docker run -it 0fc97ec3f4ae
+   31  docker container rm  454b7823c8ef 0fc97ec3f4ae
+   32  docker container stop  454b7823c8ef 0fc97ec3f4ae
+   33  docker container rm  454b7823c8ef 0fc97ec3f4ae
+   34  docker container ls -a
+   35  docker run -it ce1f58a4a5db
+   36  docker container ps -aq
+   37  docker container rm $docker container stop $(docker container ps -aq))
+   38  docker container rm $(docker container stop $(docker container ps -aq))
+   39  docker images ls 
+   40  docker images
+   41  docker image rm d70ce34baa49
+   42  docker image rm c
+   43  docker run -ti d
+   44  docker container rm $(docker container stop $(docker container ps -aq))
+   45  docker run -ti d
+   46  docker container rm $(docker container stop $(docker container ps -aq))
+   47  docker run -ti d
+   48  docker container rm $(docker container stop $(docker container ps -aq))
+   49  df
+   50  docker run -ti d
+   51  docker container ls -a
+   52  docker images
+   53  docker commit 902facf36109 ubuntu:arrow
+   54  docker images 
+   55  df
+   56  vncserver :1
+   57  exit
+   58  docker login
+   59  docker images;
+   60  docker push ubuntu:arrow
+   61  docker push liurenjie/ubuntu:arrow
+   62  docker images;
+   63  docker tag c721f6d9a46a liurenjie/ubuntu:apache_arrow
+   64  docker push liurenjie/ubuntu:apache_arrow
+   65  docker ps
+   66  docker inspect f8
+   67  free -h
+   68  exit
+   69  docker images;
+   70  docker rmi liurenjie/ubuntu:apache_arrow
+   71  docker images; 
+   72  docker run -ti c721f6d9a46a
+   73  docker ps 
+   74  docker ps -aq
+   75  docker container ls -a
+   76  docker commit f843ef52c765 ubuntu:superset
+   77  docker images
+   78  docker container rm $(docker container stop $(docker container ps -aq))
+   79  df
+   80  docker run -ti fbfebdcf0d9c
+   81  docker run -ti -p8088:8088 fbfebdcf0d9c
+   82  docker container rm $(docker container stop $(docker container ps -aq))
+   83  docker run -ti -p8088:8088 fbfebdcf0d9c
+   84  docker container ls -a
+   85  docker commit 1e64e9d65914 ubuntu:superset_init
+   86  docker images;
+   87  docker tag 683ac777814c liurenjie/apache_superset:init
+   88  docker push liurenjie/apache_superset:init
+   89  docker images;
+   90  docker run -tidp 8088:8088 683ac777814c bash -c 'cd repos/arrow/ && virtualenv pyarrow && source ./pyarrow/bin/activate && export LD_LIBRARY_PATH=/repos/arrow/dist/lib/:$LD_LIBRARY_PATH && export FLASK_APP=superset && export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0'
+   91  docker run -ti d70ce34baa49
+   92  docker container ls -a
+   93  docker container start -ti d70ce34baa49
+   94  docker container start -a d70ce34baa49
+   95  docker container start -a 4bbc25c85c71
+   96  docker container ls -a
+   97  docker container stop 4bbc25c85c71
+   98  docker container start -a 4bbc25c85c71
+   99  docker container stop 4bbc25c85c71
+  100  docker run -ti d70ce34baa49
+  101  history
+  102  docker images; 
+  103  docker run -ti d70ce34baa49
+  104  docker container ps -a 
+  105  docker commit aee1ad5934e5 ubuntu:before_gcc_make
+  106  docker images;
+  107  df
+  108  docker container rm $(docker ps -aq)
+  109  vncserver :1
+  110  exi
+  111  exit
+  112  docker images; 
+  113  docker run -ti d896676e9b48
+  114  docker container rm $(docker ps -aq)
+  115  docker run -ti d896676e9b48
+  116  docker images; 
+  117  dockerrun -ti d896676e9b48
+  118  docker run -ti d896676e9b48
+  119  docker ps -a
+  120  df
+  121  exit
+  122  docker ps -a 
+  123  docker commit 1bf11d4ef1e4 ubuntu:gcc_9_3_0
+  124  docker images
+  125  docker tag b065ea2108ae liurenjie/ubuntu:gcc_9_3_0
+  126  docker images;
+  127  docker push liurenjie/ubuntu:gcc_9_3_0
+  128  docker images; 
+  129  docker run -it b065ea2108ae
+  130  docker container ps -aq
+  131  docker container rm $(docker container ps -aq)
+  132  exit
+  133  docker images; 
+  134  docker run -it b065ea2108ae
+  135  docker container ls -a
+  136  docker commit 6e384486cb42 ubuntu:before_make_clickhouse
+  137  docker images; 
+  138  docker run -tidp 8088:8088 683ac777814c bash -c 'cd repos/arrow/ && virtualenv pyarrow && source ./pyarrow/bin/activate && export LD_LIBRARY_PATH=/repos/arrow/dist/lib/:$LD_LIBRARY_PATH && export FLASK_APP=superset && export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && superset run -p 8088 --with-threads --reload --debugger --host 0.0.0.0'
+  139  exit
+  140  ls -al
+  141  history
+  142  history > rpi8_20200615.txt

@@ -1,0 +1,458 @@
+    1  passwd
+    2  sudo passwd
+    3  sudo raspi-config
+    4  mkdir Share
+    5  cd Share
+    6  mkdir arrow
+    7  cd arrow/
+    8  wget https://github.com/apache/arrow/archive/apache-arrow-0.17.1.tar.gz
+    9  tar zxvf apache-arrow-0.15.1.zip
+   10  cd apache-arrow-0.17.1/cpp
+   11  mkdir release
+   12  cd release
+   13  export ARROW_HOME=/usr/local/lib
+   14  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+   15  ls -al
+   16  cd ..
+   17  ls -al
+   18  tar zxvf apache-arrow-0.17.1.tar.gz
+   19  cd apache-arrow-0.17.1/cpp
+   20  mkdir release
+   21  cd release
+   22  export ARROW_HOME=/usr/local/lib
+   23  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+   24  cd ..
+   25  ls -al
+   26  sudo rm -rf arrow-apache-arrow-0.17.1/
+   27  cd arrow-apache-arrow-0.17.1/cpp
+   28  ls -al
+   29  rmdir release/ 
+   30  tar zxvf apache-arrow-0.17.1.tar.gz
+   31  ls -al
+   32  cd arrow-apache-arrow-0.17.1/
+   33  cd cpp/
+   34  mkdir release
+   35  cd release
+   36  export ARROW_HOME=/usr/local/lib
+   37  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+   38  sudo apt-get update
+   39  sudo apt-get install libjemalloc-dev libboost-dev libboost-filesystem-dev libboost-system-dev libboost-regex-dev python3-dev autoconf flex bison libssl-dev curl cmake -y
+   40  pip3
+   41  python
+   42  nano ~/.bashrc
+   43  source ~/.bsahrc
+   44  source ~/.bashrc 
+   45  python
+   46  python -v
+   47  python --version
+   48  pip3 install six numpy pandas cython pytest psutil
+   49  sudo pip3 freeze
+   50  sudo pip3 install pandas
+   51  sudo reboot now
+   52  cd ~/Share/gcc
+   53  tar zxvf gcc-9.3.0.tar.gz 
+   54  cd gcc-9.3.0/
+   55  ls -all
+   56  contrib/download_prerequisites
+   57  mkdir build && cd build
+   58  exit 
+   59  cd Share/
+   60  mkdir gcc
+   61  wget http://gnu.mirrors.hoobly.com/gcc/gcc-9.3.0/gcc-9.3.0.tar.gz
+   62  mv gcc-9.3.0.tar.gz gcc
+   63  ls -al
+   64  cd gcc/ 
+   65  ls -al
+   66  sudo pip3 install pandas
+   67  exit
+   68  cd Share/gcc/gcc-9.3.0/
+   69  cd build/
+   70  ../gcc-9.3.0/configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-9.3 --program-suffix=-9.3
+   71  ls ..
+   72  ../configure -v --enable-languages=c,c++ --prefix=/usr/local/gcc-9.3 --program-suffix=-9.3
+   73  ls -al
+   74  make -j 4
+   75  exit
+   76  cd Share/gcc/gcc-9.3.0/build/
+   77  history
+   78  sudo make install 
+   79  df
+   80  cd /usr/local/gcc-9.3/bin/
+   81  ls -al
+   82  gcc-9.3 -v
+   83  ./gcc-9.3 
+   84  ./gcc-9.3 -v
+   85  nano ~/.bashrc 
+   86  cd ~
+   87  source ~/.bashrc 
+   88  sudo apt-get install ntfs-3g
+   89  sudo fdisk -l
+   90  sudo mkdir /mnt/samsung
+   91  sudo mount -t ntfs /dev/sda1 /mnt/samsung/
+   92  ls -al /mnt/samsung/
+   93  du -s ./Share/gcc/
+   94  mkdir /mnt/samsung/gcc9
+   95  cp -r ./Share/gcc/ /mnt/samsung/gcc9/
+   96  du -s /mnt/samsung/gcc9/
+   97  sudo umount /dev/sda1
+   98  cd Share/
+   99  ls -al
+  100  mkdir clickhouse
+  101  cd clickhouse/
+  102  sudo apt-get install git cmake python ninja-build
+  103  nano ~/.bashrc
+  104  gcc-9
+  105  nano ~/.bashrc
+  106  source ~/.bashrc
+  107  CC
+  108  echo $CC
+  109  $(echo $CC)
+  110  git clone --recursive https://github.com/ClickHouse/ClickHouse.git
+  111  cd .
+  112  cd ..
+  113  cd gcc/ 
+  114  df
+  115  cd gcc-9.3.0/build/
+  116  ls -al
+  117  rm -rf *
+  118  df
+  119  cd ~/Share/clickhouse/
+  120  ls -al
+  121  rm -rf *
+  122  df
+  123  git clone --recursive https://github.com/ClickHouse/ClickHouse.git
+  124  df
+  125  ls 0al
+  126  ls -al
+  127  cd cd ClickHouse
+  128  cd ClickHouse
+  129  mkdir build
+  130  cd build
+  131  cmake ..
+  132  ninja
+  133  ninja clickhous
+  134  ninja clickhouse
+  135  gcc -v
+  136  gcc-9.3 -std=c++14
+  137  gcc-9.3 -std=c++14 -v
+  138  nano ~/.bashrc
+  139  g++-9.3 -std=c++14 -v
+  140  nano ~/.bashrc
+  141  source ~/.bashrc
+  142  ninja
+  143  export $CC
+  144  nano ~/.bashrc
+  145  source ~/.bashrc 
+  146  nano ~/.bashrc
+  147  source ~/.bashrc 
+  148  export $CC
+  149  source ~/.bashrc 
+  150  export $CC
+  151  nano ~/.bashrc
+  152  source ~/.bashrc 
+  153  rm -rf *
+  154  cmake ..
+  155  ninja
+  156  nano ../contrib/libunwind/src/DwarfInstructions.hpp
+  157  ninja
+  158  pdf
+  159  df
+  160  rm -rf *
+  161  df
+  162  sudo rm -rf ~/Share/gcc/
+  163  df
+  164  ls ~/Share/
+  165  sudo rm -rf ~/Share/arrow/
+  166  df
+  167  cmake ..
+  168  ninja
+  169  df
+  170  sudo rm -rf *
+  171  df
+  172  exit
+  173  df
+  174  sudo fdisk -l
+  175  sudo mkdir /mnt/sandisk
+  176  sudo mount -t ntfs /dev/sda1 /mnt/sandisk/
+  177  cd -
+  178  cd Share/
+  179  ls -al
+  180  cd clickhouse/ 
+  181  ls -al
+  182  cd ClickHouse/
+  183  ls -al
+  184  cd ..
+  185  cp -R ClickHouse/ /mnt/sandisk/
+  186  ls -al  /mnt/sandisk/
+  187  du -s  /mnt/sandisk/
+  188  du -s .
+  189  sudo umount /dev/sda1
+  190  sudo shutdown 
+  191  sudo shutdown  now
+  192  cat /sys/class/thermal/thermal_zone0/temp
+  193  exit
+  194  sudo fdisk -l
+  195  sudo mount -t ntfs /dev/sda1 /mnt/samsung/
+  196  ls -al /mnt/samsung/
+  197  cp -R ~/Share/clickhouse/ /mnt/samsung/
+  198  ls -al
+  199  cd /mnt/samsung/
+  200  ls -al
+  201  cd clickhouse/ 
+  202  ls -al
+  203  cd ClickHouse/
+  204  ls -al
+  205  cd build
+  206  ls -al
+  207  rm -rf *
+  208  cmake ..
+  209  make -j 4
+  210  ninja
+  211  sudo rm -rf *
+  212  exit
+  213  cat /sys/class/thermal/thermal_zone0/temp
+  214  exit
+  215  pi
+  216  history
+  217  cat /sys/class/thermal/thermal_zone0/temp
+  218  exit
+  219  cd /mnt/samsung/
+  220  ls -al
+  221  cd clickhouse/ClickHouse/
+  222  cd build/
+  223  ls -al
+  224  rm *
+  225  sudo rm -rf *
+  226  ls -al
+  227  sudo rm .ninja_*
+  228  ls -al
+  229  cmake ..
+  230  ninja
+  231  dmesg
+  232  free -h 
+  233  sudo rm -rf *
+  234  cmake ..
+  235  make
+  236  ninja
+  237  history
+  238  df
+  239  cd ~/Share/
+  240  ls -al
+  241  sudo rm -rf clickhouse/
+  242  uname -a 
+  243  df
+  244  docker
+  245  curl -sSL https://get.docker.com | sh ;
+  246  sudo usermod -aG docker pi
+  247  sudo reboot now
+  248  exit
+  249  docker pull ubuntu
+  250  docker images;
+  251  docker run -ti dbc66a3d7b82
+  252  cd Share
+  253  docker rm $(docker ps -aq)
+  254  sudo shutdown now
+  255  docker images;
+  256  docker run -ti dbc66a3d7b82
+  257  docker container
+  258  docker container ps 
+  259  docker container ps -a
+  260  docker commit baee55ace1b2 ubuntu:clickhouse_before_ninja
+  261  df
+  262  docker images;
+  263  docker rm $(docker s -aq)
+  264  docker rm $(docker ps -aq)
+  265  df
+  266  exit
+  267  vncserver :1
+  268  history
+  269  history | grep vnc
+  270  apt-get install realvnc-vnc-server
+  271  sudo apt-get install realvnc-vnc-server
+  272  vncserver :1
+  273  exit
+  274  df
+  275  exit
+  276  df
+  277  exit
+  278  docker images; 
+  279  docker run -it 6f56039f60ac
+  280  docker container ls 
+  281  docker container ls -a
+  282  docker start -a e13e1eefc078
+  283  df
+  284  docker container ls -a
+  285  docker container rm e13e1eefc078
+  286  docker container stop e13e1eefc078
+  287  docker container rm  e13e1eefc078
+  288  df
+  289  docker images;
+  290  docker run -ti 6f56039f60ac
+  291  df
+  292  docker stop $(docker ps -aq)
+  293  docker rm $(docker ps -aq)
+  294  df
+  295  lsm-al
+  296  ls -al
+  297  cd Share/
+  298  ls -al
+  299  sudo find / -size +200M
+  300  ls -al /usr/local/gcc-9.3/libexec/gcc/aarch64-unknown-linux-gnu/9.3.0/cc1plus
+  301  sudo apt-get autoclean 
+  302  df
+  303  history
+  304  ls -al
+  305  df
+  306  docker  images;
+  307  docker tag 6f56039f60ac ubuntu:clickhouse_before_ninja
+  308  docker tag 6f56039f60ac liurenjie/ubuntu:clickhouse_before_ninja
+  309  docker images; 
+  310  docker push liurenjie/ubuntu:clickhouse_before_ninja
+  311  docker login
+  312  docker push liurenjie/ubuntu:clickhouse_before_ninja
+  313  df
+  314  find / -size +500M
+  315  sudo find / -size +500M
+  316  sudo find / -size +200M
+  317  exit
+  318  df
+  319  ssh liurenjie@192.168.1.160
+  320  exit
+  321  docker images;
+  322  docker run -ti dbc66a3d7b82
+  323  uname -a
+  324  exit
+  325  docker ps -aq
+  326  docker stop b19e6ecc8d40
+  327  docker rm b19e6ecc8d40
+  328  df
+  329  exit
+  330  df
+  331  sudo shutdown now 
+  332  sudo raspi-config
+  333  df
+  334  sudo reboot now 
+  335  df
+  336  exit
+  337  df
+  338  exit
+  339  df
+  340  exit
+  341  df
+  342  docker ps -a
+  343  docker commit c88ced4d2d90 clickouse:ninja_half
+  344  df
+  345  docker images;
+  346  docker run -ti 53790667dfbf
+  347  docker run -ti clickhouse:init
+  348  docker run -ti --privileged  clickhouse:init
+  349  /ClickHouse/build/clickhouse client --host 192.168.1.28
+  350  docker run -ti  clickhouse:init
+  351  cd Share/
+  352  ls -al
+  353  git clone --recursive https://github.com/ClickHouse/ClickHouse.git;
+  354  cd ClickHouse/
+  355  mkdir build 
+  356  cd build/ 
+  357  cmake ..
+  358  wget https://clickhouse-builds.s3.yandex.net/0/b8685322b7b847d92654c0c08a344929fd6d7ba0/clang-10-aarch64_relwithdebuginfo_none_bundled_unsplitted_disable_False_binary/clickhouse
+  359  sudo chmod +x ./clickhouse 
+  360  ./clickhouse client --host 127.0.0.1
+  361  ./clickhouse server --config-file ../ClickHouse/programs/server/config.xml
+  362  ./clickhouse server --config-file ../programs/server/config.xml
+  363  exit
+  364  docker rm $(docker ps -aq)
+  365  docker images;
+  366  docker rmi 53790667dfbf
+  367  df
+  368  docker pull matwey/clickhouse:arm
+  369  docker images;
+  370  docker run -ti a5df9bc4f6c4
+  371  docker rmi a5df9bc4f6c4
+  372  docker rm $(docker ps -a )
+  373  docker rm $(docker ps -a a)
+  374  docker rm $(docker ps -aq)
+  375  docker ps -a
+  376  docker images; 
+  377  docker rmi a5df9bc4f6c4
+  378  df
+  379  history
+  380  uname -a
+  381  sudo apt-get install git cmake python ninja-build
+  382  gcc -v
+  383  sudo apt-get install gcc-9 g++-9
+  384  docker images;
+  385  docker run -ti 6f56039f60ac
+  386  docker rm $(docker ps -a)
+  387  docker stop $(docker ps -aq)
+  388  docker rm stop $(docker ps -aq)
+  389  docker container stop $(docker ps -aq)
+  390  docker ps -aq
+  391  docker ps -a
+  392  docker images; 
+  393  docker run -ti 6f56039f60ac
+  394  docker images;
+  395  docker run -ti 6f56039f60ac
+  396  mkdir Share
+  397  cd Share/
+  398  ls -al
+  399  nano Dockerfile_ClickHouse
+  400  docker build -f Dockerfile_ClickHouse -t clickhouse_server:init .
+  401  nano init_clickserver.sh
+  402  nano Dockerfile_ClickHouse 
+  403  docker build -f Dockerfile_ClickHouse -t clickhouse_server:init .
+  404  docker images; 
+  405  docker rmi 0e1062e06d15
+  406  docker rmi -f 0e1062e06d15
+  407  nano init_clickserver.sh
+  408  docker build -f Dockerfile_ClickHouse -t clickhouse_server:init .
+  409  nano init_clickserver.sh
+  410  docker images; 
+  411  docker rmi -f 7eeaa3ce4f02
+  412  docker build -f Dockerfile_ClickHouse -t clickhouse_server:init .
+  413  docker images;
+  414  docker rmi -f 1c650205c04d
+  415  nano init_clickserver.sh
+  416  sudo apt-get install tzdata
+  417  apt-get install dbc66a3d7b82
+  418  docker run -ti  dbc66a3d7b82
+  419  nano Dockerfile_ClickHouse 
+  420  docker images;
+  421  docker ps -a
+  422  docker container rm $(docker ps -aq)
+  423  df
+  424  docker build -f Dockerfile_ClickHouse -t clickhouse_server:init .
+  425  nano Dockerfile_ClickHouse
+  426  docker images ;
+  427  docker run s-ti 987a24299ef1
+  428  docker run -ti 987a24299ef1
+  429  docker rn -ti 6f56039f60ac
+  430  docker run -ti 6f56039f60ac
+  431  nano Dockerfile_ClickHouse 
+  432  docker images;
+  433  docker rmi 987a24299ef1
+  434  docker rmi -f 987a24299ef1
+  435  nano Dockerfile_ClickHouse
+  436  docker build -f Dockerfile_ClickHouse -t clickhouse:init .
+  437  docker images;
+  438  docker run -tip8123:8123 clickhouse:init /ClickHouse/build/clickhouse server --config-file /ClickHouse/programs/server/config.xml
+  439  docker run -tip8123:8123 -p9000:9000 -p9004:9004 clickhouse:init /ClickHouse/build/clickhouse server --config-file /ClickHouse/programs/server/config.xml
+  440  docker run -tipd8123:8123 -p9000:9000 -p9004:9004 clickhouse:init /ClickHouse/build/clickhouse server --config-file /ClickHouse/programs/server/config.xml
+  441  docker run -tidp8123:8123 -p9000:9000 -p9004:9004 clickhouse:init /ClickHouse/build/clickhouse server --config-file /ClickHouse/programs/server/config.xml
+  442  curl 'http://localhost:8123/ping'
+  443  curl 'http://localhost:8123/'
+  444  curl 'http://localhost:8123/?query=SELECT%201'
+  445  curl 'http://localhost:9000/'
+  446  docker ps -a
+  447  docker stop $(docker ps -aq)
+  448  docker rm $(docker ps -aq)
+  449  docker run -ti clickhouse:init
+  450  cd ClickHouse/
+  451  cd b
+  452  cd build/
+  453  ./clickhouse client --host 127.0.0.1
+  454  exit
+  455  df
+  456  history
+  457  cd Share/
+  458  history > rpi8_20200620.txt

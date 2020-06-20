@@ -1,0 +1,117 @@
+    1  passwd
+    2  sudo raspi-config
+    3  mkdir Share
+    4  cd Share/
+    5  ls -al /boot
+    6  cp /boot/AP_Rpi_Buster.sh  .
+    7  ls -al
+    8  sudo pip3 install jupyter && bash AP_RpiZeroW.sh -a Rpi3A_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+    9  bash AP_RpiZeroW.sh -a Rpi3A_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+   10  ls -al
+   11  bash AP_Rpi_Buster.sh -a Rpi3A_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+   12  nano AP_Rpi_Buster.sh 
+   13  rm AP_Rpi_Buster.sh
+   14  nano AP_Rpi_Buster.sh
+   15  bash AP_Rpi_Buster.sh -a Rpi3A_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+   16  sudo reboot now
+   17  ls
+   18  exit
+   19  nano ~/.bashrc 
+   20  exit
+   21  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   22  jupyter notebook password
+   23  sudo reboot now 
+   24  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   25  exit
+   26  ls -al
+   27  sudo shutdown now 
+   28  cd Share/ 
+   29  ls -al
+   30  nano generate_cpu_stat.sh
+   31  sudo nohup sh ./generate_cpu_stat.sh &
+   32  ls -al
+   33  tail CPUTemp.txt
+   34  /opt/vc/bin/vcgencmd measure_temp
+   35  tail CPUTemp.txt
+   36  sudo reboot now 
+   37  cd Share/ 
+   38  sudo nohup sh ./generate_cpu_stat.sh &
+   39  exit
+   40  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   41  exit
+   42  cd Share/
+   43  tail CPUTemp.txt 
+   44  nano ~/.bashrc 
+   45  exit
+   46  python
+   47  exit
+   48  ls
+   49  tail CPUTemp.txt 
+   50  exit
+   51  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   52  sudo reboot now 
+   53  crontab -e
+   54  sudo reboot now 
+   55  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null 
+   56  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   57  exit
+   58  ls -al
+   59  cd jupyter/
+   60  ls -al
+   61  exit
+   62  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   63  crontab -e
+   64  crontab -e 
+   65  sudo crontab -e 
+   66  exit
+   67  docker
+   68  exit
+   69  ls -al
+   70  cd jupyter/
+   71  ls -al
+   72  exit
+   73  sudo apt-cache search pandas
+   74  sudo apt-get install python3-pandas
+   75  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   76  exit
+   77  sudo reboot now
+   78  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   79  exit
+   80  which pip
+   81  /usr/bin/pip --version 
+   82  sudo pip3 install xlrd
+   83  sudo pip3 install pyodbc
+   84  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   85  exit
+   86  sudo pip3 install seaborn
+   87  exit 
+   88  cd jupyter/
+   89  ls -al
+   90  unzip DATA.zip 
+   91  ls -al
+   92  cd DATA/
+   93  ls -la
+   94  exit
+   95  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+   96  exit
+   97  sudo pip3 install scikit-learn
+   98  sudo pip3 install tensorflow
+   99  sudo apt-cache search tensorflow
+  100  sudo apt install libatlas-base-dev
+  101  sudo pip3 install tensorflow
+  102  sudo pip3 install tensorflow==2.1.0
+  103  sudo apt-get install python3-keras-applications  python3-keras   python3-keras-preprocessing -y
+  104  sudo aptr-get install python3-theano
+  105  exit
+  106  sudo apt-get install python3-theano
+  107  sudo apt-get install python3-keras-applications python3-keras-preprocessing -y
+  108  wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v2.1.0/tensorflow-2.1.0-cp37-none-linux_armv7l.whl
+  109  sudo pip3 install tensorflow-2.1.0-cp37-none-linux_armv7l.whl 
+  110  exit
+  111  uname -a 
+  112  docker pull silverwind/armhf-droppy
+  113  history
+  114  exit
+  115  nano ~/.bashrc 
+  116  history
+  117  history > ~/Share/history_rpi3A_20200509_1120.txt

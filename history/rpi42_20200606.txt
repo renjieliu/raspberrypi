@@ -1,0 +1,1608 @@
+    1  ping rpi42
+    2  exit
+    3  sudo nano  /etc/dhcpcd.conf;
+    4  sudo reboot now 
+    5  sudo apt-get install php7.3
+    6  a2enmod php7.3
+    7  sudo apt-get install libapache2-mod-php7.3
+    8  sudo service apache2 restart 
+    9  sudo apt-get install php7.3-mysql 
+   10  sudo service apache2 restart
+   11  mysql -uboroger -p
+   12  cd /var/www/
+   13  ls -al
+   14  cd wordpress/ 
+   15  ls -al
+   16  sudo nano wp-config.php
+   17  mysql -uroot -p
+   18  cd chown /var/www/ pi
+   19  cd chown pi /var/www/
+   20  sudo chown pi /var/www/
+   21  ls -al
+   22  sudo chown -r pi /var/www/
+   23  sudo chown -R pi /var/www/
+   24  ls -al
+   25  ls a-l 
+   26  ls -al
+   27  sudo chown -R pi /var/www/wordpress/.
+   28  ls -al
+   29  ls -al /var/www/wordpress/wp-content/themes
+   30  wget https://downloads.wordpress.org/theme/primer.1.8.8.zip
+   31  unzip primer.1.8.8.zip 
+   32  ls -al
+   33  sudo rm -rf primer 
+   34  sudo rm primer.1.8.8.zip 
+   35  cd wp-includes/
+   36  ls -al
+   37  cd ../wp-content
+   38  ls -al
+   39  cd themes/
+   40  ls -al
+   41  wget https://downloads.wordpress.org/theme/primer.1.8.8.zip
+   42  unzip primer.1.8.8.zip 
+   43  ls a-l
+   44  ls -al
+   45  rm primer*.zip
+   46  ls -al
+   47  ls -al primer/
+   48  wget https://downloads.wordpress.org/theme/twentyfifteen.2.5.zip
+   49  unzip twentyfifteen.2.5.zip 
+   50  ls -al
+   51  rm twentyfifteen.2.5.zi*
+   52  ls -alk
+   53  ls -alll
+   54  cd /var/
+   55  cd ~
+   56  mkdir ~/Share
+   57  history > ~/Share/history_20200328.txt
+   58  exit
+   59  mysql -uroot -p -d wordpress < ~/Share/app_anlrj.sql 
+   60  mysql -uroot -ppassword1! wordpress < ~/Share/app_anlrj.sql 
+   61  mysql -uroot -p
+   62  mysql -uroot -ppassword1! wordpress_liurenjie < ~/Share/app_anlrj.sql 
+   63  mysql -uroot -p
+   64  insert into wp_posts (post_author          ,post_date            ,post_date_gmt        ,post_content         ,post_title           ,post_excerpt         ,post_status          ,comment_status       ,ping_status          ,post_password        ,post_name            ,to_ping              ,pinged               ,post_modified        ,post_modified_gmt    ,post_content_filtered ,post_parent          ,guid                 ,menu_order           ,post_type            ,post_mime_type       ,comment_count) select post_author          ,post_date            ,post_date_gmt        ,post_content         ,post_title           ,post_excerpt         ,post_status          ,comment_status       ,ping_status          ,post_password        ,post_name            ,to_ping              ,pinged               ,post_modified        ,post_modified_gmt    ,post_content_filtered ,post_parent          ,guid                 ,menu_order           ,post_type            ,post_mime_type       ,comment_count     from wordpress_liurenjie.wp_posts; 
+   65  insert into wp_posts 
+   66  (post_author ,post_date ,post_date_gmt ,post_content ,post_title ,post_excerpt ,post_status ,comment_status ,ping_status ,post_password ,post_name ,to_ping  ,pinged   ,post_modified ,post_modified_gmt  ,post_content_filtered ,post_parent ,guid ,menu_order ,post_type ,post_mime_type ,comment_count)
+   67  select post_author ,post_date ,post_date_gmt ,post_content ,post_title ,post_excerpt ,post_status ,comment_status ,ping_status ,post_password ,post_name ,to_ping  ,pinged   ,post_modified ,post_modified_gmt  ,post_content_filtered ,post_parent ,guid ,menu_order ,post_type ,post_mime_type ,comment_count   from wordpress_liurenjie.wp_posts; 
+   68  select post_author ,post_date ,post_date_gmt ,post_content ,post_title ,post_excerpt ,post_status ,comment_status ,ping_status ,post_password ,post_name ,to_ping  ,pinged   ,post_modified ,post_modified_gmt  ,post_content_filtered ,post_parent ,guid ,menu_order ,post_type ,post_mime_type ,comment_count   from wordpress_liurenjie.wp_posts;
+   69  insert into wp_posts(post_author post_date , post_date_gmt , post_content , post_title , post_excerpt , post_status , comment_status , ping_status , post_password , post_name , to_ping , pinged , post_modified , post_modified_gmt , post_content_filtered , post_parent , guid , menu_order , post_type , post_mime_type , comment_count)
+   70  select post_author post_date , post_date_gmt , post_content , post_title , post_excerpt , post_status , comment_status , ping_status , post_password , post_name , to_ping , pinged , post_modified , post_modified_gmt , post_content_filtered , post_parent , guid , menu_order , post_type , post_mime_type , comment_count from wordpress_liurenjie.wp_posts;
+   71  cd ~/Share/
+   72  mkdir websitePic
+   73  cd websitePic/
+   74  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/02/021313_1920_WordPress1.png 
+   75  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word1.jpg
+   76  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word21.jpg
+   77  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word11.jpg
+   78  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word12.jpg
+   79  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word13.jpg
+   80  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows711.png 
+   81  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows71.png 
+   82  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows712.png 
+   83  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows722.png 
+   84  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows732.png 
+   85  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows742.png 
+   86  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows752.png 
+   87  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows762.png 
+   88  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows772.png 
+   89  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows71.png 
+   90  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows72.png 
+   91  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows73.png 
+   92  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows74.png 
+   93  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows75.png 
+   94  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows76.png 
+   95  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows77.png 
+   96  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows711.png 
+   97  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows721.png 
+   98  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows731.png 
+   99  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows741.png 
+  100  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows751.png 
+  101  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows761.png 
+  102  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows771.png 
+  103  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL1.png 
+  104  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL2.png 
+  105  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL11.png 
+  106  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL21.png 
+  107  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL12.png 
+  108  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL22.png 
+  109  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_12.jpg
+  110  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_22.jpg
+  111  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_32.jpg
+  112  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_42.jpg
+  113  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_52.jpg
+  114  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_62.jpg
+  115  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_72.jpg
+  116  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_82.jpg
+  117  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_92.jpg
+  118  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi1.png 
+  119  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi2.png 
+  120  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi11.png 
+  121  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi21.png 
+  122  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi12.png 
+  123  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi22.png 
+  124  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/02/020614_0235_1.png 
+  125  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20131.jpg
+  126  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20132.jpg
+  127  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20133.jpg
+  128  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20134.jpg
+  129  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20135.jpg
+  130  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20136.jpg
+  131  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20137.jpg
+  132  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20138.jpg
+  133  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20139.jpg
+  134  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201310.jpg
+  135  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201311.jpg
+  136  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201312.jpg
+  137  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201313.jpg
+  138  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201314.jpg
+  139  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows712.png 
+  140  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows722.png 
+  141  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows732.png 
+  142  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows742.png 
+  143  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows752.png 
+  144  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows762.png 
+  145  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows772.png 
+  146  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201315.jpg
+  147  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201321.jpg
+  148  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201331.jpg
+  149  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201341.jpg
+  150  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201351.jpg
+  151  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201361.jpg
+  152  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201371.jpg
+  153  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201381.jpg
+  154  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201391.jpg
+  155  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013101.jpg
+  156  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013111.jpg
+  157  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013121.jpg
+  158  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013131.jpg
+  159  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013141.jpg
+  160  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201315.jpg
+  161  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201321.jpg
+  162  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201331.jpg
+  163  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201341.jpg
+  164  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201351.jpg
+  165  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201361.jpg
+  166  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201371.jpg
+  167  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201381.jpg
+  168  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201391.jpg
+  169  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013101.jpg
+  170  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013111.jpg
+  171  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013121.jpg
+  172  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013131.jpg
+  173  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013141.jpg
+  174  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201316.jpg
+  175  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201322.jpg
+  176  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201332.jpg
+  177  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201342.jpg
+  178  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201352.jpg
+  179  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201362.jpg
+  180  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201372.jpg
+  181  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201382.jpg
+  182  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201392.jpg
+  183  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013102.jpg
+  184  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013112.jpg
+  185  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013122.jpg
+  186  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013132.jpg
+  187  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013142.jpg
+  188  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_1.jpg
+  189  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_2.jpg
+  190  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_3.jpg
+  191  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_4.jpg
+  192  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_5.jpg
+  193  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_6.jpg
+  194  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_7.jpg
+  195  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_8.jpg
+  196  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_9.jpg
+  197  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_11.jpg
+  198  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_21.jpg
+  199  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_31.jpg
+  200  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_41.jpg
+  201  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_51.jpg
+  202  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_61.jpg
+  203  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_71.jpg
+  204  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_81.jpg
+  205  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_91.jpg
+  206  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie114.jpg
+  207  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie27.jpg
+  208  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie33.jpg
+  209  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie43.jpg
+  210  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie53.jpg
+  211  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie63.jpg
+  212  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie73.jpg
+  213  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie83.jpg
+  214  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie93.jpg
+  215  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie103.jpg
+  216  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie115.jpg
+  217  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie123.jpg
+  218  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie133.jpg
+  219  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie143.jpg
+  220  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie153.jpg
+  221  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie163.jpg
+  222  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie173.jpg
+  223  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie183.jpg
+  224  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie193.jpg
+  225  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie203.jpg
+  226  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie213.jpg
+  227  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie223.jpg
+  228  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie233.jpg
+  229  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie243.jpg
+  230  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie1.jpg
+  231  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie2.jpg
+  232  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie3.jpg
+  233  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie4.jpg
+  234  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie5.jpg
+  235  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie6.jpg
+  236  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie7.jpg
+  237  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie8.jpg
+  238  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie9.jpg
+  239  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie10.jpg
+  240  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie11.jpg
+  241  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie12.jpg
+  242  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie13.jpg
+  243  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie14.jpg
+  244  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie15.jpg
+  245  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie16.jpg
+  246  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie17.jpg
+  247  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie18.jpg
+  248  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie19.jpg
+  249  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie20.jpg
+  250  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie21.jpg
+  251  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie22.jpg
+  252  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie23.jpg
+  253  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie24.jpg
+  254  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie110.jpg
+  255  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie25.jpg
+  256  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie31.jpg
+  257  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie41.jpg
+  258  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie51.jpg
+  259  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie61.jpg
+  260  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie71.jpg
+  261  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie81.jpg
+  262  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie91.jpg
+  263  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie101.jpg
+  264  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie111.jpg
+  265  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie121.jpg
+  266  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie131.jpg
+  267  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie141.jpg
+  268  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie151.jpg
+  269  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie161.jpg
+  270  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie171.jpg
+  271  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie181.jpg
+  272  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie191.jpg
+  273  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie201.jpg
+  274  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie211.jpg
+  275  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie221.jpg
+  276  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie231.jpg
+  277  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie241.jpg
+  278  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie112.jpg
+  279  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie26.jpg
+  280  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie32.jpg
+  281  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie42.jpg
+  282  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie52.jpg
+  283  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie62.jpg
+  284  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie72.jpg
+  285  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie82.jpg
+  286  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie92.jpg
+  287  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie102.jpg
+  288  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie113.jpg
+  289  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie122.jpg
+  290  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie132.jpg
+  291  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie142.jpg
+  292  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie152.jpg
+  293  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie162.jpg
+  294  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie172.jpg
+  295  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie182.jpg
+  296  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie192.jpg
+  297  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie202.jpg
+  298  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie212.jpg
+  299  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie222.jpg
+  300  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie232.jpg
+  301  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie242.jpg
+  302  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0134_Android1.png 
+  303  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0134_Android11.png 
+  304  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0135_Android1.png 
+  305  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0137_Android1.png 
+  306  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0138_Android1.png 
+  307  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0312_SAPBusiness1.jpg
+  308  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness1.jpg
+  309  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness2.jpg
+  310  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness3.jpg
+  311  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness4.jpg
+  312  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness6.jpg
+  313  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness7.jpg
+  314  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness8.jpg
+  315  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness9.jpg
+  316  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness10.jpg
+  317  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness11.jpg
+  318  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD1.jpg
+  319  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD2.jpg
+  320  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD3.jpg
+  321  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD4.jpg
+  322  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD5.jpg
+  323  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD6.jpg
+  324  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD7.jpg
+  325  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0328_BOReposirot1.jpg
+  326  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj1.jpg
+  327  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj2.jpg
+  328  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj3.jpg
+  329  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj4.jpg
+  330  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj1.jpg
+  331  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj2.jpg
+  332  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj3.jpg
+  333  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj4.jpg
+  334  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj1.jpg
+  335  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj2.jpg
+  336  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj3.jpg
+  337  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj4.jpg
+  338  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0020_20156.jpg
+  339  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0021_20156.jpg
+  340  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0021_20157.png 
+  341  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0026_20156.jpg
+  342  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0026_20157.png 
+  343  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm1.jpg
+  344  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm2.jpg
+  345  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm3.jpg
+  346  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm4.jpg
+  347  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm5.jpg
+  348  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm6.jpg
+  349  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm7.png 
+  350  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14341.png 
+  351  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14342.png 
+  352  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14343.png 
+  353  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14344.png 
+  354  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14341.png 
+  355  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14342.png 
+  356  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14343.png 
+  357  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14344.png 
+  358  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi1.png 
+  359  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi2.png 
+  360  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi3.png 
+  361  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi4.png 
+  362  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0209_RaspberryPi1.png 
+  363  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi1.png 
+  364  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi2.png 
+  365  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi3.png 
+  366  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi1.png 
+  367  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi2.png 
+  368  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi3.png 
+  369  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0253_1.png 
+  370  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0253_2.png 
+  371  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0252_2.png 
+  372  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget1.jpg
+  373  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget2.jpg
+  374  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget3.jpg
+  375  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget4.jpg
+  376  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget5.jpg
+  377  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget6.jpg
+  378  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget7.jpg
+  379  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget8.jpg
+  380  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget9.jpg
+  381  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget11.jpg
+  382  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget12.jpg
+  383  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget13.jpg
+  384  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget14.jpg
+  385  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget15.jpg
+  386  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget16.jpg
+  387  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget1.jpg
+  388  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget2.jpg
+  389  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget3.jpg
+  390  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget4.jpg
+  391  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget5.jpg
+  392  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget6.jpg
+  393  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget7.jpg
+  394  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget8.jpg
+  395  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget9.jpg
+  396  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget11.jpg
+  397  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget12.jpg
+  398  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget13.jpg
+  399  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget14.jpg
+  400  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget15.jpg
+  401  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget16.jpg
+  402  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/10/100718_0145_CheckPoint21.jpg
+  403  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission1.jpg
+  404  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission2.jpg
+  405  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission3.jpg
+  406  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission4.jpg
+  407  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission5.jpg
+  408  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission6.jpg
+  409  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission7.jpg
+  410  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission8.jpg
+  411  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission9.jpg
+  412  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission10.jpg
+  413  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission11.jpg
+  414  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission12.jpg
+  415  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission13.jpg
+  416  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission14.jpg
+  417  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission15.jpg
+  418  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission1.jpg
+  419  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission2.jpg
+  420  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission3.jpg
+  421  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission4.jpg
+  422  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission5.jpg
+  423  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission6.jpg
+  424  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission7.jpg
+  425  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission8.jpg
+  426  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission9.jpg
+  427  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission10.jpg
+  428  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission11.jpg
+  429  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission12.jpg
+  430  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission13.jpg
+  431  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission14.jpg
+  432  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission15.jpg
+  433  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission1.jpg
+  434  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission2.jpg
+  435  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission3.jpg
+  436  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission4.jpg
+  437  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission5.jpg
+  438  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission6.jpg
+  439  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission7.jpg
+  440  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission8.jpg
+  441  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission9.jpg
+  442  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission10.jpg
+  443  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission11.jpg
+  444  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission12.jpg
+  445  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission13.jpg
+  446  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission14.jpg
+  447  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission15.jpg
+  448  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0117_Python1.png 
+  449  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0117_Python2.png 
+  450  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall1.jpg
+  451  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall2.jpg
+  452  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall3.jpg
+  453  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall4.jpg
+  454  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall5.jpg
+  455  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall6.jpg
+  456  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall7.jpg
+  457  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall8.jpg
+  458  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall9.jpg
+  459  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall10.jpg
+  460  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall11.jpg
+  461  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall12.jpg
+  462  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll1.jpg
+  463  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll2.jpg
+  464  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll3.jpg
+  465  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll4.jpg
+  466  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll5.jpg
+  467  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll6.jpg
+  468  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll7.jpg
+  469  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll8.jpg
+  470  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll9.jpg
+  471  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll10.jpg
+  472  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll11.jpg
+  473  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll12.jpg
+  474  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll1.jpg
+  475  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll2.jpg
+  476  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll3.jpg
+  477  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll4.jpg
+  478  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll5.jpg
+  479  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll6.jpg
+  480  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll7.jpg
+  481  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll8.jpg
+  482  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll9.jpg
+  483  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll10.jpg
+  484  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll11.jpg
+  485  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll12.jpg
+  486  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall1.jpg
+  487  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall2.jpg
+  488  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall3.jpg
+  489  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall4.jpg
+  490  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall5.jpg
+  491  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall6.jpg
+  492  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall7.jpg
+  493  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall8.jpg
+  494  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall9.jpg
+  495  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall10.jpg
+  496  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall11.jpg
+  497  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall12.jpg
+  498  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0116_Python1.png 
+  499  ;wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0116_Python2.png 
+  500  ls -al
+  501  rm 021313_1920_WordPress1.png 
+  502  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/02/021313_1920_WordPress1.png ;
+  503  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word1.jpg;
+  504  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word21.jpg;
+  505  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word11.jpg;
+  506  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word12.jpg;
+  507  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word13.jpg;
+  508  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows711.png ;
+  509  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows71.png ;
+  510  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows712.png ;
+  511  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows722.png ;
+  512  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows732.png ;
+  513  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows742.png ;
+  514  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows752.png ;
+  515  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows762.png ;
+  516  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows772.png ;
+  517  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows71.png ;
+  518  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows72.png ;
+  519  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows73.png ;
+  520  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows74.png ;
+  521  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows75.png ;
+  522  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows76.png ;
+  523  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows77.png ;
+  524  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows711.png ;
+  525  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows721.png ;
+  526  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows731.png ;
+  527  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows741.png ;
+  528  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows751.png ;
+  529  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows761.png ;
+  530  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows771.png ;
+  531  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL1.png ;
+  532  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL2.png ;
+  533  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL11.png ;
+  534  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL21.png ;
+  535  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL12.png ;
+  536  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL22.png ;
+  537  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_12.jpg;
+  538  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_22.jpg;
+  539  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_32.jpg;
+  540  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_42.jpg;
+  541  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_52.jpg;
+  542  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_62.jpg;
+  543  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_72.jpg;
+  544  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_82.jpg;
+  545  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_92.jpg;
+  546  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi1.png ;
+  547  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi2.png ;
+  548  s -al
+  549  ls -al
+  550  rm ./*
+  551  ls -al
+  552  wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word21.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows711.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows71.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows712.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows722.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows732.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows742.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows752.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows762.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows772.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows71.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows72.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows73.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows74.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows75.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows76.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows77.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows711.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows721.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows731.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows741.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows751.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows761.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows771.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL11.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL21.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL12.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL22.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_22.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_32.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_42.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_52.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_62.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_72.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_82.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_92.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi11.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi21.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi12.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi22.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/02/020614_0235_1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20131.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20132.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20133.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20134.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20135.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20136.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20137.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20138.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20139.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201310.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201311.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201312.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201313.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201314.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201315.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201321.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201331.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201341.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201351.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201361.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201371.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201381.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201391.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013101.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013111.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013121.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013131.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013141.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201316.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201322.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201332.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201342.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201352.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201362.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201372.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201382.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201392.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013102.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013112.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013122.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013132.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013142.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_21.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_31.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_41.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_51.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_61.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_71.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_81.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_91.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie114.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie27.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie33.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie43.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie53.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie63.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie73.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie83.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie93.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie103.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie115.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie123.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie133.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie143.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie153.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie163.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie173.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie183.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie193.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie203.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie213.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie223.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie233.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie243.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie14.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie15.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie16.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie17.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie18.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie19.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie20.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie21.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie22.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie23.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie24.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie110.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie25.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie31.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie41.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie51.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie61.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie71.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie81.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie91.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie101.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie111.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie121.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie131.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie141.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie151.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie161.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie171.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie181.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie191.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie201.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie211.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie221.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie231.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie241.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie112.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie26.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie32.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie42.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie52.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie62.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie72.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie82.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie92.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie102.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie113.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie122.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie132.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie142.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie152.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie162.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie172.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie182.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie192.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie202.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie212.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie222.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie232.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie242.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0134_Android1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0134_Android11.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0135_Android1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0137_Android1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0138_Android1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0312_SAPBusiness1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0328_BOReposirot1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0020_20156.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0021_20156.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0021_20157.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0026_20156.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0026_20157.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm7.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14341.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14342.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14343.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14344.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14341.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14342.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14343.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14344.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi3.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi4.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0209_RaspberryPi1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi3.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi3.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0253_1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0253_2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0252_2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget14.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget15.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget16.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget14.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget15.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget16.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/10/100718_0145_CheckPoint21.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission14.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission15.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission14.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission15.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission13.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission14.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission15.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0117_Python1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0117_Python2.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall1.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall2.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall3.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall4.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall5.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall6.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall7.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall8.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall9.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall10.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall11.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall12.jpg  && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0116_Python1.png   && wget http://://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0116_Python2.png;
+  553  wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word21.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/11/110213_1618_Word13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows711.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/120813_1920_Windows71.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows712.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows722.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows732.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows742.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows752.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows762.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows772.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows71.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows72.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows73.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows74.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows75.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows76.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows77.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows711.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows721.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows731.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows741.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows751.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows761.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_1943_Windows771.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL11.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL21.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL12.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/121413_2022_TPL22.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_22.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_32.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_42.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_52.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_62.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_72.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_82.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_92.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi11.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi21.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi12.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/04/040714_0104_RaspberryPi22.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/02/020614_0235_1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20131.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20132.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20133.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20134.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20135.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20136.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20137.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20138.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_20139.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201310.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201311.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201312.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201313.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201314.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201315.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201321.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201331.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201341.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201351.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201361.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201371.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201381.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201391.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013101.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013111.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013121.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013131.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013141.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201316.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201322.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201332.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201342.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201352.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201362.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201372.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201382.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_201392.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013102.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013112.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013122.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013132.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2013/12/123013_2131_2013142.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_21.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_31.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_41.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_51.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_61.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_71.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_81.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/07/071414_0146_91.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie114.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie27.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie33.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie43.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie53.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie63.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie73.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie83.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie93.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie103.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie115.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie123.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie133.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie143.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie153.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie163.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie173.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie183.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie193.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie203.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie213.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie223.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie233.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie243.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie14.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie15.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie16.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie17.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie18.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie19.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie20.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie21.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie22.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie23.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie24.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie110.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie25.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie31.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie41.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie51.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie61.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie71.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie81.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie91.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie101.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie111.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie121.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie131.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie141.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie151.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie161.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie171.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie181.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie191.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie201.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie211.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie221.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie231.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie241.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie112.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie26.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie32.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie42.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie52.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie62.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie72.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie82.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie92.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie102.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie113.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie122.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie132.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie142.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie152.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie162.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie172.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie182.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie192.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie202.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie212.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie222.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie232.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2014/12/010115_0248_GotoExperie242.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0134_Android1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0134_Android11.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0135_Android1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0137_Android1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/040715_0138_Android1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0312_SAPBusiness1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0317_SAPBusiness11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0321_WebiMergeD7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0328_BOReposirot1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0337_BusinessObj4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0332_BusinessObj4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/04/041115_0336_BusinessObj4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0020_20156.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0021_20156.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0021_20157.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0026_20156.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2015/12/010116_0026_20157.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2016/12/122616_0613_2016Hmmm7.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14341.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14342.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14343.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2123_14344.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14341.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14342.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14343.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/01/010817_2122_14344.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi3.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0253_RaspberryPi4.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0209_RaspberryPi1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0214_RaspberryPi3.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/03/033017_0216_RaspberryPi3.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0253_1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0253_2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/09/092717_0252_2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget14.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget15.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0518_2017Letsget16.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget14.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget15.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2017/12/123117_0520_2017Letsget16.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/10/100718_0145_CheckPoint21.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission14.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0518_2018mission15.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission14.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0527_2018mission15.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission13.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission14.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2018/12/122318_0537_2018mission15.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0117_Python1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0117_Python2.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0116_2019itsall12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0117_2019ItsAll12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0118_2019ItsAll12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall1.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall2.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall3.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall4.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall5.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall6.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall7.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall8.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall9.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall10.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall11.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2019/12/123019_0133_2019itsall12.jpg  && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0116_Python1.png   && wget http://anlrj-wordpress.stor.sinaapp.com/uploads/2020/01/013020_0116_Python2.png;
+  554  ls -al
+  555  exit
+  556  mysql -uroot -p
+  557  history
+  558  exit
+  559  cd /var/www/
+  560  cd wordpress/
+  561  ls -al
+  562  sudo chmod 777 ./wp-content/uploads/
+  563  ls -al ./wp-content/
+  564  chmod: cannot access './wp-content/uploads/': No such file or directory
+  565  mkdir ./wp-content/uploads
+  566  sudo chmod 777 ./wp-content/uploads/
+  567  cd ./wp-content/uploads/
+  568  mkdir -p ./2013/11/
+  569  mkdir -p ./2013/12/
+  570  mkdir -p ./2014/07/
+  571  mkdir -p ./2014/04/
+  572  mkdir -p ./2014/04/ 
+  573  mkdir -p ./2014/02/
+  574  mkdir -p ./2014/12/ 
+  575  mkdir -p ./2014/12/
+  576  mkdir -p ./2015/04/
+  577  mkdir -p ./2015/12/
+  578  mkdir -p ./2016/12/
+  579  mkdir -p ./2017/01/
+  580  mkdir -p ./2017/03/
+  581  mkdir -p ./2017/09/
+  582  mkdir -p ./2017/12/
+  583  mkdir -p ./2018/10/
+  584  mkdir -p ./2018/12/
+  585  mkdir -p ./2020/01/
+  586  mkdir -p ./2019/12/
+  587  ls -al
+  588  ls -al 
+  589  cd ../
+  590  ls -al ./uploads/
+  591  sudo rm -rf ./uploads/
+  592  mkdir uploads
+  593  cd uploads/
+  594  mkdir beforeMigration_20200329
+  595  ls -al /var/www/
+  596  cd /var/www
+  597  ls -al
+  598  cd wordpress/
+  599  ls -al
+  600  cd wp-includes/
+  601  ls -al
+  602  sudo nano class-wp-user.php
+  603  mysql -uroot -p
+  604  ls -al /usr/share/mysql/charsets/
+  605  history
+  606  locate mysql | grep d 
+  607  sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+  608  exit
+  609  mysql -uboroger -p -hrenjie.in
+  610  exit
+  611  mysql -uroot -p
+  612  cnf
+  613  mysql -uroot -p
+  614  readlink
+  615  ls -al
+  616  ln -s  share Share
+  617  ls -al
+  618  cd Share
+  619  ls -al
+  620  readlink share 
+  621  rm share  
+  622  cd /var/www
+  623  cd wordpress/
+  624  cd wp-includes/
+  625  ls -al
+  626  sudo pip3 install jupyter
+  627  jupyter notebook password
+  628  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  629  cd ~/Share
+  630  mkdir jupyter
+  631  cd jupyter/ 
+  632  exit
+  633  docker 
+  634  curl -sSL https://get.docker.com | sh
+  635  sudo usermod -aG docker $USER
+  636  exit
+  637  docker version 
+  638  docker login
+  639  docker container run -ti hello-world
+  640  docker pull ubuntu
+  641  docker container  run -tid ubuntu
+  642  docker container stop c
+  643  docker container rm c 
+  644  docker container  run -ti  ubuntu
+  645  docker images; 
+  646  docker pull postgres
+  647  exit
+  648  exit 
+  649  c Share/
+  650  cd Share/ 
+  651  ls -al
+  652  unzip src.zip 
+  653  ls -al
+  654  mv 07-docker-compose-in-the-real-world/ 7
+  655  mv 08-dockerizing-your-web-applications/ 8
+  656  cd 7/
+  657  ls -al
+  658  mv 03-adding-docker-compose-support-to-our-web-app/ 3 
+  659  mv 06-managing-microservices-with-docker-compose/ 6
+  660  cd 
+  661  cd - 
+  662  cd 7
+  663  cd ../7
+  664  ls -al
+  665  cd 6
+  666  ls a-lk
+  667  ls -al
+  668  sudo apt-get install docker-compose -y 
+  669  docker-compose run --build
+  670  docker-compose run --build .
+  671  docker-compose  --version 
+  672  docker-compose up --build 
+  673  exit
+  674  cd Share/7/6/
+  675  ls -al
+  676  cd vote/ 
+  677  ls -la
+  678  nano Dockerfile 
+  679  cd ../worker/
+  680  ls -al
+  681  nano Dockerfile  
+  682  cd ../result/
+  683  ls -la 
+  684  nano docker-compose.test.yml  
+  685  nano Dockerfile 
+  686  docker images;
+  687  docker container stop $(docker container ls -aq)
+  688  docker container rm $(docker container ls -aq)
+  689  docker image ls -aq
+  690  docker image rm $(docker image ls -aq)
+  691  docker image ls 
+  692  exit
+  693  docker imagesl 
+  694  docker images; 
+  695  cd ~/Share/ 
+  696  ls -al
+  697  mkdir docker 
+  698  cd docker/ 
+  699  docker pull mysql
+  700  mysql
+  701  mysql -uroot -p
+  702  cd ..
+  703  ls -al
+  704  unzip POC_DB.dump.zip 
+  705  mysql -uboroger -p
+  706  ls -al
+  707  cd home
+  708  ls -al
+  709  cd pi/ 
+  710  ls -al
+  711  cd Share/
+  712  ls -al
+  713  mv POC_DB.dump ../../..
+  714  cd ../../..
+  715  ls -al
+  716  mysql -uboroger -p poc < POC_DB.dump
+  717  mysql -uboroger -p
+  718  vncserver :1
+  719  cd ~/Share/
+  720  ls -al
+  721  wget https://files3.lynda.com/secure/courses/601800/exercises/Ex_Files_TensorFlow.zip?k67XBYg5Uu0QIF9GDdWKOryE3qodTErjL0cM6QrxR93VNU4xJtuCiPL6biJmWPbk4wgCJtvfErdUjjCZV2B5_AGH12EpBZR13b6iG78OPkdIi1kQGrtXpLyeq9-Dao_l_yCP8LGS3i5D3NjugMGp6_2I6jD5BA
+  722  ls -al
+  723  unzip ./'Ex_Files_TensorFlow.zip?k67XBYg5Uu0Q                                                                                                             IF9GDdWKOryE3qodTErjL0cM6QrxR93VNU4xJtuCiPL6biJmWPbk4wgCJtvfErdUjjCZV2B5_AGH12Ep                                                                                                             BZR13b6iG78OPkdIi1kQGrtXpLyeq9-Dao_l_yCP8LGS3i5D3NjugMGp6_2I6jD5BA'
+  724  ls -al
+  725  sudo pip3 install scikit-learn
+  726  sudo pip install scikit-learn
+  727  exit 
+  728  mysql -uroot -p -h 192.168.1.206 -P 3307
+  729  ssh liurnejie@192.168.1.160
+  730  ssh liurenjie@192.168.1.160
+  731  mysql -uroot -p -h192.168.1.160
+  732  exit
+  733  sudo apt-get install libreoffice
+  734  exit
+  735  sudo apt-get install libatlas-base-de
+  736  sudo apt-get install libatlas-base-dev
+  737  pip uninstall tensorflow
+  738  pip3 uninstall tensorflow
+  739  sudopip3 uninstall tensorflow
+  740  sudo pip3 uninstall tensorflow
+  741  sudo pip3 install tensorflow==1.13.2
+  742  sudo pip3 install tensorflow==1.13.1
+  743  mysql -uroot -p -h192.168.1.160
+  744  exit
+  745  history > ~/Share/history_20200410.txt
+  746  exit
+  747  tensorboard 
+  748  tensorboard --logdir=.
+  749  exit
+  750  cmake
+  751  sudo apt-get install software-properties-common -y
+  752  mysql -uboroger
+  753  mysql -uboroger -p
+  754  exit
+  755  mysql -uboroger -p
+  756  exit
+  757  /opt/vc/bin/vcgencmd measure_temp
+  758  mysql -uboroger -p
+  759  cd ~/Share/
+  760  ls -la
+  761  ./generate_cpu_stat.sh
+  762  sudo ./generate_cpu_stat.sh
+  763  sudo sh ./generate_cpu_stat.sh
+  764  touch CPUTemp.txt
+  765  sudo sh ./generate_cpu_stat.sh
+  766  sudo nohup  sh ./generate_cpu_stat.sh  &
+  767  exit
+  768  mkdir ~/bin
+  769  $PATH
+  770  nano ~/.bashrc 
+  771  source ~/.bashrc 
+  772  $PATH
+  773  cd ~/bin/
+  774  mysql
+  775  mkdir
+  776  touch test.sh 
+  777  nano test.sh
+  778  bash ./test.sh 
+  779  cd ~/Share/
+  780  bash test.sh
+  781  test
+  782  man test
+  783  cd ~/bin/
+  784  ls -al 
+  785  rm test.sh ,test
+  786  mv  test.sh ,test
+  787  ls -al
+  788  nano hello
+  789  hello
+  790  sudo hello
+  791  ls -al
+  792  bash hello 
+  793  nano hello 
+  794  hello
+  795  sudo hello
+  796  sudo ./hello
+  797  ./hello
+  798  sh ./hello
+  799  ls -al
+  800  ls-al
+  801  ls -al
+  802  cd ~/Share/
+  803  hello
+  804  cd -
+  805  mv hello ,hello
+  806  ls -al
+  807  cd ~/Share/
+  808  ,hello 
+  809  exit
+  810  exit 
+  811  exit
+  812  mysql -uboroge -p
+  813  mysql -uboroger -ppassword1!
+  814  sudo pip3 install xlrd
+  815  sudo pip3 install pyodbc
+  816  sudo apt-get install python-pyodbc
+  817  exit
+  818  sudo pip3 install seaborn
+  819  cd  ~/Share/
+  820  cd jupyter/
+  821  ls a-l
+  822  ls -al
+  823  unzip original.zip 
+  824  exit
+  825  docker pull gethue/hue
+  826  docker run -it -p 8080:8888 gethue/hue:latest
+  827  docker image ls -a
+  828  docker image rm cb6d8cedc719
+  829  docker container ls -a
+  830  docker container stop 5646543ee914
+  831  docker image rm c
+  832  docker container rm 5646543ee914
+  833  docker image rm cb6d8cedc719
+  834  docker image ls -a
+  835  exit
+  836  cd ~/Share/
+  837  ls -al
+  838  wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v2.1.0/tensorflow-2.1.0-cp37-none-linux_armv7l.whl
+  839  sudo pip3 install tensorflow-2.1.0-cp37-none-linux_armv7l.whl 
+  840  exit
+  841  sudo pip3 install ph5py
+  842  sudo pip3 install p5py
+  843  sudo pip3 install h5py
+  844  sudo apt-get install libhdf5-dev
+  845  sudo pip3 install h5py
+  846  cd ~/Share/ 
+  847  ls -al
+  848  cd jupyter/
+  849  ls -al
+  850  cd TF_2_Notebooks_and_Data/
+  851  ls -al
+  852  sudo chmod +w .
+  853  ls -al
+  854  cd ..
+  855  ls -al TF_2_Notebooks_and_Data/
+  856  ls -al 
+  857  sudo chmod 777 ./TF_2_Notebooks_and_Data/
+  858  ls -al
+  859  cd TF_2_Notebooks_and_Data/
+  860  ls -al
+  861  sudo apt-get install libhdf5
+  862  pip install h5py
+  863  sudo pip3 install --upgrade h5py
+  864  pip install h5py
+  865  sudo pip3 uninstall h5py
+  866  python -c "import keras; print(keras.__version__)"
+  867  sudo apt-get install libhdf5
+  868  sudo apt-get update -y
+  869  sudo apt-get install libhdf5
+  870  sudo apt-get install -y libhdf5-dev
+  871  sudo pip3 install h5py
+  872  sudo apt-cache search h5py
+  873  sudo apt-get install python3-h5py
+  874  exit
+  875  ls a-l
+  876  ls -al
+  877  ps -elf | grep jupyter 
+  878  ls a=l
+  879  ls -al
+  880  cd .jupyter
+  881  ls -al
+  882  cat jupyter_notebook_config.json
+  883  sudo updatedb
+  884  locate jupyter | grep config
+  885  cat /usr/local/lib/python3.7/dist-packages/jupyter_core/tests/dotipython_empty/profile_default/ipython_config.py
+  886  history | grep jupyter 
+  887  cd ~/Share/ 
+  888  ls -al
+  889  df
+  890  cd jupyter/
+  891  ls -al 
+  892  head CPUTemp.txt 
+  893  nano CPUTemp.txt 
+  894  history | grep jupy
+  895  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  896  exit
+  897  uptime
+  898  top
+  899  exit
+  900  sudo reboot now
+  901  history | grep jup
+  902  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  903  exit
+  904  history
+  905  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  906  uptime
+  907  exit 
+  908  top 
+  909  sudo reboot now 
+  910  history | grep jupyter
+  911  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  912  exit
+  913  cd /home/pi/Share/jupyter/TF_2_Notebooks_and_Data/03-ANNs 
+  914  ls -al
+  915  tensorboard --logdir logs\fit 
+  916  sudo pip3 install --upgrade setuptools
+  917  tensorboard --logdir logs\fit 
+  918  tensorboard --logdir logs\fit --bind_all
+  919  tensorboard --logdir --bind_all  logs\fit
+  920  tensorboard --bind_all --logdir logs\fit
+  921  tensorboard --bind_all --logdir logs/fit
+  922  vncserver :1
+  923  PATH
+  924  $PATH
+  925  nano ~/.bashrc 
+  926  source ~/.bashrc 
+  927  vncserver :1
+  928  exit
+  929  $PATH
+  930  vncserver :1
+  931  exit
+  932  free -h
+  933  sudo ps -elf | grep jupy
+  934  free -h
+  935  sudo reboot now
+  936  cd ~/Share/jupyter/TF_2_Notebooks_and_Data/
+  937  ls -al
+  938  cd 03-ANNs/
+  939  ls a-l
+  940  ls -al
+  941  tensorboard --bind_all --logdir logs/fit
+  942  history
+  943  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  944  free -h
+  945  exit
+  946  mysql -uboroger -p
+  947  cd ~/Share/
+  948  ls -al
+  949  history | grep gene
+  950  sudo nohup  sh ./generate_cpu_stat.sh  &
+  951  mysql -uboroger -p
+  952  nano cpu_temp_extract_2018.sql
+  953  mysql -uroot -p poc < cpu_temp_extract_2018.sql > ~/Share/cpu_temp_2018.csv
+  954  sudo reboot now 
+  955  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+  956  exit
+  957  cd ~/Share/ 
+  958  ls -al
+  959  cd jupyter/
+  960  ;s -al
+  961  ls-al
+  962  ls -al
+  963  cd ..
+  964  ls -al
+  965  mv cpu_temp_Jan_2020.csv  jupyter/
+  966  vncserver: 1
+  967  vncserver :1
+  968  exit
+  969  cd ~/Share/
+  970  ls -al
+  971  nano cpu_temp_extract_2018.sql
+  972  mysql -uroot -p poc < cpu_temp_extract_2018.sql > ~/Share/cpu_temp_2018_2.csv
+  973  nano cpu_temp_extract_2018.sql
+  974  mysql -uroot -p poc < cpu_temp_extract_2018.sql > ~/Share/cpu_temp_2018_3.csv
+  975  mysql -uroot -p
+  976  sudo ps -elf | grep generate_cpu_stat.sh 
+  977  sudo nohup  sh ./generate_cpu_stat.sh  &
+  978  mysql -uroot -p
+  979  cd ~/Share/
+  980  cd jupyter/ 
+  981  nano cpu_temp_extract_2018.sql
+  982  nano ../cpu_temp_extract_2018.sql
+  983  mysql -uroot -p poc < ../cpu_temp_extract_2018.sql > ~/Share/cpu_temp_Jan_2020.csv
+  984  mysql -uroot -p
+  985  exit
+  986  docker 
+  987  docker pull silverwind/armhf-droppy
+  988  docker run --name droppy -p 127.0.0.1:8989:8989 silverwind/droppy
+  989  docker images
+  990  docker run --name droppy -p 127.0.0.1:8989:8989 47128533c083
+  991  docker container rm 8d855750
+  992  docker run --name droppy -p 127.0.0.1:8989:8989 47128533c083
+  993  exit 
+  994  sudo apt install python-opencv
+  995  sudo apt-cache search python3 | grep opencv
+  996  sudo apt-get install python3-opencv
+  997  sudo apt-get install pinta
+  998  exit
+  999  history
+ 1000  top
+ 1001  ls -al `/
+ 1002  ls -al ~/
+ 1003  nano ~/.bashrc
+ 1004  source ~/.bashrc 
+ 1005  history > ~/Share/history_20200505.txt
+ 1006  history > ~/Share/rpi42_history_20200505.txt
+ 1007  exit
+ 1008  free -h 
+ 1009  sudo reboot now 
+ 1010  cd ~/Share/jupyter/
+ 1011  ls -la
+ 1012  ls logs/fit/2020-05-03--1619/
+ 1013  tensorboard --logdir logs/fit/2020-05-03--1619/
+ 1014  tensorboard --logdir logs/fit/2020-05-03--1619/ --bind_all
+ 1015  history
+ 1016  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1017  exit
+ 1018  cd ~/Share/
+ 1019  ls -al
+ 1020  cd jupyter/ 
+ 1021  ls -al
+ 1022  cd TF_2_Notebooks_and_Data/
+ 1023  ls a-l
+ 1024  ls -al
+ 1025  unzip cell_images.zip 
+ 1026  ls a-l
+ 1027  ls -al
+ 1028  cd cell_images/
+ 1029  ls -al
+ 1030  top
+ 1031  exit
+ 1032  history
+ 1033  sudo reboot now
+ 1034  sudo jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1035  exit
+ 1036  sudo ps -elf | grep jupy
+ 1037  su
+ 1038  jupyter notebook --generate-config
+ 1039  cat /home/pi/.jupyter/jupyter_notebook_config.py
+ 1040  cat /home/pi/.jupyter/jupyter_notebook_config.py | grep Meo
+ 1041  cat /home/pi/.jupyter/jupyter_notebook_config.py | grep Mem
+ 1042  cat /home/pi/.jupyter/jupyter_notebook_config.py | grep 'Mem'
+ 1043  cat /home/pi/.jupyter/jupyter_notebook_config.py | grep 'bu'
+ 1044  python 536870912/1024/1024
+ 1045  python -e '536870912/1024/1024'
+ 1046  ls -al
+ 1047  cd .jupyter
+ 1048  ls -al
+ 1049  cp jupyter_notebook_config.py jupyter_notebook_config.py.202005061406
+ 1050  nano jupyter_notebook_config.py
+ 1051  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1052  sudo reboot now 
+ 1053  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1054  top 
+ 1055  nano ~/.jupyter/jupyter_notebook_config.py
+ 1056  sudo reboot now 
+ 1057  nano ~/.jupyter/jupyter_notebook_config.py
+ 1058  jupyter-notebook --no-browser ----NotebookApp.max_buffer_size=3221225472 --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1059  jupyter-notebook --no-browser --NotebookApp.max_buffer_size=3221225472 --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1060  top
+ 1061  sudo ps -elf | grep 'jupy'
+ 1062  uname 
+ 1063  uname -a 
+ 1064  uname -a
+ 1065  sudo apt-get update
+ 1066  sudo apt-get upgrade
+ 1067  sudo nano /boot/config.txt
+ 1068  sudo reboot now 
+ 1069  uname -a 
+ 1070  jupyter-notebook --no-browser --NotebookApp.max_buffer_size=3221225472 --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1071  exit
+ 1072  top
+ 1073  ps -elf | grep numpy
+ 1074  exit
+ 1075  pip3 install --upgrade  numpy
+ 1076  sudo rm -rf /home/pi/Share/jupyter/TF_2_Notebooks_and_Data/cell_images
+ 1077  cd ~/Share/
+ 1078  ls -al 
+ 1079  cd jupyter/ 
+ 1080  ls -al
+ 1081  cd TF_2_Notebooks_and_Data/
+ 1082  ls a-l
+ 1083  ls -al
+ 1084  nano Tensorflow_Lab_6_CNN.py
+ 1085  python Tensorflow_Lab_6_CNN.py 
+ 1086  nano Tensorflow_Lab_6_CNN.py
+ 1087  python Tensorflow_Lab_6_CNN.py 
+ 1088  which python
+ 1089  python
+ 1090  nano ~/.bashrc 
+ 1091  souce ~/.bashrc 
+ 1092  source ~/.bashrc 
+ 1093  python
+ 1094  python Tensorflow_Lab_6_CNN.py 
+ 1095  df
+ 1096  locate cpu_allocator_impl
+ 1097  locate cpu_allocator_impl
+ 1098  nano Tensorflow_Lab_6_CNN.py
+ 1099  python Tensorflow_Lab_6_CNN.py
+ 1100  nano Tensorflow_Lab_6_CNN.py
+ 1101  python Tensorflow_Lab_6_CNN.py
+ 1102  locate config | grep tensorflow
+ 1103  nano Tensorflow_Lab_6_CNN.py
+ 1104  python Tensorflow_Lab_6_CNN.py
+ 1105  python
+ 1106  top
+ 1107  ls -al  ../../
+ 1108  history | grep numpy
+ 1109  history
+ 1110  history | head
+ 1111  sudo apt-cache search numpy
+ 1112  history | grep h5
+ 1113  sudo apt-get install python3-numpy
+ 1114  locate .whl
+ 1115  sudo apt-get purge python3-numpy
+ 1116  python
+ 1117  sudo apt autoremove
+ 1118  df
+ 1119  which pip
+ 1120  pip3 install numpy
+ 1121  python
+ 1122  history | grep boot
+ 1123  sudo nano /boot/config.txt
+ 1124  sudo reboot now 
+ 1125  uname -a 
+ 1126  history | grep jupy
+ 1127  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1128  cat /proc/sys/vm/overcommit_memory
+ 1129  free -h 
+ 1130  top 
+ 1131  sudo kill -9 1076
+ 1132  top
+ 1133  free -h
+ 1134  top
+ 1135  locate keras | grep data
+ 1136  cd sa\/home/pi/.keras/datasets
+ 1137  cd /home/pi/.keras/datasets
+ 1138  ls -la
+ 1139  cd cifar-10-batches-py
+ 1140  ls -al
+ 1141  nano batches.meta
+ 1142  rm data_batch_5
+ 1143  cd .
+ 1144  cd ..
+ 1145  ls -al
+ 1146  rm cifar-10-batches-py*
+ 1147  sudo rm -f  cifar-10-batches-py*
+ 1148  sudo rm -fr  cifar-10-batches-py*
+ 1149  free - h
+ 1150  sudo reboot now 
+ 1151  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1152  free -h
+ 1153  top 
+ 1154  sudo reboot now
+ 1155  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1156  exit
+ 1157  top
+ 1158  exit
+ 1159  top
+ 1160  exit
+ 1161  vncserver :1 
+ 1162  exit
+ 1163  cd ~/Share/jupyter/
+ 1164  ls -al
+ 1165  cd TF_2_Notebooks_and_Data/ 
+ 1166  ls -al
+ 1167  unzip cell_images.zip 
+ 1168  exit 
+ 1169  nano ~/.bash
+ 1170  nano ~/.bashrc 
+ 1171  exit
+ 1172  history | grep theano
+ 1173  history 
+ 1174  sudo apt-get install python3-theano
+ 1175  exit
+ 1176  uptime s
+ 1177  cd ~/Share/
+ 1178  ls a-l
+ 1179  ls -al
+ 1180  history > history_20200509.txt
+ 1181  history | grep gene
+ 1182  sudo nohup  sh ./generate_cpu_stat.sh  &
+ 1183  exit
+ 1184  python -c "from pip import pep425tags;print(pep425tags.supported_tags)"
+ 1185  python -c "from pip3 import pep425tags;print(pep425tags.supported_tags)"
+ 1186  exit
+ 1187  pip3 -V 
+ 1188  exit
+ 1189  cd ~/Share/
+ 1190  ls ls -al
+ 1191  cd /home/pi/Share/jupyter/kaggle
+ 1192  ls a-l
+ 1193  ls -al 
+ 1194  unzip kaggle_dogs_cats.zip
+ 1195  /opt/vc/bin/vcgencmd measure_temp
+ 1196  uptime
+ 1197  /opt/vc/bin/vcgencmd measure_temp
+ 1198  hisroty
+ 1199  history 
+ 1200  exit
+ 1201  cd Share/
+ 1202  ls -al
+ 1203  cd jupyter/
+ 1204  ls a-l
+ 1205  ls -al
+ 1206  cd kaggle/
+ 1207  ls a-l
+ 1208  ls -al
+ 1209  cd dogs_cats/ 
+ 1210  ls -al
+ 1211  cd train/
+ 1212  ls -al
+ 1213  rm cat
+ 1214  rm -rf cat
+ 1215  mkdir 0
+ 1216  mkdir 1
+ 1217  mv cat* 0
+ 1218  mv dog* 1
+ 1219  ls -al
+ 1220  ls -al 0
+ 1221  ls -al 1 
+ 1222  ls -al
+ 1223  cd ..
+ 1224  ls -al
+ 1225  free -h
+ 1226  top
+ 1227  ls -al
+ 1228  mv test1/ test
+ 1229  ls -al
+ 1230  cd test/
+ 1231  ls a-l
+ 1232  ls -al
+ 1233  cd .
+ 1234  man zip
+ 1235  ls ..
+ 1236  cd ..
+ 1237  zip dogs_cats.zip dogs_cats/
+ 1238  zip 
+ 1239  sudo apt-get install zip
+ 1240  man zip
+ 1241  zip dogs_cats.zip dogs_cats/
+ 1242  ls al
+ 1243  ls -al
+ 1244  rm dogs_cats.zip 
+ 1245  zip dogs_cats.zip dogs_cats/*
+ 1246  ls -al
+ 1247  tar czvf  dogs_cats.tar.gz  dogs_cats/ 
+ 1248  ssh liurenjie@192.168.160
+ 1249  ssh liurenjie@192.168.1.160
+ 1250  exit
+ 1251  sudo dphys-swapfile swapoff
+ 1252  sudo cp /etc/dphys-swapfile /etc/dphys-swapfile.20200511
+ 1253  sudo nano /etc/dphys-swapfile
+ 1254  sudo dphys-swapfile swapon
+ 1255  sudo dphys-swapfile swapoff
+ 1256  dphys-swapfile setup
+ 1257  sudo nano /etc/dphys-swapfile
+ 1258  sudo dphys-swapfile setup
+ 1259  sudo dphys-swapfile swapon
+ 1260  df
+ 1261  history > ~/Share/history_20200511_1550.txt
+ 1262  exit
+ 1263  top
+ 1264  exit
+ 1265  top
+ 1266  df
+ 1267  exit
+ 1268  history | grep temp
+ 1269  /opt/vc/bin/vcgencmd measure_temp
+ 1270  cd /sys/class/thermal/thermal_zone0 
+ 1271  cat temp 
+ 1272  [A
+ 1273  cat temp 
+ 1274  cd ..
+ 1275  ls -al
+ 1276  exit
+ 1277  cd /sys/class/thermal/thermal_zone0 
+ 1278  cat temp 
+ 1279  exit
+ 1280  cd /sys/class/thermal/thermal_zone0 
+ 1281  cat temp 
+ 1282  exit
+ 1283  cd /sys/class/thermal/thermal_zone0 
+ 1284  cat temp
+ 1285  sudo ~/Share/
+ 1286  cd ~/Share/ 
+ 1287  ls a-l
+ 1288  ls -la 
+ 1289  pip3 install kaggle
+ 1290  ls ~
+ 1291  ls -al ~
+ 1292  nano ~/.kaggle/kaggle.json
+ 1293  fg
+ 1294  mkdir ~/.kaggle/
+ 1295  nano ~/.kaggle/kaggle.json
+ 1296  kaggle competitions submit -c dogs-vs-cats -f ./dog_cat_submission_20200511_1942.csv -m "First Submission 20200511_1958"
+ 1297  history
+ 1298  temp 
+ 1299  cat /sys/class/thermal/thermal_zone0/temp
+ 1300  nano ~/.bashrc 
+ 1301  source ~/.bashrc
+ 1302  temp
+ 1303  cat /sys/class/thermal/thermal_zone0/temp
+ 1304  exit
+ 1305  pip3 install h5pyViewer
+ 1306  exit
+ 1307  locate realvnc
+ 1308  exit
+ 1309  history | grep size 
+ 1310  history | grep +
+ 1311  exit
+ 1312  docker pull oznu/guacamole:1.1.0-armhf
+ 1313  docker container ls 
+ 1314  docker image ls 
+ 1315  docker container run -p8080:8080  4b3e74a
+ 1316  top
+ 1317  free -h 
+ 1318  top
+ 1319  top 
+ 1320  free -h
+ 1321  exit
+ 1322  history
+ 1323  exit
+ 1324  mysql -uboroger -p
+ 1325  exit
+ 1326  mysql -uboroger -p
+ 1327  exit
+ 1328  mysql -uboroger -p
+ 1329  sudo raspi-config
+ 1330  exit 
+ 1331  uptime
+ 1332  sudo reboot now 
+ 1333  exit
+ 1334  history
+ 1335  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1336  exit
+ 1337  xit
+ 1338  exit
+ 1339  lsusb
+ 1340  ifconfig 
+ 1341  ing 172.18.0.1
+ 1342  ping 172.18.0.1
+ 1343  ssh pi@172.18.0.1
+ 1344  ifconfig
+ 1345  ssh pi@172.19.0.1
+ 1346  sudo apt-get install nmap
+ 1347  ping raspberrypi.local
+ 1348  ping raspberry.local
+ 1349  nmap -sP 192.168.x.0/24
+ 1350  ping ubuntu-minimal
+ 1351  ssh ubuntu@192.168.1.247
+ 1352  exit
+ 1353  cat /sys/class/thermal/thermal_zone0/temp
+ 1354  sudo shutdown now 
+ 1355  docker pull couchdb:latest
+ 1356  exit
+ 1357  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1358  exit
+ 1359  sudo apt cache search ansible 
+ 1360  sudo apt-cache search ansible 
+ 1361  exit
+ 1362  sudo apt-get install nc
+ 1363  sudo apt-cache search netcat
+ 1364  sudo apt-get install netcat
+ 1365  nc 192.168.1.156 9978
+ 1366  nc -l 80
+ 1367  sudo nc -l 80
+ 1368  exit
+ 1369  cd Share/ 
+ 1370  cd jupyter/ 
+ 1371  ls -al
+ 1372  nano split.txt
+ 1373  mv split.txt triangle.txt
+ 1374  exit
+ 1375  free -h 
+ 1376  exit
+ 1377  netstat -tupln | grep ':5000'
+ 1378  iptables -I INPUT -p tcp --dport 5000 -j ACCEPT
+ 1379  vncserver :1
+ 1380  exit
+ 1381  cd Share/ 
+ 1382  cd jupyter/ 
+ 1383  ls a-l
+ 1384  ls -al
+ 1385  cd TF_2_Notebooks_and_Data/
+ 1386  nano
+ 1387  fg
+ 1388  ls -al
+ 1389  sudo pip3 install flask
+ 1390  python my_example.py
+ 1391  python
+ 1392  ls -al /var/log
+ 1393  ls -al
+ 1394  nano my_example.py 
+ 1395  python my_example.py
+ 1396  nano my_example.py 
+ 1397  python my_example.py 
+ 1398  nano my_example.py
+ 1399  python my_example.py 
+ 1400  nano my_example.py
+ 1401  python my_example.py 
+ 1402  nano my_example.py
+ 1403  python my_example.py 
+ 1404  nano my_example.py 
+ 1405  python my_example.py 
+ 1406  nano my_example.py 
+ 1407  python my_example.py 
+ 1408  nano my_example.py 
+ 1409  sudo apt-cache search postman
+ 1410  sudo Share/jupyter/TF_2_Notebooks_and_Data/
+ 1411  cd Share/jupyter/TF_2_Notebooks_and_Data/
+ 1412  nano my_example.py
+ 1413  fg
+ 1414  python my_example.py 
+ 1415  sudo pip3 install flask_wtf
+ 1416  python my_example.py 
+ 1417  nano my_example.py
+ 1418  python my_example.py 
+ 1419  nano my_example.py
+ 1420  python my_example.py 
+ 1421  nano my_example.py
+ 1422  python my_example.py 
+ 1423  nano my_example.py
+ 1424  python my_example.py 
+ 1425  exit
+ 1426  cd Share/
+ 1427  mkdir heroku
+ 1428  cd heroku/ 
+ 1429  wget https://cli-assets.heroku.com/branches/stable/heroku-linux-arm.tar.gz
+ 1430  mkdir -p /usr/local/lib /usr/local/bin
+ 1431  sudo tar -xvzf heroku-linux-arm.tar.gz -C /usr/local/lib
+ 1432  sudo ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku
+ 1433  heroku update
+ 1434  cd deployment/
+ 1435  ls -al
+ 1436  sudo pip3 install gunicorn
+ 1437  history
+ 1438  history | version
+ 1439  history |grep version
+ 1440  which pip
+ 1441  /usr/bin/pip
+ 1442  /usr/bin/pip -V
+ 1443  which pip3
+ 1444  pip3 freeze > requirements.txt
+ 1445  ls -al
+ 1446  nano requirements.txt 
+ 1447  nano
+ 1448  ls -al
+ 1449  heroku login
+ 1450  git init
+ 1451  heroku git:remote -a lrj-my-flower-app
+ 1452  git add .
+ 1453  git commit -am "added files"
+ 1454  git commit -m "added files"
+ 1455  git config --global user.email "the.liurenjie@outlook.com"
+ 1456  git commit -am "added files"
+ 1457  git commit -m "added files"
+ 1458  git config --global user.email "the.liurenjie@outlook.com"
+ 1459  git config --global user.name "Renjie Liu"
+ 1460  git commit -am "added files"
+ 1461  git push heroku master
+ 1462  nano requirements.txt 
+ 1463  git commit -m "added files"
+ 1464  git commit -am "updated requirements file"
+ 1465  git push heroku master
+ 1466  nano requirements.txt 
+ 1467  git commit -am "updated requirements file"
+ 1468  git push heroku master
+ 1469  nano requirements.txt 
+ 1470  git commit -am "updated requirements file"
+ 1471  git push heroku master
+ 1472  nano requirements.txt 
+ 1473  sudo pip3 install ssh-import-id
+ 1474  sudo pip3 install ssh-import-id==5.10
+ 1475  pip3 freeze > requirements.txt 
+ 1476  git commit -am "updated requirements file"
+ 1477  git push heroku master
+ 1478  nano requirements.txt 
+ 1479  git commit -am "updated requirements file"
+ 1480  git push heroku master
+ 1481  nano requirements.txt 
+ 1482  git push heroku master
+ 1483  git commit -am "updated requirements file"
+ 1484  git push heroku master
+ 1485  git commit -am "updated requirements file"
+ 1486  git push heroku master
+ 1487  git commit -am "updated requirements file"
+ 1488  git push heroku master
+ 1489  unattended-upgrades
+ 1490  nano requirements.txt 
+ 1491  git commit -am "updated requirements file"
+ 1492  git push heroku master
+ 1493  git commit -am "updated requirements file"
+ 1494  git push heroku master
+ 1495  uptime
+ 1496  sudo reboot now 
+ 1497  sudo apt-get install netcat
+ 1498  cat /sys/class/thermal/thermal_zone0/temp
+ 1499  df
+ 1500  mysql -uroot -p
+ 1501  exit
+ 1502  mysql -uroot -p
+ 1503  top 
+ 1504  cat /sys/class/thermal/thermal_zone0/temp
+ 1505  top 
+ 1506  free -h
+ 1507  exit
+ 1508  cat /sys/class/thermal/thermal_zone0/temp
+ 1509  history | grep jupyter 
+ 1510  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1511  cat /sys/class/thermal/thermal_zone0/temp
+ 1512  cd Share/ 
+ 1513  history | grep generate_cpu_stat.sh 
+ 1514  sudo nohup  sh ./generate_cpu_stat.sh  &
+ 1515  mysql -uroot -p
+ 1516  sudo reboot now
+ 1517  cd Share/ 
+ 1518  ls -al 
+ 1519  sudo nohup  sh ./generate_cpu_stat.sh  &
+ 1520  free -h
+ 1521  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1522  free -h
+ 1523  exit
+ 1524  free -h
+ 1525  mysql -uroot -p
+ 1526  exit
+ 1527  mysql -uroot -p
+ 1528  cat /sys/class/thermal/thermal_zone0/temp
+ 1529  history | grep dump
+ 1530  history | grep mysql
+ 1531  cd Share/ 
+ 1532  sudo mysqldump -uroot -ppassword1! poc >/home/pi/Share/POC_DB_20200524.dump
+ 1533  ls -al
+ 1534  exit 
+ 1535  cd Share/
+ 1536  head POC_DB_20200524.dump
+ 1537  head -50 POC_DB_20200524.dump
+ 1538  exit
+ 1539  history | grep jupytet
+ 1540  history | grep jupyter
+ 1541  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1542  exit
+ 1543  sudo apt-cache search cluster 
+ 1544  cat /sys/class/thermal/thermal_zone0/temp
+ 1545  exit 
+ 1546  mysql -uroot -p
+ 1547  mysql -uroot -p -D poc -e 'select count(1) from cpu_temp_memory'
+ 1548  mysql -uroot -p -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory limit 10;' >  ~/Share/test_dump.csv
+ 1549  mysql -uroot -p -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , ',' delimiter,  temp as average_temp from cpu_temp_memory limit 10;' >  ~/Share/test_dump.csv
+ 1550  mysql -uroot -p -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , \',\' delimiter,  temp as average_temp from cpu_temp_memory limit 10;' >  ~/Share/test_dump.csv
+ 1551  ;
+ 1552  mysql -uroot -p -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , \'',\'' delimiter,  temp as average_temp from cpu_temp_memory limit 10;' >  ~/Share/test_dump.csv
+ 1553  ;
+ 1554  mysql -uroot -p -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , ","  delimiter,  temp as average_temp from cpu_temp_memory limit 10;' >  ~/Share/test_dump.csv
+ 1555  mysql -uroot -p -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory limit 10;' >  ~/Share/test_dump.csv
+ 1556  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory limit 100000;' >  ~/Share/test_dump.csv
+ 1557  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory;' >  ~/Share/test_dump.csv
+ 1558  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory where date > '2019-01-01';' >  ~/Share/test_dump.csv
+ 1559  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory where date > '2020-05-25';' >  ~/Share/test_dump.csv
+ 1560  free -h
+ 1561  exit
+ 1562  mysql -uroot -p
+ 1563  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H:%i:%S") Dates , temp as average_temp from cpu_temp_memory where date >= '2020-05-24';' >  ~/Share/test_dump.csv
+ 1564  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1565  cat /sys/class/thermal/thermal_zone0/temp
+ 1566  exit
+ 1567  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H") dates_hour, temp = avg(temp) as average_temp from cpu_temp_memory group by date_format(time, "%Y-%m-%d %H") order by 1;' >  ~/Share/test_dump.csv
+ 1568  mysql -uroot -p
+ 1569  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H") dates_hour, temp = avg(temp) as average_temp from cpu_temp_memory group by date_format(time, "%Y-%m-%d %H") order by 1;' >  ~/Share/test_dump.csv
+ 1570  mysql -uroot -p
+ 1571  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H") dates_hour, avg(temp) as temp from cpu_temp_memory group by date_format(time, "%Y-%m-%d %H") order by 1;' >  ~/Share/cpu_temp_24.csv
+ 1572  cat /sys/class/thermal/thermal_zone0/temp
+ 1573  history
+ 1574  exit
+ 1575  ssh -v root@192.168.1.27 -p 2222 
+ 1576  ssh -v maria_dev@192.168.1.27 -p 2222 
+ 1577  exit 
+ 1578  ssh -v maria_dev@192.168.1.27 -p 2222
+ 1579  exit 
+ 1580  sudo pip3 install mrjob
+ 1581  exit
+ 1582  cat /etc/os-release 
+ 1583  vncserver :1 
+ 1584  fdisk =-l
+ 1585  fdisk -l
+ 1586  lsusb 
+ 1587  sudo fdisk -l
+ 1588  ls -al /dev/sda2
+ 1589  cd /dev/sda2
+ 1590  sudo apt-get install gparted
+ 1591  df
+ 1592  exit
+ 1593  mysql -uroot -p
+ 1594  exit
+ 1595  docker login
+ 1596  exit
+ 1597  uptime
+ 1598  sudo shutdown now 
+ 1599  docker images;
+ 1600  exit
+ 1601  jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+ 1602  exit
+ 1603  sudo pip3 install pylibmc
+ 1604  sudo apt-cache search libmemcached
+ 1605  sudo apt-get install libmemcached-dev
+ 1606  sudo pip3 install pylibmc
+ 1607  exit
+ 1608  history > rpi42_20200606.txt

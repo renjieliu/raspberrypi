@@ -1,0 +1,439 @@
+    1  passwd 
+    2  su passwd
+    3  sudo passwd
+    4  sudo echo 'interface wlan0
+    5  static ip_address=192.168.1.204/24
+    6  #static ip6_address=fd51:42f8:caae:d92e::ff/64
+    7  static routers=192.168.1.1
+    8  static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
+    9  echo alias python='python3.7' >> ~/.bashrc;
+   10  mkdir ~/Share; sudo chmod 777 -R ~/Share;
+   11  sudo mkdir /mnt/sandisk; sudo chmod 777 -R /mnt/sandisk;
+   12  sudo apt-get update; sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo updatedb;
+   13  locate docker
+   14  sudo raspi-config
+   15  curl -sL get.docker.com | sed 's/9)/10)/' | sh
+   16  sudo usermod -aG docker pi
+   17  sudo reboot now 
+   18  docker logi 
+   19  docker login 
+   20  df
+   21  locate postgres | grep conf
+   22  sudo nano /etc/postgresql/11/main/pg_hba.conf
+   23  sudo cp /etc/postgresql/11/main/pg_hba.conf /etc/postgresql/11/main/pg_hba.conf.20190703
+   24  sudo nano /etc/postgresql/11/main/pg_hba.conf
+   25  sudo nano /etc/postgresql/11/main/postgresql.conf
+   26  sudo cp /etc/postgresql/11/main/postgresql.conf /etc/postgresql/11/main/postgresql.conf.2
+   27  sudo nano /etc/postgresql/11/main/postgresql.conf
+   28  psql postgres postgres
+   29  sudo service postgresql restart 
+   30  psql postgres postgres
+   31  su - postgres
+   32  su - root
+   33  psql template1 boroger
+   34  sudo service postgresql restart 
+   35  sudo nano /etc/postgresql/11/main/postgresql.conf
+   36  sudo nano /etc/postgresql/11/main/pg_hba.conf
+   37  sudo service postgresql restart
+   38  python
+   39  cd ~/Share/
+   40  sudo nano /etc/postgresql/11/main/pg_hba.conf
+   41  nosql
+   42  sudo apt-get install redis
+   43  pip3 install pandas
+   44  exit
+   45  df
+   46  sudo raspi-config
+   47  df
+   48  sudo raspi-config
+   49  df
+   50  docker info
+   51  docker login 
+   52  docker pull raspbian/stretch
+   53  docker images;
+   54  docker run -ti 82c
+   55  docker ps
+   56  docker ps -q
+   57  docker ps -a
+   58  docker rm 294092c
+   59  docker rmi 8
+   60  df
+   61  docker pull resin/rpi-raspbian
+   62  docker run -ti 18be79
+   63  docker images;
+   64  docker run -ti 28f1ee4
+   65  df
+   66  exit 
+   67  df
+   68  exit
+   69  ping google.com
+   70  exit
+   71  mysql -uroot
+   72  ls -al
+   73  octave
+   74  locate meminfo
+   75  top
+   76  free
+   77  vncserver :1
+   78  ifconfig
+   79  bash --version
+   80  exit
+   81  bash
+   82  exit
+   83  python
+   84  exit
+   85  sudo nano /etc/apt/sources.list.d/docker.list
+   86  exit
+   87  mysql -uroot -p
+   88  exit
+   89  uptime 
+   90  exit
+   91  df
+   92  exit
+   93  df 
+   94  docker
+   95  docker pull apachekylin/apache-kylin-standalone:3.0.0-alpha2
+   96  df
+   97  docker run -d -m 2G -p 7070:7070 -p 8088:8088 -p 50070:50070 -p 8032:8032 -p 8042:8042 -p 60010:60010 apachekylin/apache-kylin-standalone:3.0.0-alpha2
+   98  docker ps 
+   99  docker logs cab7
+  100  docker images ;
+  101  docker rmi d97
+  102  docker rm $(docker ps -aq)
+  103  docker rmi d97
+  104  df
+  105  exit
+  106  id
+  107  id -u
+  108  id -g
+  109  id
+  110  df
+  111  mkdir nifi
+  112  wget http://www.trieuvan.com/apache/nifi/1.10.0/nifi-1.10.0-bin.tar.gz
+  113  ls -al
+  114  tar zxvf nifi-1.10.0-bin.tar.gz 
+  115  exit
+  116  ls -al
+  117  ls -al  nfi-*.gz 
+  118  rm  nfi-*.gz 
+  119  ls nifi*z
+  120  ls nifi*z | rm 
+  121  rm $(ls nifi*z)
+  122  ls -al
+  123  cd nifi 
+  124  ls -al
+  125  cd ..
+  126  rm -rf nifi
+  127  mv nifi-1.10.0/ nifi/
+  128  ls -al
+  129  cd nifi/
+  130  ls -al
+  131  cd bin/
+  132  ls -al
+  133  sudo sh nifi.sh install 
+  134  sudo service nifi start
+  135  sudo service nifi start 
+  136  sudo ./nifi.sh start 
+  137  java --version
+  138  sudo reboot now 
+  139  sudo apt-get install redis-server 
+  140  redis-cli
+  141  locae redis.con sa
+  142  locae redis.con
+  143  locate redis.con
+  144  cd nano /etc/redis/redis.conf
+  145  nano /etc/redis/redis.conf
+  146  sudo nano /etc/redis/redis.conf
+  147  exit
+  148  mkdir projects
+  149  cd projects/ 
+  150  mkdir python
+  151  cd python/
+  152  nano
+  153  python cpu_temp.py 
+  154  nano
+  155  nano cpu_temp.py 
+  156  python cpu_temp.py 
+  157  nano cpu_temp.py 
+  158  python cpu_temp.py 
+  159  nano cpu_temp.py 
+  160  python cpu_temp.py 
+  161  nano cpu_temp.py 
+  162  python cpu_temp.py 
+  163  nano cpu_temp.py 
+  164  python
+  165  redis-cli
+  166  exit
+  167  pip install redis 
+  168  python
+  169  sudo pip install redis
+  170  python
+  171  which pip
+  172  pip3 
+  173  pip3 install redis
+  174  python
+  175  exit 
+  176  ssh pi@192.168.1.203
+  177  exit
+  178  sshd
+  179  locate sshd 
+  180  locate openssh
+  181  ssh liurenjie@192.168.1.159
+  182  exit
+  183  ifconfig
+  184  sudo apt-list --installed
+  185  sudo apt-get list --instale
+  186  sudo apt-get list --installed
+  187  sudo apt list --installed 
+  188  exit
+  189  uname -r 
+  190  ls /boot
+  191  ls -al /boot
+  192  exit
+  193  history
+  194  exit
+  195  sudo nano /etc/hostname 
+  196  exit
+  197  locate wpa_ | grep conf
+  198  sudo more /etc/wpa_supplicant/wpa_supplicant.conf
+  199  exit
+  200  mysql -uroot -p
+  201  exit
+  202  history
+  203  nano ~/.bashrc 
+  204  source ~/.bashrc 
+  205  cat /etc/os-release
+  206  ls -al 
+  207  cd projects/ 
+  208  ls -la
+  209  mkdir couchdb
+  210  cd couchdb/
+  211  wget http://packages.erlang-solutions.com/debian/erlang_solutions.asc
+  212  sudo apt-key add erlang_solutions.asc
+  213  sudo apt-get update
+  214  ls -al 
+  215  sudo apt update --allow-releaseinfo-change
+  216  sudo apt-get update
+  217  sudo apt-get --no-install-recommends -y install build-essential
+  218  sudo apt-get --no-install-recommends -y install build-essential pkg-config erlang libicu-dev libmozjs185-dev libcurl4-openssl-dev
+  219  sudo useradd -d /home/couchdb couchdb
+  220  sudo mkdir /home/couchdb
+  221  sudo chown couchdb:couchdb /home/couchdb
+  222  cd 
+  223  ls -al 
+  224  cd ~/Share/projects/couchdb/
+  225  sudo useradd -d /home/couchdb couchdb
+  226  sudo mkdir /home/couchdb
+  227  sudo chown couchdb:couchdb /home/couchdb
+  228  wget sudo useradd -d /home/couchdb couchdb
+  229  sudo mkdir /home/couchdb
+  230  wget https://mirrors.sonic.net/apache/couchdb/source/3.1.0/apache-couchdb-3.1.0.tar.gz
+  231  tar zxvf apache-couchdb-3.1.0.tar.gz 
+  232  cd apache-couchdb-3.1.0/ 
+  233  ls -al
+  234  ./configure
+  235  make release
+  236  cd ./rel/couchdb/
+  237  sudo cp -Rp * /home/couchdb
+  238  sudo chown -R couchdb:couchdb /home/couchdb
+  239  ls -al
+  240  cd etc
+  241  ls a-l
+  242  ls -al
+  243  cd /home/couchdb/
+  244  ls -al
+  245  cd e
+  246  cd /etc/
+  247  vv
+  248  ls -al
+  249  cd /home/couchdb/
+  250  cd etc/
+  251  ls -al
+  252  sudo nano local.ini 
+  253  sudo -i -u couchdb /home/couchdb/bin/couchdb
+  254  sudo nano local.ini 
+  255  sudo -i -u couchdb /home/couchdb/bin/couchdb
+  256  sudo nano /home/couchdb/etc/local.ini
+  257  sudo -i -u couchdb /home/couchdb/bin/couchdb
+  258  history
+  259  exit
+  260  df
+  261  exit
+  262  df
+  263  top
+  264  clear
+  265  df
+  266  history
+  267  nano ~/.bashrc 
+  268  uptime
+  269  df
+  270  mysql -uroot -p
+  271  fg
+  272  df
+  273  top
+  274  df
+  275  cat /sys/class/thermal/thermal_zone0/temp
+  276  mysql -uroot -p
+  277  exit
+  278  mysql 
+  279  sudo apt-get install mariadb-server-10.3 -y 
+  280  df
+  281  sudo mysql -u root
+  282  mysql -uroot -p
+  283  unzip ./POC_DB.dump.zip 
+  284  ls -al 
+  285  mysql -uroot -ppassword1! -Dpoc < POC_DB.dump
+  286  mysql -uroot -p
+  287  df
+  288  ls a-l
+  289  ls -al
+  290  rm POC_DB.dump.zip 
+  291  df
+  292  vncsever :1
+  293  vncserver :1
+  294  exit
+  295  df
+  296  exit
+  297  mysql -uroot -p -Dpoc
+  298  mysql -uroot -ppassword1! -D poc -e 'select date_format(time, "%Y-%m-%d %H") dates_hour, avg(temp) as temp from cpu_temp_memory group by date_format(time, "%Y-%m-%d %H") order by 1;' >  ~/Share/cpu_temp_24.csv
+  299  ls -al
+  300  mysql -uroot -ppassword1! -Dpoc < POC_DB.dump
+  301  docker
+  302  docker login
+  303  docker imagesl 
+  304  docker images;
+  305  docker pull liurenjie/raspbian_hadoop_master_20170808_2353:hive
+  306  df
+  307  docker system prune
+  308  docker image ls 
+  309  sudo reboot now
+  310  df
+  311  sudo find / -type f -size +100000k
+  312  df
+  313  sudo apt-get autoremove 
+  314  df
+  315  docker info 
+  316  cd /var/lib/docker
+  317  ls -al
+  318  sudo ls -al
+  319  ls -al ./overlay2
+  320  sudo ls -al ./overlay2
+  321  sudo ls -al ./overlay2/0320b3962998c035f2f26d324ed7c3dc3540a3c0d7d08d9535167deb98656132
+  322  docker image ls 
+  323  docker image rm 28f1ee4d4d5a
+  324  sudo ls -al ./overlay2/0320b3962998c035f2f26d324ed7c3dc3540a3c0d7d08d9535167deb98656132
+  325  sudo ls -al ./overlay2/
+  326  sudo ls -al ./overlay2/l
+  327  df
+  328  docker images ls -a
+  329  exit
+  330  cd ignite
+  331  ls -al 
+  332  cd apache-ignite-2.8.1-bin/ 
+  333  ls -al 
+  334  cd examples/
+  335  cd config/ 
+  336  ls -al
+  337  nano example-cache.xml 
+  338  cd ../..
+  339  cd bin/
+  340  ls -al
+  341  cp ignite.sh  ignite.sh.20200604
+  342  nano ignite.sh
+  343  pwd
+  344  export IGNITE_HOME=/home/pi/Share/ignite/apache-ignite-2.8.1-bin/bin
+  345  ./ignite.sh $IGNITE_HOME/examples/config/example-cache.xml
+  346  ls -al
+  347  ./ignite.sh.20200604 $IGNITE_HOME/examples/config/example-cache.xml
+  348  export IGNITE_HOME=/home/pi/Share/ignite/apache-ignite-2.8.1-bin/
+  349  ./ignite.sh $IGNITE_HOME/examples/config/example-cache.xml
+  350  exit
+  351  free -h
+  352  ls -al
+  353  mkdir ignite
+  354  wget http://mirror.metrocast.net/apache//ignite/2.8.1/apache-ignite-2.8.1-bin.zip
+  355  ls -al
+  356  mv apache-ignite-2.8.1-bin.zip  ignite/
+  357  cd ig 
+  358  cd ignite/
+  359  ls -al
+  360  unzip apache-ignite-2.8.1-bin.zip 
+  361  ls -al
+  362  cd apache-ignite-2.8.1-bin/ 
+  363  ls -al
+  364  pwd
+  365  export IGNITE_HOME=/home/pi/Share/ignite/apache-ignite-2.8.1-bin
+  366  ls -al
+  367  cd libs/
+  368  ls -al
+  369  cd optional/ 
+  370  ls -al
+  371  cd ignite-rest-http
+  372  ls -al
+  373  cp ./*.jar ~/Share/ignite/apache-ignite-2.8.1-bin/libs/
+  374  cd ../../../
+  375  cd libs/ 
+  376  ls -al
+  377  echo $IGNITE_HOME
+  378  ignite.sh $IGNITE_HOME/examples/config/example-cache.xml
+  379  cd ..
+  380  ls -al
+  381  cd bin/
+  382  ls -al
+  383  ignite.sh $IGNITE_HOME/examples/config/example-cache.xml
+  384  ls -al
+  385  cd ..
+  386  ls -al
+  387  cd examples/
+  388  ls al
+  389  ls -al
+  390  cd config/
+  391  ls -al
+  392  nano example-cache.xml
+  393  nano example-default.xml
+  394  nano example-cache.xml 
+  395  cd .. 
+  396  cd ..
+  397  ./bin/ignite.sh -DIGNITE_JETTY_PORT=8083 $IGNITE_HOME/examples/config/example-cache.xml
+  398  history | grep nifi 
+  399  sudo service nifi stop
+  400  ./bin/ignite.sh  $IGNITE_HOME/examples/config/example-cache.xml
+  401  ./bin/ignite.sh -DIGNITE_JETTY_PORT=8083 $IGNITE_HOME/examples/config/example-cache.xml
+  402  ./bin/ignite.sh  $IGNITE_HOME/examples/config/example-cache.xml
+  403  exit
+  404  free -h
+  405  ignitevisor
+  406  cd ignite/apache-ignite-2.8.1-bin/
+  407  ls -al
+  408  cd b 
+  409  cd bin/ 
+  410  ls -al
+  411  ignitevisorcmd.sh
+  412  ./ignitevisorcmd.sh
+  413  exit
+  414  ls -al
+  415  cd ~/Share/ignite/apache-ignite-2.8.1-bin
+  416  ls -al
+  417  exit
+  418  cd ignite/
+  419  ls -al
+  420  cd apache-ignite-2.8.1-bin/
+  421  ls -al
+  422  history
+  423  ./bin/ignite.sh  $IGNITE_HOME/examples/config/example-cache.xml
+  424  exit
+  425  mkdir airflow
+  426  export AIRFLOW_HOME=~/Share/airflow
+  427  sudo pip3 install apache-airflow
+  428  sudo pip3 install Werkzeug
+  429  sudo pip3 install --upgrade Werkzeug
+  430  sudo pip3 uninstall Werkzeug
+  431  sudo pip3 install --upgrade Werkzeug
+  432  sudo pip3 uninstall Werkzeug
+  433  sudo pip3 install Werkzeug==0.16.1
+  434  sudo pip3 install apache-airflow
+  435  airflow initdb
+  436  airflow webserver -p 8088 
+  437  exit
+  438  history
+  439  history > rpi4_20200606.txt
