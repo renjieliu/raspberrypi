@@ -178,7 +178,7 @@ zipp==3.1.0               # via importlib-metadata
 
 
 pip3 install apache-superset==0.36.0 --no-deps pyarrow -r requirements.txt ;
-
+pip3 install PyMySQL
 
 ###############################
 # when above finished running, run below command to initialize the superset repository
