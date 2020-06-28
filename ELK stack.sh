@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ##### 1. Download and install prerequisites
 
 sudo apt-get install -y openjdk-8-jdk
