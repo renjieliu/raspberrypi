@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### MUST RUN on X86_64, CANNOT RUN ARM-BASED CPU #####
+##### MUST RUN on X86_64, CANNOT RUN ON ARM-BASED CPU #####
 
 ##### 1. Download and install prerequisites
 
