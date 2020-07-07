@@ -1,5 +1,7 @@
 #!/bin/bash
 
+##### MUST RUN on X86_64, CANNOT RUN ARM BASED CPU #####
+
 ##### 1. Download and install prerequisites
 
 sudo apt-get install -y openjdk-8-jdk
