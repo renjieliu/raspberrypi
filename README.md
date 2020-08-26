@@ -1,2 +1,3 @@
 # raspberrypi
-Linux commands to tweak Raspberry Pi, majorly on Raspberry Pi Zero W
+
+Linux commands to set up Raspberry Pi.
