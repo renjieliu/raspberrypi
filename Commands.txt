@@ -116,9 +116,14 @@ lxpanelctl restart
 
 
 
-
-
-
+#######Increase the swap size################
+free -m
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+free -m
+########################################
 
 
 
