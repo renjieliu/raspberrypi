@@ -62,51 +62,44 @@ docker container run -ti -p 5000:5000 -e FLASK_APP=app.py --rm -e FLASK_DEBUG=1 
 ##############GET CPU TEMPERATURE############################################
 cat /sys/class/thermal/thermal_zone0/temp
 
+
+
+
 ############################################################################
-#########Install and setup the mail client to send mail#######################
-
-
-# ------------------------------------------------------
-# ---below information for the ssmtp.conf ---------------
-# ------------------------------------------------------
-
-#
-# Config file for sSMTP sendmail
-#
-# The person who gets all mail for userids < 1000
-# Make this empty to disable rewriting.
-root=
-
-# The place where the mail goes. The actual machine name is required no
-# MX records are consulted. Commonly mailhosts are named mail.domain.com
-mailhub=smtp.gmail.com:587
-
-# Where will the mail seem to come from?
-#rewriteDomain=
-
-# The full hostname
-hostname=gmail.com
-
-# Are users allowed to set their own From: address?
-# YES - Allow the user to specify their own From: address
-# NO - Use the system generated From: address
-FromLineOverride=YES
-AuthUser=liurenjiemessage@gmail.com
-AuthPass=xxxxxxxx
-mailhub=smtp.gmail.com:587
-UseSTARTTLS=YES
+#########Install and setup the mail client to send mail#####################
 
 
 ------------commands----------------
-apt-get update
-apt-get install ssmtp nano
-nano /etc/ssmtp/ssmtp.conf
-echo "Test mail from docker" | ssmtp liurenjiemobile@gmail.com
-apt-get install mailutils
-echo "This is a message from docker" | mail -s "Test mail from Docker, Rpi3A" anlrj@qq.com
+sudo apt-get install msmtp msmtp-mta mailutils
+sudo nano /etc/msmtprc
+
+# ------------------------------------------------------
+# ---below information for the /etc/msmtprc ---------------
+# ------------------------------------------------------
+
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+account        gmail
+host           smtp.gmail.com
+port           587
+from           liurenjiemessage@gmail.com
+user           liurenjiemessage@gmail.com
+password       xxxxxxxxxxxxx
+account default : gmail
 
 
-###############################################################################################
+echo "Hello from mail test" | mail -s "Hello from Mail Test" anlrj@qq.com
+
+### use -A option if need to contain an attachment ###
+
+echo "Hello from mail test" | mail -s "Hello from Mail Test" -A test.txt anlrj@qq.com
+
+############################################################################
+############################################################################
+
 
 
 ############Fix the task bar############
