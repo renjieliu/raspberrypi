@@ -70,7 +70,7 @@ cat /sys/class/thermal/thermal_zone0/temp
 
 
 ------------commands----------------
-sudo apt-get install msmtp msmtp-mta mailutils
+sudo apt-get install msmtp msmtp-mta mailutils -y
 sudo nano /etc/msmtprc
 
 # ------------------------------------------------------
