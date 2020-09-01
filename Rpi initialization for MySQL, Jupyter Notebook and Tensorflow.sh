@@ -35,6 +35,8 @@ nano ~/.bashrc;
 #HISTFILESIZE=20000000
 
 alias python='python3.7';
+alias pip='pip3';
+
 cd /home/pi/Share;
 
 
