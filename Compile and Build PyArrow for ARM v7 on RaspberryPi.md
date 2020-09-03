@@ -1,4 +1,4 @@
-### Compile and Build PyArrow for ARM
+### Compile and Build PyArrow for ARM v7
 
 - I am using a docker container for this process in order not to mess around with my current setup
 - The output is named as pyarrow-1.0.1-cp37-cp37m-linux_armv7l.whl, under the folder /build/arrow/python/dist inside the docker container.
