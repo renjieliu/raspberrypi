@@ -2,7 +2,7 @@
 
 - I am using a docker container for this process in order not to mess around with my current setup
 - The output is named as pyarrow-1.0.1-cp37-cp37m-linux_armv7l.whl, under the folder /build/arrow/python/dist inside the docker container.
-- The output whl can also be found here - https://drive.google.com/file/d/18r3K_lBQKA0GwqS22FQyIWatlWVzcmAN/view?usp=sharing
+- The output whl can also be downloaded here - https://drive.google.com/file/d/18r3K_lBQKA0GwqS22FQyIWatlWVzcmAN
 
 Below is the Dockerfile
 
