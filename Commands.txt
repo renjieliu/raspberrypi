@@ -119,5 +119,10 @@ free -m
 ########################################
 
 
-
+#######Initialize a docker ubuntu################
+apt-get update && apt-get install nano locate wget openjdk-11-jdk ssh net-tools iputils-ping sudo
+useradd pi 
+passwd pi
+sudo usermod -aG docker pi
+########################################
 
