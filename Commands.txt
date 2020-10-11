@@ -126,3 +126,37 @@ passwd pi
 sudo usermod -aG docker pi
 ########################################
 
+
+####### Install and configure Samba Service ################
+
+# 1. Install
+sudo apt-get install -y samba; 
+
+# 2. find the samba configure file 
+locate smb.conf;
+sudo nano /etc/samba/smb.conf;
+
+# 3.add below lines to the end of the file
+[Share]
+path = /home/pi/Share
+browseable = yes
+writeable = yes
+guest ok = yes
+
+[sandisk]
+path = /mnt/sandisk
+browseable = yes
+writeable = yes
+guest ok = yes
+
+[var_www]
+path = /var/www
+browseable = yes
+writeable = yes
+guest ok = yes
+
+
+# 4.Restart the service
+sudo service smbd restart
+
+########################################
