@@ -7,13 +7,13 @@
 ############ Install ############
 ############ Install ############
 ############ Install ############
-# bash AP_Rpi_Buster.sh -a Rpi0_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
-# bash AP_Rpi_Buster.sh -a Rpi0_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
-# bash AP_Rpi_Buster.sh -a Rpi0_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+# Make sure the crontab has a default editor #
+# Initializin by running `crontab -e` #
 
-# after install, comment the crontab job under pi account. And put it to the root account
-# crontab -e -- comment the rpi_wifi script
-# sudo crontab -e -- add the crontab job to the root account
+# bash AP_Rpi_Buster.sh -a RpiXXXXX_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+# bash AP_Rpi_Buster.sh -a RpiXXXXX_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+# bash AP_Rpi_Buster.sh -a RpiXXXXX_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
+
 
 # Error management
 set -o errexit
