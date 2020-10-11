@@ -199,4 +199,4 @@ sudo chmod +x /bin/rpi-wifi.sh
 crontab -l | { cat; echo "@reboot /bin/rpi-wifi.sh"; } | crontab -
 
 # Finish
-echo "Wifi configuration is finished! Please reboot your Raspberry Pi to apply changes..."
+echo "Wifi configuration is finished! Please reboot your Raspberry Pi to apply changes..." 
