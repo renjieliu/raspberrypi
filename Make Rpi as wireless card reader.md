@@ -1,0 +1,59 @@
+1. Install Rpi AP. If it does not work after reboot, install it again
+
+Script here - 
+
+https://github.com/renjieliu/raspberrypi/blob/master/AP_Rpi_Buster.sh
+
+Install: 
+
+`bash AP_Rpi_Buster.sh -a RpiXXXXX_RLAP 12345678. -c C9RBL F02220B87C59FDE2`
+
+2. Install usbmount
+
+`sudo apt-get install -y usbmount`
+
+The mount point will be /media/pi/xxx by default
+
+`sudo chmod -R 777 /media/pi`
+
+2. Install samba
+`sudo apt-get install -y samba`
+
+
+3. Configure Samba
+
+add below lines to the end of the file
+[Share]
+path = /home/pi/Share
+browseable = yes
+writeable = yes
+guest ok = yes
+
+[usb]
+path = /media/pi
+browseable = yes
+writeable = yes
+guest ok = yes
+
+
+4. Restart the service
+`sudo service smbd restart`
+
+
+5. Restart the device, and see if you can see the RpiXXXXX_RLAP SSID from other devices
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
