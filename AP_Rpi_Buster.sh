@@ -9,6 +9,7 @@
 ############ Install ############
 # Make sure the crontab has a default editor #
 # Initializin by running `crontab -e` #
+# If the script does not work, install it again #
 
 # bash AP_Rpi_Buster.sh -a RpiXXXXX_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
 # bash AP_Rpi_Buster.sh -a RpiXXXXX_RLAP 12345678. -c C9RBL F02220B87C59FDE2 
