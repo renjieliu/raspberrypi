@@ -21,6 +21,14 @@ sudo nano /etc/ssh/sshd_config
 #using sed:
 #sudo sed -i 's/Port 22/Port 5802/g' /etc/ssh/sshd_config
 
+
+#############Install Docker#############
+curl -sSL https://get.docker.com | sh ;
+sudo usermod -aG docker pi ;
+sudo apt-get install docker-compose -y;
+########################################
+
+
 #save docker image to a .tar file, for migration
 docker save ebdf4c99a > ~/Share/raspbian_20180622_1625_zookeeper.tar
 
