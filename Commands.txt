@@ -168,3 +168,12 @@ guest ok = yes
 sudo service smbd restart
 
 ########################################
+
+
+#########Change Timezone#########
+
+sudo rm -rf /etc/localtime
+sudo ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
+date # to check if the change takes effect
+
+#################################
