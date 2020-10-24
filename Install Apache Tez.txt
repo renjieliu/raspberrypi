@@ -1,0 +1,408 @@
+---Apache Tez--
+
+mvn clean package -DskipTests=true -Dhadoop.version=3.1.4 -Phadoop28 -P\!hadoop27 -Dmaven.javadoc.skip=true
+
+
+
+ssh: 
+
+
+/usr/bin/phantomjs --version
+qt.qpa.screen: QXcbConnection: Could not connect to display :0
+Could not connect to any X display
+
+export QT_QPA_PLATFORM='offscreen'
+
+mvn clean package -rf :tez-ui -DskipTests=true -Dhadoop.version=3.1.4 -Phadoop28 -P\!hadoop27 -Dmaven.javadoc.skip=true
+
+
+#download the ARM version and rename the file, and rename the tar within the tar.gz file and place below
+#
+#/home/pi/.m2/repository/com/github/eirslett/node/5.12.0/node-5.12.0-linux-x86.tar.gz
+
+
+
+
+
+wget https://mirror.olnevhost.net/pub/apache/tez/0.9.2/apache-tez-0.9.2-src.tar.gz
+tar zxvf apache-tez-0.9.2-src.tar.gz
+mv apache-tez-0.9.2-src tez
+cd tez
+wget https://issues.apache.org/jira/secure/attachment/12906302/TEZ-3884.patch.1
+patch -p 0 < TEZ-3884.patch.1
+############change to be made in the pom.xml####################33
+# 1. need to change frontend-maven-plugin.version to 1.10.3 the pom.xml, to make sure it's downloading the correct version of Node from nodejs.org
+# 2. change the guava version to 23.0
+############
+
+export QT_QPA_PLATFORM='offscreen'
+# mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true -Dhadoop.version=3.1.4 -Phadoop3 -X
+
+mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true
+
+
+hadoop fs -rm /tez/*
+hadoop fs -put /home/pi/Share/dp/tez/tez-dist/target/tez-0.9.2.tar.gz /tez/
+
+
+/home/pi/Share/dp/hadoop/sbin/stop-dfs.sh;
+/home/pi/Share/dp/hadoop/sbin/stop-yarn.sh;
+/home/pi/Share/dp/hadoop/sbin/start-dfs.sh;
+/home/pi/Share/dp/hadoop/sbin/start-yarn.sh;
+
+
+hadoop jar /home/pi/Share/dp/tez/tez-dist/target/tez-0.10.0/tez-examples-0.10.0.jar orderedwordcount /home/data/wordCount_onTez.txt /home/data/output.txt
+
+
+
+
+hive --hiveconf hive.root.logger=DEBUG,console 
+set hive.execution.engine=tez;
+select count(1) from dp.student;
+
+
+cd /home/pi/Share/dp/tez/tez-dist/target/tez-0.9.2/lib
+
+
+########################################################################################################################################################################
+
+[INFO] Reactor Summary for tez 0.10.0:
+[INFO]
+[INFO] tez ................................................ SUCCESS [ 39.249 s]
+[INFO] hadoop-shim ........................................ SUCCESS [01:34 min]
+[INFO] tez-api ............................................ SUCCESS [ 54.520 s]
+[INFO] tez-build-tools .................................... SUCCESS [  0.153 s]
+[INFO] tez-common ......................................... SUCCESS [  2.017 s]
+[INFO] tez-runtime-internals .............................. SUCCESS [  2.722 s]
+[INFO] tez-runtime-library ................................ SUCCESS [ 12.945 s]
+[INFO] tez-mapreduce ...................................... SUCCESS [  6.812 s]
+[INFO] tez-examples ....................................... SUCCESS [  0.874 s]
+[INFO] tez-dag ............................................ SUCCESS [ 33.980 s]
+[INFO] tez-tests .......................................... SUCCESS [ 16.962 s]
+[INFO] tez-ext-service-tests .............................. SUCCESS [  2.926 s]
+[INFO] tez-ui ............................................. SUCCESS [04:08 min]
+[INFO] tez-plugins ........................................ SUCCESS [  0.117 s]
+[INFO] tez-protobuf-history-plugin ........................ SUCCESS [  3.746 s]
+[INFO] tez-yarn-timeline-history .......................... SUCCESS [  2.420 s]
+[INFO] tez-yarn-timeline-history-with-acls ................ SUCCESS [  1.108 s]
+[INFO] tez-yarn-timeline-cache-plugin ..................... SUCCESS [01:03 min]
+[INFO] tez-yarn-timeline-history-with-fs .................. SUCCESS [  1.355 s]
+[INFO] tez-history-parser ................................. SUCCESS [ 54.054 s]
+[INFO] tez-aux-services ................................... SUCCESS [ 41.163 s]
+[INFO] tez-tools .......................................... SUCCESS [  0.093 s]
+[INFO] tez-perf-analyzer .................................. SUCCESS [  0.080 s]
+[INFO] tez-job-analyzer ................................... SUCCESS [  3.023 s]
+[INFO] tez-javadoc-tools .................................. SUCCESS [  0.504 s]
+[INFO] hadoop-shim-impls .................................. SUCCESS [  0.109 s]
+[INFO] hadoop-shim-2.8 .................................... SUCCESS [  0.527 s]
+[INFO] tez-dist ........................................... SUCCESS [03:44 min]
+[INFO] Tez ................................................ SUCCESS [  0.087 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15:13 min
+[INFO] Finished at: 2020-10-21T23:28:59-04:00
+[INFO] ------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for tez 0.9.2:
+[INFO]
+[INFO] tez ................................................ SUCCESS [  3.671 s]
+[INFO] hadoop-shim ........................................ SUCCESS [ 11.280 s]
+[INFO] tez-api ............................................ SUCCESS [ 20.102 s]
+[INFO] tez-build-tools .................................... SUCCESS [  0.876 s]
+[INFO] tez-common ......................................... SUCCESS [  3.214 s]
+[INFO] tez-runtime-internals .............................. SUCCESS [  5.271 s]
+[INFO] tez-runtime-library ................................ SUCCESS [ 12.932 s]
+[INFO] tez-mapreduce ...................................... SUCCESS [  7.020 s]
+[INFO] tez-examples ....................................... SUCCESS [  2.374 s]
+[INFO] tez-dag ............................................ SUCCESS [ 26.392 s]
+[INFO] tez-tests .......................................... SUCCESS [  6.762 s]
+[INFO] tez-ext-service-tests .............................. SUCCESS [  5.128 s]
+[INFO] tez-ui ............................................. SUCCESS [03:32 min]
+[INFO] tez-plugins ........................................ SUCCESS [  0.371 s]
+[INFO] tez-protobuf-history-plugin ........................ SUCCESS [  5.392 s]
+[INFO] tez-yarn-timeline-history .......................... SUCCESS [  4.058 s]
+[INFO] tez-yarn-timeline-history-with-acls ................ SUCCESS [  2.796 s]
+[INFO] tez-history-parser ................................. SUCCESS [01:42 min]
+[INFO] tez-aux-services ................................... SUCCESS [ 43.712 s]
+[INFO] tez-yarn-timeline-cache-plugin ..................... SUCCESS [01:45 min]
+[INFO] tez-yarn-timeline-history-with-fs .................. SUCCESS [  5.039 s]
+[INFO] tez-tools .......................................... SUCCESS [  0.284 s]
+[INFO] tez-perf-analyzer .................................. SUCCESS [  0.320 s]
+[INFO] tez-job-analyzer ................................... SUCCESS [  4.964 s]
+[INFO] tez-javadoc-tools .................................. SUCCESS [  2.251 s]
+[INFO] hadoop-shim-impls .................................. SUCCESS [  0.286 s]
+[INFO] hadoop-shim-2.8 .................................... SUCCESS [  2.485 s]
+[INFO] tez-dist ........................................... SUCCESS [05:53 min]
+[INFO] Tez ................................................ SUCCESS [  0.364 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15:53 min
+[INFO] Finished at: 2020-10-21T16:12:17-04:00
+[INFO] ------------------------------------------------------------------------
+
+
+
+
+
+2020-10-21 18:12:19,215 [INFO] [main] |common.TezClassLoader|: Created TezClassLoader with parent classloader: sun.misc.Launcher$AppClassLoader@15fbaa4, thread: 1, system classloader: sun.misc.Launcher$AppClassLoader@15fbaa4
+2020-10-21 18:12:19,756 [INFO] [main] |app.DAGAppMaster|: Creating DAGAppMaster for applicationId=application_1603318172602_0001, attemptNum=2, AMContainerId=container_1603318172602_0001_02_000001, jvmPid=13330, userFromEnv=pi, cliSessionOption=true, pwd=/home/pi/Share/dp/hadoop/data/tmp/nm-local-dir/usercache/pi/appcache/application_1603318172602_0001/container_1603318172602_0001_02_000001, localDirs=/home/pi/Share/dp/hadoop/data/tmp/nm-local-dir/usercache/pi/appcache/application_1603318172602_0001, logDirs=/home/pi/Share/dp/hadoop/logs/userlogs/application_1603318172602_0001/container_1603318172602_0001_02_000001
+2020-10-21 18:12:19,817 [ERROR] [main] |app.DAGAppMaster|: Error starting DAGAppMaster
+java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
+	at org.apache.hadoop.conf.Configuration.set(Configuration.java:1357)
+	at org.apache.hadoop.conf.Configuration.set(Configuration.java:1338)
+	at org.apache.tez.common.TezUtilsInternal.addUserSpecifiedTezConfiguration(TezUtilsInternal.java:84)
+	at org.apache.tez.dag.app.DAGAppMaster.main(DAGAppMaster.java:2396)
+
+
+	
+
+
+
+
+
+
+wget https://mirror.olnevhost.net/pub/apache/tez/0.9.2/apache-tez-0.9.2-src.tar.gz
+tar zxvf apache-tez-0.9.2-src.tar.gz
+mv apache-tez-0.9.2-src tez
+cd tez
+wget https://issues.apache.org/jira/secure/attachment/12906302/TEZ-3884.patch.1
+patch -p 0 < TEZ-3884.patch.1
+mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true -Dhadoop.version=3.1.4 -Phadoop3 -X
+
+
+Error Occurred - 
+
+
+
+[ERROR] /home/pi/Share/dp/tez/tez-ui/src/main/webapp/node/node: 1: /home/pi/Share/dp/tez/tez-ui/src/main/webapp/node/node: Syntax error: "(" unexpected
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for tez 0.9.2:
+[INFO] 
+[INFO] tez ................................................ SUCCESS [  3.897 s]
+[INFO] hadoop-shim ........................................ SUCCESS [  6.368 s]
+[INFO] tez-api ............................................ SUCCESS [ 19.527 s]
+[INFO] tez-build-tools .................................... SUCCESS [  0.904 s]
+[INFO] tez-common ......................................... SUCCESS [  4.028 s]
+[INFO] tez-runtime-internals .............................. SUCCESS [  5.165 s]
+[INFO] tez-runtime-library ................................ SUCCESS [ 14.040 s]
+[INFO] tez-mapreduce ...................................... SUCCESS [  6.935 s]
+[INFO] tez-examples ....................................... SUCCESS [  2.203 s]
+[INFO] tez-dag ............................................ SUCCESS [ 25.851 s]
+[INFO] tez-tests .......................................... SUCCESS [  6.322 s]
+[INFO] tez-ext-service-tests .............................. SUCCESS [  7.214 s]
+[INFO] tez-ui ............................................. FAILURE [ 50.917 s]
+[INFO] tez-plugins ........................................ SKIPPED
+[INFO] tez-protobuf-history-plugin ........................ SKIPPED
+[INFO] tez-yarn-timeline-history .......................... SKIPPED
+[INFO] tez-yarn-timeline-history-with-acls ................ SKIPPED
+[INFO] tez-history-parser ................................. SKIPPED
+[INFO] tez-aux-services ................................... SKIPPED
+[INFO] tez-yarn-timeline-cache-plugin ..................... SKIPPED
+[INFO] tez-yarn-timeline-history-with-fs .................. SKIPPED
+[INFO] tez-tools .......................................... SKIPPED
+[INFO] tez-perf-analyzer .................................. SKIPPED
+[INFO] tez-job-analyzer ................................... SKIPPED
+[INFO] tez-javadoc-tools .................................. SKIPPED
+[INFO] hadoop-shim-impls .................................. SKIPPED
+[INFO] hadoop-shim-2.8 .................................... SKIPPED
+[INFO] tez-dist ........................................... SKIPPED
+[INFO] Tez ................................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:35 min
+[INFO] Finished at: 2020-10-20T17:34:23-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.4:bower (bower install) on project tez-ui: Failed to run task: 'bower install' failed. org.apache.commons.exec.ExecuteException: Process exited with an error: 2 (Exit value: 2) -> [Help 1]
+
+
+[ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.4:bower (bower install) on project tez-ui: Failed to run task: 'bower install' failed. org.apache.commons.exec.ExecuteException: Process exited with an error: 2 (Exit value: 2) -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.4:bower (bower install) on project tez-ui: Failed to run task
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.maven.plugin.MojoFailureException: Failed to run task
+    at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:121)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: com.github.eirslett.maven.plugins.frontend.lib.TaskRunnerException: 'bower install' failed.
+    at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:63)
+    at com.github.eirslett.maven.plugins.frontend.mojo.BowerMojo.execute (BowerMojo.java:47)
+    at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:115)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutionException: org.apache.commons.exec.ExecuteException: Process exited with an error: 2 (Exit value: 2)
+    at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.execute (ProcessExecutor.java:82)
+    at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.executeAndRedirectOutput (ProcessExecutor.java:64)
+    at com.github.eirslett.maven.plugins.frontend.lib.NodeExecutor.executeAndRedirectOutput (NodeExecutor.java:29)
+    at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:58)
+    at com.github.eirslett.maven.plugins.frontend.mojo.BowerMojo.execute (BowerMojo.java:47)
+    at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:115)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.commons.exec.ExecuteException: Process exited with an error: 2 (Exit value: 2)
+    at org.apache.commons.exec.DefaultExecutor.executeInternal (DefaultExecutor.java:404)
+    at org.apache.commons.exec.DefaultExecutor.execute (DefaultExecutor.java:166)
+    at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.execute (ProcessExecutor.java:74)
+    at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.executeAndRedirectOutput (ProcessExecutor.java:64)
+    at com.github.eirslett.maven.plugins.frontend.lib.NodeExecutor.executeAndRedirectOutput (NodeExecutor.java:29)
+    at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:58)
+    at com.github.eirslett.maven.plugins.frontend.mojo.BowerMojo.execute (BowerMojo.java:47)
+    at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:115)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :tez-ui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
