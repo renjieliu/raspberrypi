@@ -23,9 +23,12 @@ sudo nano /etc/ssh/sshd_config
 
 
 #############Install Docker#############
+
+sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
 curl -sSL https://get.docker.com | sh ;
 sudo usermod -aG docker pi ;
 sudo apt-get install docker-compose -y;
+
 ########################################
 
 
