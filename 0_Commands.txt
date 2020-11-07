@@ -184,3 +184,20 @@ sudo ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
 date # to check if the change takes effect
 
 #################################
+
+
+################## chroot to debian system ##################
+
+sudo apt-get install -y debootstrap
+mkdir debian_for_chroot
+cd debian_for_chroot/
+sudo debootstrap --arch armhf buster .
+sudo mount -t sysfs /sys ./debian_for_chroot/sys
+sudo mount -t proc /proc ./debian_for_chroot/proc
+sudo mount --bind /dev ./debian_for_chroot/dev
+sudo mount --bind /dev/pts ./debian_for_chroot/dev/pts
+sudo mount --bind /dev/shm ./debian_for_chroot/dev/shm
+sudo chroot ./debian_for_chroot/ /bin/bash
+
+##############################################################
+
