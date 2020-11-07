@@ -5,6 +5,10 @@ sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo up
 sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 
 
+##########Docker init install##########
+apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping sudo gnupg2 ; 
+#######################################
+
 sudo echo 'interface wlan0
 static ip_address=192.168.1.206/24
 #static ip6_address=fd51:42f8:caae:d92e::ff/64
