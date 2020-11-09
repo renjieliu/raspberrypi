@@ -201,3 +201,28 @@ sudo chroot ./debian_for_chroot/ /bin/bash
 
 ##############################################################
 
+
+
+##############################################################################################
+###### Docker for Azure SQL Edge, it can be connected from SQL Server Management Studio ######
+##############################################################################################
+docker pull mcr.microsoft.com/azure-sql-edge:latest
+
+#sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=password1!' -p 1433:1433 --name mssql -d mcr.microsoft.com/azure-sql-edge
+
+mkdir -p /home/pi/Share/azsql/data
+mkdir -p /home/pi/Share/azsql/log
+mkdir -p /home/pi/Share/azsql/secrets
+
+chmod -R 777 /home/pi/Share/azsql/data
+chmod -R 777 /home/pi/Share/azsql/log
+chmod -R 777 /home/pi/Share/azsql/secrets
+
+docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1433:1433 -v /home/pi/Share/azsql/data:/var/opt/mssql/data -v /home/pi/Share/azsql/log:/var/opt/mssql/log -v /home/pi/Share/azsql/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/azure-sql-edge
+
+
+####################################################################################################### 
+#######################################################################################################
+
+
+
