@@ -218,7 +218,7 @@ chmod -R 777 /home/pi/Share/azsql/data
 chmod -R 777 /home/pi/Share/azsql/log
 chmod -R 777 /home/pi/Share/azsql/secrets
 
-docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1433:1433 -v /home/pi/Share/azsql/data:/var/opt/mssql/data -v /home/pi/Share/azsql/log:/var/opt/mssql/log -v /home/pi/Share/azsql/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/azure-sql-edge
+docker run --restart always -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1433:1433 -v /home/pi/Share/azsql/data:/var/opt/mssql/data -v /home/pi/Share/azsql/log:/var/opt/mssql/log -v /home/pi/Share/azsql/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/azure-sql-edge
 
 
 ####################################################################################################### 
