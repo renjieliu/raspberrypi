@@ -186,6 +186,21 @@ date # to check if the change takes effect
 #################################
 
 
+
+######### Mount exFat #########
+
+sudo apt-get install exfat-fuse exfat-utils
+sudo mount -t exfat /dev/sdb1 /mnt/sandisk/
+
+## unmount the drive
+cd ~
+sudo umount /mnt/sandisk/
+
+#################################
+
+
+
+
 ################## chroot to debian system ##################
 
 sudo apt-get install -y debootstrap
