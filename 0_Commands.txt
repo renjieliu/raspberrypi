@@ -240,4 +240,17 @@ docker run --restart always -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<passwdxxxx
 #######################################################################################################
 
 
+###### Port Forward on Linux with iptables ######
+
+### Add the rule ###
+sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 10.8.0.2:2222
+
+### Delete the rule ###
+sudo iptables -t nat -D PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 10.8.0.2:2222
+
+##################################################
+
+
+
+
 
