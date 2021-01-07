@@ -262,6 +262,11 @@ sudo iptables -t nat -D PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 
 ##################################################
 
 
+##### Switch to another user and run commands #####
+
+su pi -c "echo $USER" ;
+
+###################################################
 
 
 
