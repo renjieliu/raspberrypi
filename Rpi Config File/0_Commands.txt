@@ -1,0 +1,186 @@
+#Initialize Rpi
+
+sudo apt-get update; 
+sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo updatedb;
+sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
+
+
+##########Docker init install##########
+apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping sudo gnupg2 ; 
+#######################################
+
+sudo echo 'interface wlan0
+static ip_address=192.168.1.206/24
+#static ip6_address=fd51:42f8:caae:d92e::ff/64
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
+echo alias python='python3.7' >> ~/.bashrc;
+mkdir ~/Share; sudo chmod 777 -R ~/Share;
+sudo mkdir /mnt/sandisk; sudo chmod 777 -R /mnt/sandisk;
+
+
+#Change the default ssh port from 22 to 5802
+sudo nano /etc/ssh/sshd_config
+
+#using sed:
+#sudo sed -i 's/Port 22/Port 5802/g' /etc/ssh/sshd_config
+
+
+#############Install Docker#############
+
+sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
+curl -sSL https://get.docker.com | sh ;
+sudo usermod -aG docker pi ;
+sudo apt-get install docker-compose -y;
+
+########################################
+
+
+#save docker image to a .tar file, for migration
+docker save ebdf4c99a > ~/Share/raspbian_20180622_1625_zookeeper.tar
+
+#load the export docker image
+docker load raspbian_20180622_1625_zookeeper.tar
+
+#docker import, this is to import a filesystem as an image, it may or may not be an image itself
+
+#set up the password for anydesk unattended access
+echo passwordhere | sudo anydesk --set-password
+
+
+sudo apt-get install mariadb-server
+
+#initialize mariadb
+#change mysql password and create new user
+#need to make below as 1-liner to be called from shell.
+sudo mysql -u root;
+use mysql;
+update user set plugin='' where User='root';
+flush privileges;
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');
+create user boroger identified by 'password';
+grant all on *.* to boroger@'%' with grant option;
+
+########################################################################
+#install pi-hole to block all the ads
+#after install, need to change the DNS on the client (laptops,tablet) to the raspberry pi.
+
+sudo curl -sSL https://install.pi-hole.net | bash
+
+########################################################################
+
+########################################################################
+docker container run -ti -p 5000:5000 -e FLASK_APP=app.py --rm -e FLASK_DEBUG=1 -v $PWD:/app --name web1 web1
+########################################################################
+
+
+##############GET CPU TEMPERATURE############################################
+cat /sys/class/thermal/thermal_zone0/temp
+
+
+
+
+############################################################################
+#########Install and setup the mail client to send mail#####################
+
+
+------------commands----------------
+sudo apt-get install msmtp msmtp-mta mailutils -y
+sudo nano /etc/msmtprc
+
+# ------------------------------------------------------
+# ---below information for the /etc/msmtprc ---------------
+# ------------------------------------------------------
+
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
+account        gmail
+host           smtp.gmail.com
+port           587
+from           liurenjiemessage@gmail.com
+user           liurenjiemessage@gmail.com
+password       xxxxxxxxxxxxx
+account default : gmail
+
+
+echo "Hello from mail test" | mail -s "Hello from Mail Test" anlrj@qq.com
+
+### use -A option if need to contain an attachment ###
+
+echo "Hello from mail test" | mail -s "Hello from Mail Test" -A test.txt anlrj@qq.com
+
+############################################################################
+############################################################################
+
+
+
+############Fix the task bar############
+rm -r /home/pi/.config/lxpanel
+lxpanelctl restart
+########################################
+
+
+
+#######Increase the swap size################
+free -m
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+free -m
+########################################
+
+
+#######Initialize a docker ubuntu################
+apt-get update && apt-get install nano locate wget openjdk-11-jdk ssh net-tools iputils-ping sudo
+useradd pi 
+passwd pi
+sudo usermod -aG docker pi
+########################################
+
+
+####### Install and configure Samba Service ################
+
+# 1. Install
+sudo apt-get install -y samba; 
+
+# 2. find the samba configure file 
+locate smb.conf;
+sudo nano /etc/samba/smb.conf;
+
+# 3.add below lines to the end of the file
+[Share]
+path = /home/pi/Share
+browseable = yes
+writeable = yes
+guest ok = yes
+
+[sandisk]
+path = /mnt/sandisk
+browseable = yes
+writeable = yes
+guest ok = yes
+
+[var_www]
+path = /var/www
+browseable = yes
+writeable = yes
+guest ok = yes
+
+
+# 4.Restart the service
+sudo service smbd restart
+
+########################################
+
+
+#########Change Timezone#########
+
+sudo rm -rf /etc/localtime
+sudo ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
+date # to check if the change takes effect
+
+#################################
