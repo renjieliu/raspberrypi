@@ -268,5 +268,23 @@ su pi -c "echo $USER" ;
 
 ###################################################
 
+###### Add new Linux .so file library folder ######
+
+1. sudo cat /etc/ld.so.conf, it should look like this:
+
+# include /etc/ld.so.conf.d/*.conf
+
+2. add the new file to the folder mentioned above
+
+sudo nano /etc/ld.so.conf.d/new_Folder_file
+
+#add the path to the new_Folder_file, should only have one line in the file.
+/path/to/the/file
+
+###################################################
+
+
+
+
 
 
