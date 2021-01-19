@@ -284,6 +284,29 @@ sudo nano /etc/ld.so.conf.d/new_Folder_file
 ###################################################
 
 
+###### Python connecting to SQL Server ######
+sudo apt-get install -y python3-pymssql
+
+# in the python file
+
+import pymssql
+
+conn = pymssql.connect(server, user, password, db)
+cursor = conn.cursor()
+cursor.execute("select @@version") #here is the SQL to be executed
+conn.commit()
+
+cursor.execute("SELECT @@version")
+
+for row in cursor:
+  print(row)
+
+conn.close()
+
+########################################################
+
+
+
 
 
 
