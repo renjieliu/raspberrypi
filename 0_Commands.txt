@@ -306,7 +306,11 @@ conn.close()
 ########################################################
 
 
+########## kill a process/command directly ##########
 
+sudo ps -elf | grep -e "the command/process to be found" |  grep -v "grep" | awk {'print $4'} | sudo xargs kill -9
+
+#####################################################
 
 
 
