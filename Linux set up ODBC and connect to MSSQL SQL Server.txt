@@ -29,13 +29,20 @@ nano /etc/odbc.ini
 [FreeTDS]
 Driver = FreeTDS
 Description = My Test Server
-# the server name below is specified in the /etc/freetds/freetds.conf.
-Servername = sqlserver
+
+# RL 20210118:
+# the Servername below is specified in the /etc/freetds/freetds.conf.
+# or to use Server = xxxx to ignore the freetds.conf
+# refer to https://www.freetds.org/userguide/prepodbc.html for more details
+
+# Servername = sqlserver
+Server = server.com
 Port = 1433
 Database = Test
 Trace=No
 #TDS_Version = 4.2
 #TraceFile = /tmp/sql.log
+
 
 
 #make it into effect.
