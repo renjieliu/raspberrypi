@@ -106,11 +106,11 @@ password       xxxxxxxxxxxxx
 account default : gmail
 
 
-echo "Hello from mail test" | mail -s "Hello from Mail Test" anlrj@qq.com
+echo "Hello from ${HOSTNAME} mail test" | mail -s "Hello from ${HOSTNAME} mail test" anlrj@qq.com
 
 ### use -A option if need to contain an attachment ###
 
-echo "Hello from mail test" | mail -s "Hello from Mail Test" -A test.txt anlrj@qq.com
+echo "Hello from ${HOSTNAME} mail test" | mail -s "Hello from ${HOSTNAME} mail test" -A test.txt anlrj@qq.com
 
 ############################################################################
 ############################################################################
