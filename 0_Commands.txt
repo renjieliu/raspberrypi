@@ -251,7 +251,7 @@ sudo chroot ./debian_for_chroot/ /bin/bash
 ##############################################################################################
 docker pull mcr.microsoft.com/azure-sql-edge:latest
 
-#sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=password1!' -p 1433:1433 --name mssql -d mcr.microsoft.com/azure-sql-edge
+#sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1433:1433 --name mssql -d mcr.microsoft.com/azure-sql-edge
 
 mkdir -p /home/pi/Share/azsql/data
 mkdir -p /home/pi/Share/azsql/log
