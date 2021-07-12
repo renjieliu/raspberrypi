@@ -356,7 +356,7 @@ sync; echo 3 > /proc/sys/vm/drop_caches
 #################################################################################
 
 
-####################Configure Rclone on Raspberry Pi#############################
+#################### Configure rclone on Raspberry Pi to connect to OneDrive #############################
 
 1. Download ARM rclone and unzip # wget https://downloads.rclone.org/rclone-current-linux-arm.zip
 
@@ -379,6 +379,7 @@ Log into Raspberry Pi Remotely
 5. ./rclone copy localfile onedrive:folder1 # copy file from local to onedrive folder1 folder
 
 
-####################################################################################################
+###########################################################################################################
+
 
 
