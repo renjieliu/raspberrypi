@@ -356,4 +356,29 @@ sync; echo 3 > /proc/sys/vm/drop_caches
 #################################################################################
 
 
+####################Configure Rclone on Raspberry Pi#############################
+
+1. Download ARM rclone and unzip # wget https://downloads.rclone.org/rclone-current-linux-arm.zip
+
+Log into Raspberry Pi Remotely
+
+2. ./rclone authorize "onedrive" # Open browser, get the API access code, Copy everything from the {xxxx}
+
+3. ./rclone config
+	# name: onedrive
+	# choose the number of onedrive.
+	# client_id: #press enter without enter anything
+	# client_secret: # press enter without enter anything
+	# Choose national cloud region for OneDrive: region> 1 # choose 1 for Microsoft Cloud Global
+	# Edit advanced config? N
+	# Use auto config? N 
+	# Paste the key copied from step 2 
+	
+4. ./rclone ls onedrive:  # this should list all the files on onedrive, and the setup is successful
+
+5. ./rclone copy localfile onedrive:folder1 # copy file from local to onedrive folder1 folder
+
+
+####################################################################################################
+
 
