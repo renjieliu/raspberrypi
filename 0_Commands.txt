@@ -373,6 +373,10 @@ Log into Raspberry Pi Remotely
 	# Edit advanced config? N
 	# Use auto config? N 
 	# Paste the key copied from step 2 
+	# Your choice > 1: for OneDrive Personal or Business
+	# Chose drive to use:> 0
+	# Is that OK:> y
+	# Yes, this is OK > y
 	
 4. ./rclone ls onedrive:  # this should list all the files on onedrive, and the setup is successful
 
