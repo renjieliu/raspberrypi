@@ -382,6 +382,9 @@ Log into Raspberry Pi Remotely
 
 5. ./rclone copy localfile onedrive:folder1 # copy file from local to onedrive folder1 folder
 
+6. #If necessary, copy the config file to root account
+sudo mkdir -p /root/.config/rclone/
+sudo cp -p /home/pi/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
 
 ###########################################################################################################
 
