@@ -390,3 +390,12 @@ sudo cp -p /home/pi/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
 
 
 
+############ start portainer ############
+
+docker run -d -p 9222:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+
+#########################################
+
+
+
+
