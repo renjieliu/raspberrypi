@@ -398,5 +398,21 @@ docker run -d -p 9222:9000 --name portainer --restart always -v /var/run/docker.
 #########################################
 
 
+#### start sqlpad with docker image ####
+docker run -p 3010:3010 -tid liurenjie/sqlpad:v01 /bin/sh -c 'cd /Share/sqlpad/server && node /Share/sqlpad/server/server.js --config /Share/sqlpad/server/config.dev.env'
+
+change admin username and password: 
+1. run below command 
+docker run -p 3010:3010 -ti liurenjie/sqlpad:v01
+
+2. nano /Share/sqlpad/server/config.dev.env
+
+# find below line and change
+
+# Email address to give admin permissions to.
+SQLPAD_ADMIN = "pi@pi.com"
+
+SQLPAD_ADMIN_PASSWORD = "xxxxxxxx"
+########################################
 
 
