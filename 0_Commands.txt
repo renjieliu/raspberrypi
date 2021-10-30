@@ -416,3 +416,7 @@ SQLPAD_ADMIN_PASSWORD = "xxxxxxxx"
 ########################################
 
 
+############### Raspberry pi check CPU frequency ###############
+vcgencmd measure_clock arm
+################################################################
+
