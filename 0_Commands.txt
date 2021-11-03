@@ -420,3 +420,22 @@ SQLPAD_ADMIN_PASSWORD = "xxxxxxxx"
 vcgencmd measure_clock arm
 ################################################################
 
+
+
+
+######## Install and set up Jupyter Notebook ########
+
+## Install jupyter notebook onto Raspberry Pi
+
+pip3 install --upgrade pip
+
+pip3 install jupyterlab
+
+## set password
+jupyter notebook password
+
+## start jupyter notebook
+jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+
+######################################################
+
