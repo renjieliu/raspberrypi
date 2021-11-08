@@ -439,3 +439,9 @@ jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
 
 ######################################################
 
+
+### Mount the flash drive to /mnt/sandisk folder###
+
+sudo mount -t exfat $(sudo fdisk -l | grep /dev/sd | grep -v GiB | awk '{print $1}') /mnt/sandisk;
+
+#############################
