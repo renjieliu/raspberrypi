@@ -6,4 +6,7 @@ while True:
 
 	f.write(str(datetime.datetime.now())+'\n')
 	print('OK')	
-	time.sleep(5
+	time.sleep(5)
+	
+	f.close()
+
