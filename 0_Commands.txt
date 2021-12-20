@@ -445,3 +445,22 @@ jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
 sudo mount -t exfat $(sudo fdisk -l | grep /dev/sd | grep -v GiB | awk '{print $1}') /mnt/sandisk;
 
 #############################
+
+
+#######Port forwarding with iptables########
+
+--1. Add forwarding rule (192.168.xxx.xxx, server ip,  10.8.xxx.xxx:8080 destination internal ip:port)
+sudo iptables -t nat -A PREROUTING -d 192.168.xxx.xxx -p tcp --dport 8080 -j DNAT --to-destination 10.8.xxx.xxx:8080
+
+--2. Delete forwarding rule
+-- 2.1 show all the rules and find the number to delete
+sudo iptables -t nat -v -L PREROUTING -n --line-number
+
+-- 2.2 delete the rule, with the number show above
+sudo iptables -t nat -D PREROUTING 1
+
+#############################################
+
+
+
+
