@@ -33,6 +33,7 @@
 0 02 * * 3 sudo reboot
 0 03 * * 3 sudo service mysql restart
 @reboot sudo /home/pi/Share/starting_command.sh
-#@reboot sudo sh /home/pi/Share/generate_cpu_stat.sh &
 
+
+#@reboot sudo sh /home/pi/Share/generate_cpu_stat.sh &
 
