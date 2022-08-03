@@ -464,6 +464,8 @@ sudo iptables -t nat -D PREROUTING 1
 #############################################
 
 
-
+######Change default shell for a user########
+usermod --shell /bin/bash pi
+#############################################
 
 
