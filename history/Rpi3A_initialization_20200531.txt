@@ -59,7 +59,7 @@ use mysql;
 update user set plugin='' where User='root';
 flush privileges;
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('xxxxxxx');
-create user boroger identified by 'password1!';
+create user boroger identified by 'xxxxxxx';
 grant all on *.* to root@'%' with grant option;
 grant all on *.* to boroger@'%' with grant option;
 quit;

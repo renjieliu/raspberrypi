@@ -123,8 +123,8 @@
   123  mysql -uroot -p
   124  sqoop export --connect jdbc:/mysql://localhost/movielens -m 1 --driver com.mysql.jdbc.Driver --table exported_movirs --export-dir /apps/hives/warehouse/movies --input-fields-terminated-by '\0001';
   125  sqoop export --connect jdbc://mysql://localhost/movielens -m 1 --driver com.mysql.jdbc.Driver --table exported_movirs --export-dir /apps/hives/warehouse/movies --input-fields-terminated-by '\0001';
-  126  sqoop export --connect jdbc:mysql://localhost/movielens -m 1 --driver com.mysql.jdbc.Driver --table exported_movirs --export-dir /apps/hives/warehouse/movies --input-fields-terminated-by '\0001' --username root --password password1! ;
-  127  sqoop export --connect jdbc:mysql://localhost/movielens -m 1 --driver com.mysql.jdbc.Driver --table exported_movirs --export-dir /apps/hive/warehouse/movies --input-fields-terminated-by '\0001' --username root --password password1! ;
+  126  sqoop export --connect jdbc:mysql://localhost/movielens -m 1 --driver com.mysql.jdbc.Driver --table exported_movirs --export-dir /apps/hives/warehouse/movies --input-fields-terminated-by '\0001' --username root --password xxxxxxxxxx ;
+  127  sqoop export --connect jdbc:mysql://localhost/movielens -m 1 --driver com.mysql.jdbc.Driver --table exported_movirs --export-dir /apps/hive/warehouse/movies --input-fields-terminated-by '\0001' --username root --password xxxxxxxxxx ;
   128  mysql -uroot -p
   129  su root
   130  su
