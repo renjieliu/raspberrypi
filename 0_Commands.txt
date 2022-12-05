@@ -383,7 +383,7 @@ Log into Raspberry Pi Remotely
 	
 4. ./rclone ls onedrive:  # this should list all the files on onedrive, and the setup is successful
 
-5. ./rclone copy localfile onedrive:folder1 # copy file from local to onedrive folder1 folder
+5. ./rclone copy "/path/to/source" onedrive:target/folder_location -P --create-empty-src-dirs  # copy file from local to onedrive target/folder_location folder. Displaying progress, and keep all source folders even if they are empty
 
 6. #If necessary, copy the config file to root account
 sudo mkdir -p /root/.config/rclone/
