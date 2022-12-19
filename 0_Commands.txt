@@ -400,7 +400,7 @@ sudo cp -p /home/pi/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
 docker run -d --name=aliyunpan-webdav --restart=always -p 23077:23077 -e TZ="America/New_York" -e ALIYUNPAN_REFRESH_TOKEN="xxxxxxxxxxxxxxxxxx" -e ALIYUNPAN_AUTH_USER="admin_user_name_xxxx" -e ALIYUNPAN_AUTH_PASSWORD="admin_password_xxxx" -e ALIYUNPAN_WEBDAV_MODE="rw" -e ALIYUNPAN_PAN_DRIVE="File" -e ALIYUNPAN_PAN_DIR="/" tickstep/aliyunpan-webdav:v0.2.4
 
 3. Configure rclone, to connect to the aliyun webdav running in the docker
-Note: when entering url , use http://localhost:23077
+Note: when entering url, use http://localhost:23077
 
 ./rclone config 
 
