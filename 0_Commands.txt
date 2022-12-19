@@ -405,6 +405,12 @@ Note: when entering url, use http://localhost:23077
 ./rclone config 
 
 
+
+4. Test uploading files to aliyun
+
+./rclone copy "/path/to/sourcefolder" aliyun_webdav:"/path/to/target" -P --create-empty-src-dirs
+
+
 ###########################################################################################################
 
 
