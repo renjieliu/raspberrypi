@@ -5,6 +5,7 @@ sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo up
 sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 
 
+
 ##########Docker init install##########
 apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping tmux sudo && mkdir Share && cd Share && updatedb;
 #######################################
