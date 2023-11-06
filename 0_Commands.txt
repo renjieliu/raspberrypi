@@ -5,13 +5,20 @@ sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo up
 sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 
 
+### Must install on Rpi ###
+
+sudo apt-get update && sudo apt-get install locate nano wget curl git net-tools iputils-ping gnupg2 pass python3 xrdp mariadb-server php apache2 -y && sudo updatedb
+mkdir Share && cd Share ;
+
+
 
 ##########Docker init install##########
 apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping tmux sudo && mkdir Share && cd Share && updatedb;
 #######################################
 
 sudo echo 'interface wlan0
-static ip_address=192.168.1.206/24
+#change the static ip in below line
+static ip_address=192.168.1.215/24
 #static ip6_address=fd51:42f8:caae:d92e::ff/64
 static routers=192.168.1.1
 static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
@@ -91,7 +98,7 @@ sudo nano /etc/msmtprc
 
 # ----------------------------------------------------------------
 # ---below information for the /etc/msmtprc ----------------------
-# -- log onto gmail for liurenjiemessage@gmail.com, get an app password for the new client
+# -- log onto gmail for liurenjiemessage@gmail.com, get an app password for the new client, and remove the space in the password
 # ----------  https://myaccount.google.com/apppasswords  ---------
 # ----------------------------------------------------------------
 
@@ -105,8 +112,9 @@ host           smtp.gmail.com
 port           587
 from           liurenjiemessage@gmail.com
 user           liurenjiemessage@gmail.com
-password       xxxxxxxxxxxxx # this needs to be app password get from https://myaccount.google.com/apppasswords
+password       xxxxxxxxxxxxx 
 account default : gmail
+
 
 
 echo "Hello from ${HOSTNAME} mail test" | mail -s "Hello from ${HOSTNAME} mail test" anlrj@qq.com
@@ -264,7 +272,14 @@ chmod -R 777 /home/pi/Share/azsql/data
 chmod -R 777 /home/pi/Share/azsql/log
 chmod -R 777 /home/pi/Share/azsql/secrets
 
-docker run --restart always -e 'ACCEPT_EULA=Y' -e 'ACCEPT_EULA_ML=Y' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1434:1433 -v /home/pi/Share/azsql/data:/var/opt/mssql/data -v /home/pi/Share/azsql/log:/var/opt/mssql/log -v /home/pi/Share/azsql/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/azure-sql-edge
+docker run --restart always -e 'ACCEPT_EULA=Y' \
+							-e 'ACCEPT_EULA_ML=Y'\
+							-e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>'\
+							-p 1434:1433\
+							-v /home/pi/Share/azsql/data:/var/opt/mssql/data\
+							-v /home/pi/Share/azsql/log:/var/opt/mssql/log\
+							-v /home/pi/Share/azsql/secrets:/var/opt/mssql/secrets\
+							-d mcr.microsoft.com/azure-sql-edge
 
 
 
