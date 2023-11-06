@@ -9,11 +9,29 @@ sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping sudo gnupg2 ; 
 #######################################
 
-sudo echo 'interface wlan0
-static ip_address=192.168.1.206/24
-#static ip6_address=fd51:42f8:caae:d92e::ff/64
-static routers=192.168.1.1
-static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
+
+
+##-------------------------------------------------------------------------------------------------------------
+## -- 20231106_151948: previous approach for config static ip on Raspberry Pi, prior to Debian 12 Bookworm 
+##-------------------------------------------------------------------------------------------------------------
+#    sudo echo 'interface wlan0
+#    static ip_address=192.168.1.206/24
+#    #static ip6_address=fd51:42f8:caae:d92e::ff/64
+#    static routers=192.168.1.1
+#    static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/dhcpcd.conf;
+##-------------------------------------------------------------------------------------------------------------
+
+
+
+#######################################
+# Current approach to set up static IP, after Debian 12 Bookworm 
+# using network manager GUI
+
+sudo nmtui
+
+#######################################
+
+
 echo alias python='python3.7' >> ~/.bashrc;
 mkdir ~/Share; sudo chmod 777 -R ~/Share;
 sudo mkdir /mnt/sandisk; sudo chmod 777 -R /mnt/sandisk;
