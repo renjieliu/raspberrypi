@@ -7,7 +7,7 @@ sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 
 ### Must install on Rpi ###
 
-sudo apt-get update && sudo apt-get install locate nano wget curl git net-tools iputils-ping gnupg2 pass python3 xrdp mariadb-server php apache2 -y && sudo updatedb
+sudo apt-get update && sudo apt-get install locate nano wget curl git net-tools iputils-ping gnupg2 pass python3 xrdp mariadb-server php php-mysql apache2 -y && sudo updatedb
 mkdir Share && cd Share ;
 
 
@@ -272,7 +272,7 @@ chmod -R 777 /home/pi/Share/azsql/data
 chmod -R 777 /home/pi/Share/azsql/log
 chmod -R 777 /home/pi/Share/azsql/secrets
 
-docker run --restart always -e 'ACCEPT_EULA=Y' \
+docker run --restart always -e 'ACCEPT_EULA=Y'\
 							-e 'ACCEPT_EULA_ML=Y'\
 							-e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>'\
 							-p 1434:1433\
