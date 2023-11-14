@@ -1,3 +1,20 @@
+# -- 20231114_120131: Running Home assistant on Raspberry Pi. 
+# Target is to use the Xiaomi device to control other brand.
+# Home assistant does not support Xiaomi Bluetooth Switch. 
+# Workaround:
+# 1. Xiaomi Bluetooth Switch connect to Mijia
+# 2. Automation with some device supported by Home Assistant
+# 3. Automation in Home assistant, to trigger other brand device.
+
+# Note: Get Xiaomi Device Token - using below Github app - 
+# https://github.com/PiotrMachowski/Xiaomi-cloud-tokens-extractor
+# .exe file is also mailed in QQ mail, on 2023/11/13 17:02
+#
+#
+
+
+
+
 ########## Install docker##########
 
 sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
@@ -33,5 +50,7 @@ docker run -d --name homeassistant \
               -v /var/run/dbus:/run/dbus:ro \
               --network=host \
               homeassistant/home-assistant:latest
+
+
 
 
