@@ -1,27 +1,28 @@
-------------- Install docker-------------
+########## Install docker##########
 
 sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
 curl -sSL https://get.docker.com | sh ;
 sudo usermod -aG docker pi ;
 
------ Other packages ---
+##### Other packages #####
 
 sudo apt install python3-bluez dbus-broker -y 
 
----------------------------
+#########################
 
 sudo reboot now
 
----------------------------
+#########################
 
-
--- If I have the previous instance of homeassistant.tar.gz, copy to to ~/Share folder and uncompress
--- If not, create the folder ~/Share/homeassistant
+#### If I have the previous instance of homeassistant.tar.gz, copy to to ~/Share folder and uncompress
+#### If not, create the folder ~/Share/homeassistant
 
 docker pull homeassistant/home-assistant
 
+#########################
 
--- CHECK if dbus is at /var/run/dbus or /run/dbus, and make proper changes below
+# CHECK if dbus is at /var/run/dbus or /run/dbus, and make proper changes below
+# Start the docker container below
 
 docker run -d --name homeassistant \
               --privileged \
