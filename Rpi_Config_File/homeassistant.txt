@@ -21,7 +21,7 @@ docker pull homeassistant/home-assistant
 
 #########################
 
-# CHECK if dbus is at /var/run/dbus or /run/dbus, and make proper changes below
+#### CHECK if dbus is at /var/run/dbus or /run/dbus, and make proper changes below #### 
 # Start the docker container below
 
 docker run -d --name homeassistant \
