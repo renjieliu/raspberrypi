@@ -504,3 +504,15 @@ usermod --shell /bin/bash pi
 #############################################
 
 
+
+
+#############################################
+## Change default Python version on the system
+#############################################
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 2
+sudo update-alternatives --config python
+--> This command will present a list of installed Python versions. Enter the number corresponding to Python 3.10 to set it as the default.
+
+
