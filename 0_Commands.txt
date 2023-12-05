@@ -5,12 +5,12 @@ sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo up
 sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 
 
-### Must install on Rpi ###
+### One liner initiation for Rpi ###
 
-sudo apt-get update && sudo apt-get install locate nano wget curl git net-tools iputils-ping gnupg2 pass python3 xrdp mariadb-server php php-mysql apache2 -y && sudo updatedb
-mkdir Share && cd Share ;
+sudo apt-get update && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp mariadb-server php php-gd php-mysql apache2 && sudo a2enmod cgi && sudo updatedb && mkdir Share && cd Share && curl -sSL https://get.docker.com | sh && sudo usermod -aG docker pi 
 
-sudo a2enmod cgi # to enable CGI on Apache2 
+#########
+
 
 ##########Docker init install##########
 apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping tmux sudo && mkdir Share && cd Share && updatedb;
@@ -514,5 +514,41 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 2
 sudo update-alternatives --config python
 --> This command will present a list of installed Python versions. Enter the number corresponding to Python 3.10 to set it as the default.
+
+
+##############################################
+## connect to SQL server from Raspberry Pi 
+##############################################
+
+# Download the binary from Microsoft Github repository: https://github.com/microsoft/go-sqlcmd
+wget https://github.com/microsoft/go-sqlcmd/releases/download/v1.5.0/sqlcmd-v1.5.0-linux-arm64.tar.bz2 
+
+# Extract the tar ball 
+tar xvjf sqlcmd-v1.5.0-linux-arm64.tar.bz2
+
+# connect to the database
+./sqlcmd -S server:port -U user_name -P pass_word
+
+############################################################################################
+# alternative is to use FreeTDS + tsql
+############################################################################################
+
+sudo apt-get install freetds-dev freetds-bin -y
+sudo nano /etc/freetds/freetds.conf
+
+# add below to the file
+
+[serverName_alias]
+    host = serverName
+    port = 1434
+    tds version = 7.3
+
+# connect to the SQL Server 
+
+tsql -S serverName_alias  -U user_name -P pass_word
+
+##############################################
+
+
 
 
