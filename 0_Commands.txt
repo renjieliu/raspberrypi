@@ -409,6 +409,8 @@ sudo cp -p /home/pi/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
 
 ####################Configure Aliyun on Raspberry Pi################################################
 
+### Approach 1 ###
+
 1. Logon to Aliyun website, get the refresh token
 
 2. Mount Aliyun as webdav with docker
@@ -423,6 +425,49 @@ Note: when entering url, use http://localhost:23077
 4. Test uploading files to aliyun
 
 ./rclone copy "/path/to/sourcefolder" aliyun_webdav:"/path/to/target" -P --create-empty-src-dirs
+
+
+
+### Approach 2 ###
+
+# rclone → webdav server → Aliyun
+
+wget https://github.com/messense/aliyundrive-webdav/releases/download/v2.3.3/aliyundrive-webdav_2.3.3_arm64.deb
+
+dpkg -i aliyundrive-webdav_2.3.3_arm64.deb
+
+#To get the token, scan with cell phone, login, the token will be generated automatically from raspberry pi
+aliyundrive-webdav qr login 
+
+#start webdav server
+aliyundrive-webdav --port=8080 --debug --auto-index --auth-user=admin --auth-password=admin  --refresh-token='token_here'
+
+#get rclone
+wget https://downloads.rclone.org/v1.65.0/rclone-v1.65.0-linux-arm64.zip
+
+unzip https://downloads.rclone.org/v1.65.0/rclone-v1.65.0-linux-arm64.zip 
+
+#go to the rclone folder 
+rclone config
+
+#Choose webdav
+#Vendor: Other
+#username and password as set in the webdav server (admin/admin) as above
+#bearer token: press enter directly
+#advanced config? N
+#Yes, this looks ok
+#Quit
+
+#test run - copy a folder
+
+/home/pi/Share/project/rclone/rclone copy -P /path/to/folder aliyun:/MyFiles/folder/target/ --log-file=/path/to/mylogfile.txt --log-level INFO;
+
+
+
+
+
+
+
 
 
 ###########################################################################################################
