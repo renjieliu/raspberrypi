@@ -463,8 +463,13 @@ rclone config
 /home/pi/Share/project/rclone/rclone copy -P /path/to/folder aliyun:/MyFiles/folder/target/ --log-file=/path/to/mylogfile.txt --log-level INFO;
 
 
+#using rlone to mount a folder
 
+./rclone mount remote_drive:/ /path/to/local/folder --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty
 
+# Run below command in case of error - ls: cannot access '/path/to/local/folder': Transport endpoint is not connected
+
+fusermount -uz /path/to/local/folder # -z is used to force unmount a fuse mount 
 
 
 
