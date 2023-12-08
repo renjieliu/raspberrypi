@@ -601,4 +601,3 @@ tsql -S serverName_alias  -U user_name -P pass_word
 
 
 
-
