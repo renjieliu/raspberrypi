@@ -600,4 +600,23 @@ tsql -S serverName_alias  -U user_name -P pass_word
 ##############################################
 
 
+##############################################
+## Mount an image file as loop device ## 
+##############################################
 
+#Identify the structure of the image file, take notes of start_sector, sector_count
+
+fdisk -l /path/to/your/image.img
+
+sudo losetup -o $((512 * start_sector)) --sizelimit $((512 * sector_count)) -f --show /path/to/your/image.img
+
+#Take note of the /dev/loopX
+sudo mount /dev/loopX /mnt/fat32
+
+## Unmount the loop device ## 
+
+sudo umount /mnt/fat32 # to unmount 
+sudo losetup -d /dev/loopX # to detach
+
+
+##############################################
