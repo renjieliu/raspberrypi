@@ -625,21 +625,39 @@ sudo losetup -d /dev/loopX # to detach
 
 
 
+
 ############################################################################################
 ### Steps to make aliyundrive as a network drive on windows
+### Tools needed: aliyun_webdav, rclone, samba
+### Tested with aliyun_webdav 2.3.3
+### rclone: v.1.65
+### samba: 4.17 
+### linux: Debian-12, aarch64 
 ############################################################################################
 
- - Get aliyundrive webdav from github 
+ - Get aliyundrive webdav from github releaes page and install with 'dkpg -i xxxx.deb'
  - Download rclone
  - Install the above 2 and samba server
- - Modify samba to only allow authorized user
+ - Modify samba conf to only allow authorized user - check the "Install and configure Samba Service" section above in this file 
  - Restart samba service
- - Create folder to be mounted
+ - Create the target folder to be mounted with rclone: 
+	rclone mount aliyun:/ /path/to/folder --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty
+ - Get aliyun authentication with command: aliyundrive-webdav qr login 
  - Start aliyundrive webdav service
  - Using rclone to mount the remote folder to local, make sure: the user_allow_other needs to be enabled in /etc/fuse.conf first (just remove the # before #user_allow_other in /etc/fuse.conf)
- - Put the scripts into start.sh 
+ - Put the all scripts into start.sh 
  - Modify crontab to execute the start.sh at reboot
  - Config on windows to use the share folder from Samba
+
+
+********** In case error **********
+ls: cannot access xxxxxxx  Transport endpoint is not connected
+
+Solution:
+
+fusermount -uz /home/pi/Share/project/mnt_aliyun
+
+-z is to force unmount a fuse mount 
 
 ############################################################################################
 
