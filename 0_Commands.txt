@@ -9,6 +9,8 @@ sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
 
 sudo apt-get update && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp mariadb-server php php-gd php-mysql apache2 && sudo a2enmod cgi && sudo updatedb && mkdir Share && cd Share && curl -sSL https://get.docker.com | sh && sudo usermod -aG docker pi 
 
+apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass && updatedb && mkdir Share && cd Share
+
 #########
 
 
@@ -620,5 +622,25 @@ sudo losetup -d /dev/loopX # to detach
 
 
 ##############################################
+
+
+
+############################################################################################
+### Steps to make aliyundrive as a network drive on windows
+############################################################################################
+
+ - Get aliyundrive webdav from github 
+ - Download rclone
+ - Install the above 2 and samba server
+ - Modify samba to only allow authorized user
+ - Restart samba service
+ - Create folder to be mounted
+ - Start aliyundrive webdav service
+ - Using rclone to mount the remote folder to local, make sure: the user_allow_other needs to be enabled in /etc/fuse.conf first (just remove the # before #user_allow_other in /etc/fuse.conf)
+ - Put the scripts into start.sh 
+ - Modify crontab to execute the start.sh at reboot
+ - Config on windows to use the share folder from Samba
+
+############################################################################################
 
 
