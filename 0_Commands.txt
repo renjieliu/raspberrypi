@@ -643,7 +643,7 @@ sudo losetup -d /dev/loopX # to detach
  - Create the target folder to be mounted with rclone: 
 	rclone mount aliyun:/ /path/to/folder --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty
  - Get aliyun authentication with command: aliyundrive-webdav qr login 
- - Start aliyundrive webdav service
+ - Start the aliyundrive webdav service
  - Using rclone to mount the remote folder to local, make sure: the user_allow_other needs to be enabled in /etc/fuse.conf first (just remove the # before #user_allow_other in /etc/fuse.conf)
  - Put the all scripts into start.sh 
  - Modify crontab to execute the start.sh at reboot
