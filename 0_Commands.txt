@@ -1,17 +1,30 @@
-#Initialize Rpi
-
-sudo apt-get update; 
-sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo updatedb;
-sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
-
+############ Initiation ############
 
 ### One liner initiation for Rpi ###
 
-sudo apt-get update && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp mariadb-server php php-gd php-mysql apache2 && sudo a2enmod cgi && sudo updatedb && mkdir Share && cd Share && curl -sSL https://get.docker.com | sh && sudo usermod -aG docker pi 
+sudo apt-get update \
+    && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp \
+    && sudo updatedb \
+    && mkdir Share \
+	&& cd Share;
 
-apt-get update && apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass && updatedb && mkdir Share && cd Share
+### Apache2, Mariadb and PHP stack
 
-#########
+sudo apt-get update && sudo apt-get install -y mariadb-server php php-gd php-mysql apache2 && sudo a2enmod cgi 
+
+### Docker 
+
+curl -sSL https://get.docker.com | sh && sudo usermod -aG docker pi 
+
+####################################
+
+
+########### Previous Initialize Rpi ###########
+
+###### sudo apt-get update; 
+###### sudo apt-get install -y locate tightvncserver octave postgresql cmatrix; sudo updatedb;
+###### sudo apt-get install -y libapache2-mod-php7.3 php7.3-mysql;
+
 
 
 ##########Docker init install##########
@@ -453,6 +466,7 @@ unzip https://downloads.rclone.org/v1.65.0/rclone-v1.65.0-linux-arm64.zip
 rclone config
 
 #Choose webdav
+#URL: http://0.0.0.0:8080
 #Vendor: Other
 #username and password as set in the webdav server (admin/admin) as above
 #bearer token: press enter directly
