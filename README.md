@@ -5,6 +5,15 @@
 
 ----- 
 
-this is bad
+this is bad commit
 
 -----
+
+
+---- this is new line ----
+---- this is new line ----
+---- this is new line ----
+
+
+
+
