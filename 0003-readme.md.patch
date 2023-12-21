@@ -1,0 +1,25 @@
+From 34282116388a12be103905aaf06a9b7303d21a60 Mon Sep 17 00:00:00 2001
+From: Renjie Liu <anlrj@qq.com>
+Date: Wed, 20 Dec 2023 10:41:56 -0500
+Subject: [PATCH 3/6] readme.md
+
+---
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/README.md b/README.md
+index 4b857f0..290be58 100644
+--- a/README.md
++++ b/README.md
+@@ -3,7 +3,7 @@
+ 1. Linux commands to set up Raspberry Pi.
+ 2. Side projects running on Raspberry Pi.
+ 
+-
++--this is on learning-git branch
+ 
+ --- this is from the master branch
+ 
+-- 
+2.41.0.windows.3
+
