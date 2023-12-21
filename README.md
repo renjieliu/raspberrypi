@@ -7,12 +7,7 @@
 
 --- this is from the master branch
 
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
---- this is from the master branch
+--new lines
+--new lines
+--new lines
+--new lines
