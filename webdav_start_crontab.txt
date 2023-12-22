@@ -1,1 +1,0 @@
-@reboot sudo -u pi /home/pi/Share/start.sh >> /home/pi/Share/pi_crontab_log.log 2>&1
