@@ -14,3 +14,5 @@
 --- this is from the master branch
 --- this is from the master branch
 --- this is from the master branch
+
+-- this should be a new line and I need to keep this!
