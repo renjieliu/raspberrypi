@@ -682,4 +682,3 @@ fusermount -uz /home/pi/Share/project/mnt_aliyun
 
 
 
-should not be checkout 
