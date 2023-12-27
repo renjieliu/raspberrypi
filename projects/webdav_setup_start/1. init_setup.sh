@@ -45,7 +45,7 @@ sudo apt-get update \
 
 
 
-# uncomment allow in below file, this is for samba
+# uncomment user_allow_other in below file, this is for samba
 sudo nano /etc/fuse.conf 
 
 # config onedrive and aliyun with below command
@@ -53,9 +53,9 @@ sudo nano /etc/fuse.conf
 
 
 # run below all to test if it all works
-aliyundrive-webdav --port=8080 --debug --auto-index --auth-user=admin --auth-password=admin  --refresh-token='TOKEN_FROM_ALIYUN' > /dev/null &
-/home/pi/Share/rclone/rclone mount aliyun:/ /home/pi/Share/webdav_mount/aliyun --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty > /dev/null &
-/home/pi/Share/rclone/rclone mount onedrive:/ /home/pi/Share/webdav_mount/onedrive --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty > /dev/null &
+aliyundrive-webdav --port=8080 --debug --auto-index --auth-user=admin --auth-password=admin  --refresh-token='Token_HERE' > /dev/null & 
+/home/pi/Share/rclone/rclone mount aliyun:/ /home/pi/Share/webdav_mount/aliyun --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty > /dev/null &  
+/home/pi/Share/rclone/rclone mount onedrive:/ /home/pi/Share/webdav_mount/onedrive --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty > /dev/null & 
 
 
 
