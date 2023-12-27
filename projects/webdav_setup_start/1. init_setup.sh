@@ -45,7 +45,7 @@ sudo apt-get update \
 
 
 
-# uncomment allow in below file
+# uncomment allow in below file, this is for samba
 sudo nano /etc/fuse.conf 
 
 # config onedrive and aliyun with below command
