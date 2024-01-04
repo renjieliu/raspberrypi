@@ -681,4 +681,11 @@ fusermount -uz /home/pi/Share/project/mnt_aliyun
 (rclone/rclone copy onedrive:/ aliyun:/path/to_destination -Pv --create-empty-src-dirs --ignore-existing | tee rclone_copy_progress_20231226.txt)
 
 
+######## Download all the videos from one youtuber ########
+
+alias yt="/path/to/yt-dlp_linux_aarch64"
+URL=@mkbhd && mkdir $URL && cd $URL && yt --print "%(id)s;%(title)s" "https://www.youtube.com/$(echo $URL)/videos" | awk 'BEGIN{ FS=";"} {print "https://www.youtube.com/watch?v="$1;}' >> $(echo $URL).txt && cat $URL.txt | xargs yt
+
+
+
 
