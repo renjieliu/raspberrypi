@@ -686,6 +686,30 @@ fusermount -uz /home/pi/Share/project/mnt_aliyun
 alias yt="/path/to/yt-dlp_linux_aarch64"
 URL=@mkbhd && mkdir $URL && cd $URL && yt --print "%(id)s;%(title)s" "https://www.youtube.com/$(echo $URL)/videos" | awk 'BEGIN{ FS=";"} {print "https://www.youtube.com/watch?v="$1;}' >> $(echo $URL).txt && cat $URL.txt | xargs yt
 
+########################################################################################################################
 
 
+
+#################### Set up Apache Answer ####################
+
+# Step 0. Need to create a database in mysql: answer or other names for apache answer to use
+
+
+mkdir -p ~/Share/project/answer/data && cd ~/Share/project/answer
+
+wget https://github.com/apache/incubator-answer/releases/download/v1.2.0/apache-answer-1.2.0-incubating-linux-arm64.tar.gz
+
+tar zxvf apache-answer-1.2.0-incubating-linux-arm64.tar.gz
+
+sudo INSTALL_PORT=60080 ./answer init  -C ./data/
+
+--Config answer with ip:60080 from browser
+
+sudo nano data/conf/config.yaml -- change the port to 9080 or something else 
+
+sudo ./answer run -C ./data/ 
+
+--Then access the portal with the port specified
+
+############################################################
 
