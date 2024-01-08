@@ -26,13 +26,13 @@ sudo a2enmod cgi
 ```
 sudo apt-get update && sudo apt-get install gnupg2 pass -y; #for docker login password management
 ```
-##### install docker
+##### Install docker
 
 ```
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 ```
-##### install docker compose
+##### Install docker compose
 
 ```
 sudo apt-get install docker-compose -y
