@@ -933,3 +933,9 @@ ip:port_specified
 
 ---
 
+
+##### To export MySQL db with mysqldump
+
+```
+mysqldump -u username -p dabasebase_name > xxx.SQL
+```
