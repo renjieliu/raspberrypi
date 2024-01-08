@@ -1,1 +1,0 @@
-this is the revised pom file for compiling Atlas on Rpi
