@@ -10,3 +10,6 @@ onedriveFolder="onedrive:Temp/";
 ##/mnt/sandisk/pishrink.sh /mnt/sandisk/$serverName_Backup_$time.img;
 # /mnt/sandisk/pishrink.sh "/mnt/sandisk/${host}_Backup_${time}.img";
 echo "${host} Backup /mnt/sandisk/${host}_Backup_${time}.img completed! ${host}_Backup_${time}.img uploaded to OneDrive Temp folder." | mail -s "${host} Backup /mnt/sandisk/${host}_Backup_${time}.img completed! ${host}_Backup_${time}.img uploaded to OneDrive Temp folder." anlrj@qq.com;
+
+
+
