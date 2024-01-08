@@ -18,6 +18,8 @@ sudo apt-get update && sudo apt-get install -y mariadb-server php php-gd php-mys
 sudo a2enmod cgi 
 ```
 
+---
+
 ####  Docker related
 
 ##### New machine initialization before installing docker
@@ -95,8 +97,9 @@ sudo sed -i 's/Port 22/Port 5802/g' /etc/ssh/sshd_config
 echo passwordhere | sudo anydesk --set-password
 ```
 
+---
 
-#### initialize mariadb
+#### Initialize mariadb
 ``` 
 sudo apt-get install mariadb-server
 ```
@@ -114,7 +117,10 @@ grant all on *.* to boroger@'%' with grant option;
 
 ```
 
-#### install pi-hole to block all the ads
+---
+
+
+#### Install pi-hole to block all the ads
 
 After install, need to change the DNS on the client (laptops,tablet) to the raspberry pi.
 
@@ -122,7 +128,9 @@ After install, need to change the DNS on the client (laptops,tablet) to the rasp
 sudo curl -sSL https://install.pi-hole.net | bash
 ```
 
-#### start flask webservice in docke container
+---
+
+#### Start flask webservice in docke container
 
  
 ```
@@ -130,11 +138,13 @@ docker container run -ti -p 5000:5000 -e FLASK_APP=app.py --rm -e FLASK_DEBUG=1 
 ```
  
 
+---
 
-#### GET CPU TEMPERATURE
+#### GET CPU TEMPERATURE - cputemp
 ```
 cat /sys/class/thermal/thermal_zone0/temp
 ```
+---
 
 
 #### Install and setup the mail client to send mail 
@@ -323,6 +333,7 @@ sudo mount --bind /dev/shm ./debian_for_chroot/dev/shm
 sudo chroot ./debian_for_chroot/ /bin/bash
 ```
 
+---
 
 
 #### Docker for Azure SQL Edge, it can be connected from SQL Server Management Studio
@@ -715,7 +726,7 @@ jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
 sudo mount -t exfat $(sudo fdisk -l | grep /dev/sd | grep -v GiB | awk '{print $1}') /mnt/sandisk;
 ```
 
- ---
+---
 
 #### Port forwarding with iptables 
 
