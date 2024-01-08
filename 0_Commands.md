@@ -72,6 +72,8 @@ static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/
 
 ```
 
+-------
+
 
 #### Change the default ssh port from 22 to 5802
 
@@ -469,89 +471,141 @@ sync; echo 1 > /proc/sys/vm/drop_caches
 ```
 
 ##### 2. Clear dentries and inodes.
+```
 sync; echo 2 > /proc/sys/vm/drop_caches
+```
 
 ##### 3. Clear PageCache, dentries and inodes.
+```
 sync; echo 3 > /proc/sys/vm/drop_caches 
+```
+ 
+---
 
-#################################################################################
+####  Configure rclone on Raspberry Pi to connect to OneDrive 
 
+1. Download ARM rclone and unzip
 
-#################### Configure rclone on Raspberry Pi to connect to OneDrive #############################
+```
+wget https://downloads.rclone.org/rclone-current-linux-arm.zip
+```
 
-1. Download ARM rclone and unzip # wget https://downloads.rclone.org/rclone-current-linux-arm.zip
+2. Log into Raspberry Pi Remotely and open terminal
 
-Log into Raspberry Pi Remotely
+```
+./rclone authorize "onedrive"
+``` 
+Open browser, get the API access code, Copy everything from the {xxxx}
 
-2. ./rclone authorize "onedrive" # Open browser, get the API access code, Copy everything from the {xxxx}
+3. Configure rclone
+   
+``` 
+./rclone config 
 
-3. ./rclone config
-	# name: onedrive
-	# choose the number of onedrive.
-	# client_id: #press enter without enter anything
-	# client_secret: # press enter without enter anything
-	# Choose national cloud region for OneDrive: region> 1 # choose 1 for Microsoft Cloud Global
-	# Edit advanced config? N
-	# Use auto config? N 
-	# Paste the key copied from step 2 
-	# Your choice > 1: for OneDrive Personal or Business
-	# Chose drive to use:> 0
-	# Is that OK:> y
-	# Yes, this is OK > y
-	
-4. ./rclone ls onedrive:  # this should list all the files on onedrive, and the setup is successful
+```
 
-5. ./rclone copy "/path/to/source" onedrive:"path/to/target" -P --create-empty-src-dirs  # copy file from local to onedrive target/folder_location folder. Displaying progress, and keep all source folders even if they are empty
+```
+# name: onedrive
+# choose the number of onedrive.
+# client_id: #press enter without enter anything
+# client_secret: # press enter without enter anything
+# Choose national cloud region for OneDrive: region> 1 # choose 1 for Microsoft Cloud Global
+# Edit advanced config? N
+# Use auto config? N 
+# Paste the key copied from step 2 
+# Your choice > 1: for OneDrive Personal or Business
+# Chose drive to use:> 0
+# Is that OK:> y
+# Yes, this is OK > y
+```
 
-6. #If necessary, copy the config file to root account
+##### Test onedrive
+
+1. Below command should list all the files on onedrive, and the setup is successful
+```
+./rclone ls onedrive:  
+```
+
+2. Try copy files: copy file from local to onedrive target/folder_location folder. Displaying progress, and keep all source folders even if they are empty
+
+```
+./rclone copy "/path/to/source" onedrive:"path/to/target" -P --create-empty-src-dirs 
+```
+
+3. #If necessary, copy the config file to root account
+```
 sudo mkdir -p /root/.config/rclone/
 sudo cp -p /home/pi/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
+```
 
-###########################################################################################################
+---
 
-####################Configure Aliyun on Raspberry Pi################################################
 
-### Approach 1 ###
+#### Configure Aliyun on Raspberry Pi 
+
+##### Approach 1
 
 1. Logon to Aliyun website, get the refresh token
 
 2. Mount Aliyun as webdav with docker
 
+```
 docker run -d --name=aliyunpan-webdav --restart=always -p 23077:23077 -e TZ="America/New_York" -e ALIYUNPAN_REFRESH_TOKEN="xxxxxxxxxxxxxxxxxx" -e ALIYUNPAN_AUTH_USER="admin_user_name_xxxx" -e ALIYUNPAN_AUTH_PASSWORD="admin_password_xxxx" -e ALIYUNPAN_WEBDAV_MODE="rw" -e ALIYUNPAN_PAN_DRIVE="File" -e ALIYUNPAN_PAN_DIR="/" tickstep/aliyunpan-webdav:v0.2.4
+```
 
 3. Configure rclone, to connect to the aliyun webdav running in the docker
 Note: when entering url, use http://localhost:23077
 
+```
 ./rclone config
+```
 
 4. Test uploading files to aliyun
 
+```
 ./rclone copy "/path/to/sourcefolder" aliyun_webdav:"/path/to/target" -P --create-empty-src-dirs
+```
 
 
 
-### Approach 2 ###
+##### Approach 2
 
-# rclone → webdav server → Aliyun
+**rclone → webdav server → Aliyun**
 
+```
 wget https://github.com/messense/aliyundrive-webdav/releases/download/v2.3.3/aliyundrive-webdav_2.3.3_arm64.deb
+```
 
+``` 
 dpkg -i aliyundrive-webdav_2.3.3_arm64.deb
+```
 
-#To get the token, scan with cell phone, login, the token will be generated automatically from raspberry pi
-aliyundrive-webdav qr login 
+To get the token, scan with cell phone, login, the token will be generated automatically from raspberry pi
 
-#start webdav server
+```
+aliyundrive-webdav qr login
+```
+
+Start webdav server
+
+```
 aliyundrive-webdav --port=8080 --debug --auto-index --auth-user=admin --auth-password=admin  --refresh-token='token_here'
+```
 
-#get rclone
+Get rclone and unzip
+
+```
 wget https://downloads.rclone.org/v1.65.0/rclone-v1.65.0-linux-arm64.zip
-
 unzip https://downloads.rclone.org/v1.65.0/rclone-v1.65.0-linux-arm64.zip 
+```
 
-#go to the rclone folder 
+Go to the rclone folder 
+```
 rclone config
+```
 
+
+```
 #Choose webdav
 #URL: http://0.0.0.0:8080
 #Vendor: Other
@@ -560,198 +614,257 @@ rclone config
 #advanced config? N
 #Yes, this looks ok
 #Quit
+```
 
-#test run - copy a folder
 
+Test run - copy a folder
+
+```
 /home/pi/Share/project/rclone/rclone copy -P /path/to/folder aliyun:/MyFiles/folder/target/ --log-file=/path/to/mylogfile.txt --log-level INFO;
+```
 
+Using rlone to mount a folder
 
-#using rlone to mount a folder
-
+```
 ./rclone mount remote_drive:/ /path/to/local/folder --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty
+```
 
-# Run below command in case of error - ls: cannot access '/path/to/local/folder': Transport endpoint is not connected
 
+Run below command in case of error - ls: cannot access '/path/to/local/folder': Transport endpoint is not connected
+
+```
 fusermount -uz /path/to/local/folder # -z is used to force unmount a fuse mount 
+```
+
+---
 
 
+#### start portainer  
 
-
-
-###########################################################################################################
-
-
-############ start portainer ############
-
+```
 docker run -d -p 9222:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+```
 
-#########################################
+---
 
 
-#### start sqlpad with docker image ####
+#### sqlpad setup
+
+
+Start sqlpad with docker image
+
+```
 docker run -p 3010:3010 -tid liurenjie/sqlpad:v01 /bin/sh -c 'cd /Share/sqlpad/server && node /Share/sqlpad/server/server.js --config /Share/sqlpad/server/config.dev.env'
+```
 
 change admin username and password: 
 1. run below command 
+
+```
 docker run -p 3010:3010 -ti liurenjie/sqlpad:v01
+```
 
-2. nano /Share/sqlpad/server/config.dev.env
-
-# find below line and change
-
-# Email address to give admin permissions to.
+1. Find below line and change:
+Email address to give admin permissions to.
+```
 SQLPAD_ADMIN = "pi@pi.com"
-
 SQLPAD_ADMIN_PASSWORD = "xxxxxxxx"
-########################################
+
+```
+
+```
+nano /Share/sqlpad/server/config.dev.env
+```
+
+---
 
 
-############### Raspberry pi check CPU frequency ###############
+#### Raspberry pi check CPU frequency
+```
 vcgencmd measure_clock arm
-################################################################
+```
+ 
+---
 
 
+#### Install and set up Jupyter Notebook
 
+Install - 
 
-######## Install and set up Jupyter Notebook ########
+```
+pip3 install --upgrade pip && pip3 install jupyterlab
+```
 
-## Install jupyter notebook onto Raspberry Pi
+Set password
 
-pip3 install --upgrade pip
-
-pip3 install jupyterlab
-
-## set password
+```
 jupyter notebook password
+```
 
-## start jupyter notebook
+Start jupyter notebook
+```
 jupyter-notebook --no-browser --ip=0.0.0.0 --port=8888 &> /dev/null &
+```
 
-######################################################
 
+---
 
-### Mount the flash drive to /mnt/sandisk folder###
+#### Mount the flash drive to /mnt/sandisk folder
 
+```
 sudo mount -t exfat $(sudo fdisk -l | grep /dev/sd | grep -v GiB | awk '{print $1}') /mnt/sandisk;
+```
 
-#############################
+ ---
 
+#### Port forwarding with iptables 
 
-#######Port forwarding with iptables########
+1. Add forwarding rule (192.168.xxx.xxx, server ip,  10.8.xxx.xxx:8080 destination internal ip:port)
 
---1. Add forwarding rule (192.168.xxx.xxx, server ip,  10.8.xxx.xxx:8080 destination internal ip:port)
+```
 sudo iptables -t nat -A PREROUTING -d 192.168.xxx.xxx -p tcp --dport 8080 -j DNAT --to-destination 10.8.xxx.xxx:8080
+```
 
---2. Delete forwarding rule
--- 2.1 show all the rules and find the number to delete
+2. Delete forwarding rule
+* 2.1 show all the rules and find the number to delete
+
+```
 sudo iptables -t nat -v -L PREROUTING -n --line-number
+```
 
--- 2.2 delete the rule, with the number show above
+* 2.2 delete the rule, with the number show above
+```
 sudo iptables -t nat -D PREROUTING 1
+```
 
-#############################################
+
+---
 
 
-######Change default shell for a user########
+
+#### Change default shell for a user 
+```
 usermod --shell /bin/bash pi
-#############################################
+```
+ 
 
 
 
 
-##############################################
-## Change default Python version on the system
-##############################################
+#### Change default Python version on the system
 
+
+```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 2
+```
+Below command  present a list of installed Python versions. Enter the number corresponding to Python 3.10 to set it as the default.
+
+```
 sudo update-alternatives --config python
---> This command will present a list of installed Python versions. Enter the number corresponding to Python 3.10 to set it as the default.
+```
 
 
-##############################################
-## connect to SQL server from Raspberry Pi 
-##############################################
+---
 
-# Download the binary from Microsoft Github repository: https://github.com/microsoft/go-sqlcmd
-wget https://github.com/microsoft/go-sqlcmd/releases/download/v1.5.0/sqlcmd-v1.5.0-linux-arm64.tar.bz2 
+#### connect to SQL server from Raspberry Pi 
 
-# Extract the tar ball 
-tar xvjf sqlcmd-v1.5.0-linux-arm64.tar.bz2
 
-# connect to the database
+Download the binary from Microsoft Github repository: https://github.com/microsoft/go-sqlcmd
+```
+wget https://github.com/microsoft/go-sqlcmd/releases/download/v1.5.0/sqlcmd-v1.5.0-linux-arm64.tar.bz2
+```
+
+Extract the tar ball 
+``` 
+tar xvjf sqlcmd-v1.5.0-linux-arm64.tar.bz2 
+```
+
+Connect to the database
+```
 ./sqlcmd -S server:port -U user_name -P pass_word
+```
 
-############################################################################################
-# alternative is to use FreeTDS + tsql
-############################################################################################
 
+#### Alternative is to use FreeTDS + tsql
+
+
+```
 sudo apt-get install freetds-dev freetds-bin -y
 sudo nano /etc/freetds/freetds.conf
+```
 
-# add below to the file
+Add below to the file
 
+```
 [serverName_alias]
     host = serverName
     port = 1434
     tds version = 7.3
+```
 
-# connect to the SQL Server 
 
+Connect to the SQL Server 
+
+```
 tsql -S serverName_alias  -U user_name -P pass_word
+```
 
-##############################################
+---
 
 
-##############################################
-## Mount an image file as loop device ## 
-##############################################
+#### Mount an image file as loop device ## 
 
-#Identify the structure of the image file, take notes of start_sector, sector_count
+Identify the structure of the image file, take notes of start_sector, sector_count
 
+```
 fdisk -l /path/to/your/image.img
+```
 
+Take note of the /dev/loopX
+
+```
 sudo losetup -o $((512 * start_sector)) --sizelimit $((512 * sector_count)) -f --show /path/to/your/image.img
+```
 
-#Take note of the /dev/loopX
-sudo mount /dev/loopX /mnt/fat32
+```sudo mount /dev/loopX /mnt/fat32```
 
-## Unmount the loop device ## 
+#### Unmount the loop device 
 
+```
 sudo umount /mnt/fat32 # to unmount 
 sudo losetup -d /dev/loopX # to detach
+```
+
+---
 
 
-##############################################
+#### Steps to make aliyundrive as a network drive on windows
+* Tools needed: aliyun_webdav, rclone, samba
+* Tested with aliyun_webdav 2.3.3
+* rclone: v.1.65
+* samba: 4.17 
+* Linux: Debian-12, aarch64 
 
+```
+- Get aliyundrive webdav from github releaes page and install with 'dkpg -i xxxx.deb'
+- Download rclone
+- Install the above 2 and samba server
+- Modify samba conf to only allow authorized user - check the "Install and configure Samba Service" section above in this file 
+- Restart samba service
+- Create the target folder to be mounted with rclone: 
+rclone mount aliyun:/ /path/to/folder --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty
+- Get aliyun authentication with command: aliyundrive-webdav qr login 
+- Start the aliyundrive webdav service
+- Using rclone to mount the remote folder to local, make sure: the user_allow_other needs to be enabled in /etc/fuse.conf first (just remove the # before #user_allow_other in /etc/fuse.conf)
+- Put the all scripts into start.sh 
+- Modify crontab to execute the start.sh at reboot
+- Config on windows to use the share folder from Samba
+```
 
+*In case error* 
+``` 
 
-
-############################################################################################
-### Steps to make aliyundrive as a network drive on windows
-### Tools needed: aliyun_webdav, rclone, samba
-### Tested with aliyun_webdav 2.3.3
-### rclone: v.1.65
-### samba: 4.17 
-### linux: Debian-12, aarch64 
-############################################################################################
-
- - Get aliyundrive webdav from github releaes page and install with 'dkpg -i xxxx.deb'
- - Download rclone
- - Install the above 2 and samba server
- - Modify samba conf to only allow authorized user - check the "Install and configure Samba Service" section above in this file 
- - Restart samba service
- - Create the target folder to be mounted with rclone: 
-	rclone mount aliyun:/ /path/to/folder --allow-other --cache-dir /tmp --vfs-cache-mode writes --allow-non-empty
- - Get aliyun authentication with command: aliyundrive-webdav qr login 
- - Start the aliyundrive webdav service
- - Using rclone to mount the remote folder to local, make sure: the user_allow_other needs to be enabled in /etc/fuse.conf first (just remove the # before #user_allow_other in /etc/fuse.conf)
- - Put the all scripts into start.sh 
- - Modify crontab to execute the start.sh at reboot
- - Config on windows to use the share folder from Samba
-
-
-********** In case error **********
 ls: cannot access xxxxxxx  Transport endpoint is not connected
 
 Solution:
@@ -760,28 +873,34 @@ fusermount -uz /home/pi/Share/project/mnt_aliyun
 
 -z is to force unmount a fuse mount 
 
-##############################################################################################
 
+```
 
-############### Copy from OneDrive to Aliyun ###############
+**Copy from OneDrive to Aliyun**
 
+```
 (rclone/rclone copy onedrive:/ aliyun:/path/to_destination -Pv --create-empty-src-dirs --ignore-existing | tee rclone_copy_progress_20231226.txt)
+```
 
 
-######## Download all the videos from one youtuber ########
+---
 
+#### Download all the videos from one youtuber
+
+```
 alias yt="/path/to/yt-dlp_linux_aarch64"
 URL=@mkbhd && mkdir $URL && cd $URL && yt --print "%(id)s;%(title)s" "https://www.youtube.com/$(echo $URL)/videos" | awk 'BEGIN{ FS=";"} {print "https://www.youtube.com/watch?v="$1;}' >> $(echo $URL).txt && cat $URL.txt | xargs yt
+```
 
-########################################################################################################################
+---
 
+#### Set up Apache Answer
 
+``` 
+MAKE SURE - Need to create a database in mysql: answer or other names for apache answer to use
+```
 
-#################### Set up Apache Answer ####################
-
-# Step 0. Need to create a database in mysql: answer or other names for apache answer to use
-
-
+```
 mkdir -p ~/Share/project/answer/data && cd ~/Share/project/answer
 
 wget https://github.com/apache/incubator-answer/releases/download/v1.2.0/apache-answer-1.2.0-incubating-linux-arm64.tar.gz
@@ -790,15 +909,27 @@ tar zxvf apache-answer-1.2.0-incubating-linux-arm64.tar.gz
 
 sudo INSTALL_PORT=60080 ./answer init  -C ./data/
 
---Config answer with ip:60080 from browser
+```
 
-sudo nano data/conf/config.yaml -- change the port to 9080 or something else 
+Config answer with ```ip:60080``` from browser
 
+change the port to 9080 or something else 
+
+```
+sudo nano data/conf/config.yaml
+```
+
+Running Apache Answer
+
+```
 sudo ./answer run -C ./data/ 
+```
 
---Then access the portal with the port specified
+Access the portal in the browser 
 
-############################################################
+```
+ip:port_specified
+```
 
-
+---
 
