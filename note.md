@@ -52,7 +52,7 @@ docker load raspbian_20180622_1625_zookeeper.tar
 
 
 #### Initialize a docker ubuntu
-apt-get update && apt-get install nano locate wget openjdk-11-jdk curl git tmux ssh net-tools iputils-ping sudo
+apt-get update && apt-get install -y nano locate wget curl git tmux ssh net-tools iputils-ping sudo
 sudo && mkdir Share && cd Share && updatedb;
 useradd pi 
 passwd pi
