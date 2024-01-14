@@ -52,7 +52,6 @@ docker load raspbian_20180622_1625_zookeeper.tar
 
 
 #### Initialize a docker ubuntu
-<<<<<<< HEAD
 
 ``` 
 apt-get update && apt-get install -y nano locate wget curl git ssh net-tools iputils-ping sudo
@@ -60,14 +59,10 @@ sudo && mkdir Share && cd Share && updatedb;
 useradd pi 
 passwd pi
 sudo apt-get update && sudo apt-get install -y mariadb-server php php-gd php-mysql apache2
-=======
 apt-get update && apt-get install -y nano locate wget curl git tmux ssh net-tools iputils-ping sudo
 mkdir Share && cd Share && updatedb;
 useradd pi 
 passwd pi
-
->>>>>>> 62b536ec7b953d30d5acf090afec8e07c11e2fdf
-
 
 
 ```
