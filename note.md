@@ -957,3 +957,8 @@ mysqldump -u username -p dabasebase_name > xxx.SQL
 
 
 
+##### Convert putty private key to openssh
+```
+sudo apt-get install putty-tools
+puttygen putty.ppk -O private-openssh -o output_ssh_key
+```
