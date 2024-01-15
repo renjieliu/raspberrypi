@@ -111,9 +111,10 @@ sudo apt-get install mariadb-server
 
 sudo mysql -u root;
 use mysql;
-update user set plugin='' where User='root';
+--update user set plugin='' where User='root';
+--SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 flush privileges;
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('password');
 create user boroger identified by 'password';
 grant all on *.* to boroger@'%' with grant option;
 
