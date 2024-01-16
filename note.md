@@ -962,3 +962,14 @@ mysqldump -u username -p dabasebase_name > xxx.SQL
 sudo apt-get install putty-tools
 puttygen putty.ppk -O private-openssh -o output_ssh_key
 ```
+
+
+
+##### Add below lines to the /etc/apache2/sites-enabled/000-default.conf, right before the </VirtualHost>
+
+for all the url request, website.com/container, it will redirect to the container
+
+```
+ProxyPass "/container" "http://localhost:8080" 
+ProxyPassReverse "/container" "http://localhost:8080"
+```
