@@ -3,7 +3,7 @@
     sudo apt update && apt install xrdp -y
     ```
 
-2. Connect to the bluetooth device in rdp desktop
+2. Rdp into the Rpi and Connect to the bluetooth device
 
 3. Check if the device is connected with command -
     ```
