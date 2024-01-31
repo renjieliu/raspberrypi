@@ -978,7 +978,7 @@ ProxyPassReverse "/container" "http://localhost:8080"
 ##### dd over network to another server 
 
 ```
-dd bs=1k if=/dev/sda | ssh user@serverB "dd bs=1k of=~/file.img"
+dd bs=1k if=/dev/sda | ssh user@serverXXX -p 22 "dd bs=1k of=~/file.img"
 ```
 
 
