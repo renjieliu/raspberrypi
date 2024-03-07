@@ -4,5 +4,4 @@
 2. Side projects running on Raspberry Pi.
 
 
-<img width="250px" src="http://renjie.rocks/home/img.php"/>
 
