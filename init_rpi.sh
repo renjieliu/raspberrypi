@@ -9,7 +9,6 @@ sudo apt-get update \
 cat <<EOF >> ~/.bashrc ;
 
 
-
 alias ll='ls -al';
 alias home='cd /home/pi/Share';
 alias cputemp='cat /sys/class/thermal/thermal_zone0/temp';
@@ -19,6 +18,7 @@ echo "Remember these commands";
 echo "ln -s target_location soft_link";
 
 cd /home/pi/Share;
+
 EOF
 
 
