@@ -10,6 +10,13 @@ sudo apt-get update \
 	&& cd Share;
 ```
 
+or 
+
+```bash 
+wget https://raw.githubusercontent.com/renjieliu/raspberrypi/master/init_rpi.sh && chmod +x ./init_rpi.sh && ./init_rpi.sh
+
+```
+
 #### To add Apache2, Mariadb and PHP stack
 
 ```
