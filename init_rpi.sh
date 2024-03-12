@@ -21,5 +21,7 @@ cd /home/pi/Share;
 
 EOF
 
+sed -i 's/HISTSIZE=1000/HISTSIZE=10000000/' /home/pi/.bashrc
+sed -i 's/HISTFILESIZE=2000/HISTFILESIZE=200000000/' /home/pi/.bashrc
 
 echo "Initialization is complete..."
