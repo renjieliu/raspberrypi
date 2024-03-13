@@ -21,6 +21,9 @@ cd /home/pi/Share;
 
 EOF
 
+# solve the Raspberry Pi scrambled / distorted screen with xrdp
+sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/renderD128"|Option "DRMDevice" ""|' /etc/X11/xrdp/xorg.conf && sudo service xrdp restart
+
 sed -i 's/HISTSIZE=1000/HISTSIZE=10000000/' /home/pi/.bashrc
 sed -i 's/HISTFILESIZE=2000/HISTFILESIZE=200000000/' /home/pi/.bashrc
 

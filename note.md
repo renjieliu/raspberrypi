@@ -989,6 +989,8 @@ dd bs=1k if=/dev/sda | ssh user@serverXXX -p 22 "dd bs=1k of=~/file.img"
 
 
 
+##### solve the Raspberry Pi scrambled / distorted screen with xrdp
+sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/renderD128"|Option "DRMDevice" ""|' /etc/X11/xrdp/xorg.conf && sudo service xrdp restart
 
 
 
