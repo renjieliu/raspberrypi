@@ -990,13 +990,22 @@ dd bs=1k if=/dev/sda | ssh user@serverXXX -p 22 "dd bs=1k of=~/file.img"
 
 
 ##### solve the Raspberry Pi scrambled / distorted screen with xrdp
+```bash 
 sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/renderD128"|Option "DRMDevice" ""|' /etc/X11/xrdp/xorg.conf && sudo service xrdp restart
-
+```
 
 
 
 ##### List all the Google photos
+
+1. rclone config
+2. choose google photos in the option list 
+3. config like other drives
+4. use below command to list google photos
+<br>
+```bash
 rclone ls remote_name_google_photos:/ 
+```
 
 
 
