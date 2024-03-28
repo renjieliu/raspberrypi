@@ -3,7 +3,7 @@
 sudo apt-get update \
     && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp \
     && sudo updatedb \
-    && mkdir Share \
+    && mkdir -p Share/project \
 	&& cd Share;
 
 cat <<EOF >> ~/.bashrc ;
