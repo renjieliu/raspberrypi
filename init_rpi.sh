@@ -4,7 +4,12 @@ sudo apt-get update \
     && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp \
     && sudo updatedb \
     && mkdir -p Share/project \
-	&& cd Share;
+	&& cd Share 
+    # \
+    # && wget https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp_linux_armv7l \
+    # && mv yt-dlp_linux_armv7l /home/pi/Share/project/ \
+    # && chmod +x /home/pi/Share/project/yt-dlp_linux_armv7l;
+
 
 cat <<EOF >> ~/.bashrc ;
 
@@ -12,7 +17,7 @@ cat <<EOF >> ~/.bashrc ;
 alias ll='ls -al';
 alias home='cd /home/pi/Share';
 alias cputemp='cat /sys/class/thermal/thermal_zone0/temp';
-
+# alias yt='/home/pi/Share/project/yt-dlp_linux_armv7l'
 
 echo "Remember these commands";
 echo "ln -s target_location soft_link";
