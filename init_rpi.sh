@@ -5,11 +5,10 @@ sudo apt-get update \
     && sudo updatedb \
     && mkdir -p Share/project \
 	&& cd Share 
-<<comment
-    && wget https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp_linux_armv7l \
-    && mv yt-dlp_linux_armv7l /home/pi/Share/project/ \
-    && chmod +x /home/pi/Share/project/yt-dlp_linux_armv7l;
-comment 
+    # \
+    # && wget https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp_linux_armv7l \
+    # && mv yt-dlp_linux_armv7l /home/pi/Share/project/ \
+    # && chmod +x /home/pi/Share/project/yt-dlp_linux_armv7l;
 
 cat <<EOF >> ~/.bashrc ;
 
