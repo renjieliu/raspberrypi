@@ -1002,7 +1002,7 @@ sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/render
 2. choose google photos in the option list 
 3. config like other drives
 4. use below command to list google photos
-<br>
+
 ```
 rclone ls remote_name_google_photos:/ 
 ```
