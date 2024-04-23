@@ -1008,7 +1008,9 @@ sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/render
 # rclone ls google_photos:/media/all  | awk '{print $2}' > list_google_photos.txt
 ```
 
+
 _Below command is to list all the google photos with different byYear byMonth and all_
+
 ```
 rclone ls remote_name_google_photos:/ 
 ```
