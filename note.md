@@ -1004,7 +1004,7 @@ sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/render
 4. use below command to list google photos
 
 ```
-./rclone ls google_photos:/media/all  | sed 's/       -1 //g' > list_google_photos.txt
+./rclone ls google_photos:/media/all  | sed 's/       -1 //g' > list_google_photos.txt # "       -1 " is the at the beginning of each line
 # rclone ls google_photos:/media/all  | awk '{print $2}' > list_google_photos.txt
 ```
 
