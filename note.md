@@ -82,6 +82,12 @@ static domain_name_servers=192.168.1.1 8.8.8.8 fd51:42f8:caae:d92e::1'  >> /etc/
 
 ```
 
+#### for new raspberry pi release, to confiure static ip
+```
+sudo nmtui
+```
+
+
 -------
 
 
