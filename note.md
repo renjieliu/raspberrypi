@@ -1010,7 +1010,8 @@ sudo adduser xrdp ssl-cert && sudo sed -i 's|Option "DRMDevice" "/dev/dri/render
 4. use below command to list google photos
 
 ```
-./rclone ls google_photos:/media/all  | sed 's/       -1 //g' > list_google_photos.txt # "       -1 " is the at the beginning of each line
+./rclone ls google_photos:/media/all  | sed 's/       -1 //g' | sed 's/ {.*}\./\./g'  > output_google_photos.txt 
+## "       -1 " is the at the beginning of each line, and remove the middle part for files named as "DSC03682 {AMGKvkLxxxDVOkTFxx}.JPG" on cloud
 # rclone ls google_photos:/media/all  | awk '{print $2}' > list_google_photos.txt
 ```
 
