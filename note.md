@@ -16,6 +16,13 @@ or
 wget https://raw.githubusercontent.com/renjieliu/raspberrypi/master/init_rpi.sh && chmod +x ./init_rpi.sh && ./init_rpi.sh
 ```
 
+
+#### Install Pi-Apps
+wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash
+
+
+---
+
 #### To add Apache2, Mariadb and PHP stack
 
 ```
