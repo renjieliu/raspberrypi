@@ -1038,4 +1038,40 @@ yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=xxxxxxxxxxx
 
 
 
+##### Initialize PostgreSQL
+
+sudo nano /etc/postgresql/15/main/postgresql.conf
+ --> change the `listen_addresses = 'localhost'` to `listen_addresses = '*'` to enable remote access
+ 
+sudo nano /etc/postgresql/15/main/pg_hba.conf 
+ --> change below line to allow connections from other IP 
+```
+# IPv4 local connections:
+#host    all             all             127.0.0.1/32            scram-sha-256
+host    all             all             0.0.0.0/0            scram-sha-256
+```
+
+```
+sudo apt install postgresql; 
+
+sudo -i -u postgres;
+
+psql
+
+CREATE ROLE pi WITH LOGIN PASSWORD 'xxxxxx';
+
+ALTER ROLE pi WITH SUPERUSER; 
+
+create database poc;
+
+GRANT ALL PRIVILEGES ON DATABASE poc TO pi;
+
+exit  --> this is to exit pgsql 
+
+exit -- this is to exit postgres user session, return to pi
+```
+
+Testing connection - `psql -d poc;`
+
+
 
