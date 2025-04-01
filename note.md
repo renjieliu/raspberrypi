@@ -1075,3 +1075,7 @@ Testing connection - `psql -d poc;`
 
 
 
+##### Remove exited docker container
+
+docker rm $(docker ps -a | grep Exited | awk 'BEGIN{NF=" "}{print $1;}')
+
