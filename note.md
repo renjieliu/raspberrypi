@@ -1079,3 +1079,18 @@ Testing connection - `psql -d poc;`
 
 docker rm $(docker ps -a | grep Exited | awk 'BEGIN{NF=" "}{print $1;}')
 
+
+
+##### Install msedit
+
+Get the latest package from -
+
+https://github.com/microsoft/edit/releases
+
+```
+sudo install -y zstd
+tar -I zst -xvf xxxx.tar.zstd
+sudo ln -s $(realpath edit) /bin/msedit
+
+```
+
