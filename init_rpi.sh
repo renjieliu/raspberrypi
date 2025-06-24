@@ -17,6 +17,12 @@ alias ll='ls -al';
 alias home='cd /home/pi/Share';
 alias cputemp='cat /sys/class/thermal/thermal_zone0/temp';
 # alias yt='/home/pi/Share/project/yt-dlp_linux_armv7l'
+alias rclone='/home/pi/Share/project/rclone/rclone'
+alias yt='/home/pi/Share/project/youtube/youtubeDownload/yt-dlp_linux_aarch64'
+alias sandisk='cd /mnt/sandisk'
+alias me='/usr/bin/msedit'
+
+
 
 echo "Remember these commands";
 echo "ln -s target_location soft_link";
