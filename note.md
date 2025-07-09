@@ -366,7 +366,7 @@ docker pull mcr.microsoft.com/azure-sql-edge:latest
 
 ##### sample start command; DO NOT USE DIRECTLY
 ```
-sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1434:1433 --name mssql -d mcr.microsoft.com/azure-sql-edg
+sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>' -p 1434:1433 --name mssql -d mcr.microsoft.com/azure-sql-edge:latest
 ```
 
 ##### Making directories for volume
