@@ -1094,3 +1094,15 @@ sudo ln -s $(realpath edit) /bin/msedit
 
 ```
 
+
+##### mount a remote to local
+
+```
+sudo apt install -y sshfs 
+mkdir remote_dir
+sshfs user@remote_host:/remote/path ./remote_dir
+
+# to unmount
+fusermount -u ./remote_dir
+
+```
