@@ -407,6 +407,11 @@ curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openv
 chmod +x openvpn-install.sh
 sudo bash openvpn-install.sh
 
+# With this approach, the installed openvpn is listening on local only, below command is to set up the openvpn to start on reboot and to listen on 0.0.0.0 - this is set up by using the default server config file, which does not have the local directive in it.
+
+sudo bash -c 'mkdir -p /etc/systemd/system/openvpn-server@server.service.d && echo -e "[Service]\nExecStart=\nExecStart=/usr/sbin/openvpn --daemon ovpn-server --status /run/openvpn-server/status-server.log --cd /etc/openvpn/server --config /etc/openvpn/server/server.conf" > /etc/systemd/system/openvpn-server@server.service.d/override.conf && systemctl daemon-reexec && systemctl restart openvpn-server@server.service'
+
+
 ```
 ---
 
