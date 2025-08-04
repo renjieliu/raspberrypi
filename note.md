@@ -400,6 +400,14 @@ docker run --restart always -e 'ACCEPT_EULA=Y'\
 ```
 wget https://git.io/vpn -O openvpn-install.sh && sudo bash openvpn-install.sh
 ```
+
+#### Install OpenVPN for Ubuntu 20.04
+``` 
+curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
+chmod +x openvpn-install.sh
+sudo bash openvpn-install.sh
+
+```
 ---
 
 
