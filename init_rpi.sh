@@ -7,7 +7,7 @@ sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 
 #  below is to download the latest microsoft edit and install 
 mkdir /tmp/msedit_tmp
 cd /tmp/msedit_tmp
-wget $(curl -s https://api.github.com/repos/microsoft/edit/releases/latest | grep "browser_download_url.*aarch.*zst" | awk 'BEGIN{FS=": "} {print $2}' | tr -d '"')
+wget $(curl -s https://api.github.com/repos/microsoft/edit/releases/latest | grep "browser_download_url.*$arch.*zst" | awk 'BEGIN{FS=": "} {print $2}' | tr -d '"')
 tar -I zstd -xvf *.zst
 sudo cp ./edit /usr/local/bin/msedit
 sudo ln -s /usr/local/bin/msedit /usr/local/bin/me
