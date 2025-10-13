@@ -1,14 +1,31 @@
 #!/bin/bash
+set -e 
 
-sudo apt-get update \
-    && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp \
-    && sudo updatedb \
-    && mkdir -p Share/project \
-	&& cd Share 
-    # \
-    # && wget https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp_linux_armv7l \
-    # && mv yt-dlp_linux_armv7l /home/pi/Share/project/ \
-    # && chmod +x /home/pi/Share/project/yt-dlp_linux_armv7l;
+sudo apt-get update 
+sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp zstd
+
+#  below is to download the latest microsoft edit and install 
+mkdir /tmp/msedit_tmp
+cd /tmp/msedit_tmp
+wget $(curl -s https://api.github.com/repos/microsoft/edit/releases/latest | grep "browser_download_url.*aarch.*zst" | awk 'BEGIN{FS=": "} {print $2}' | tr -d '"')
+tar -I zstd -xvf *.zst
+sudo cp ./edit /usr/local/bin/msedit
+sudo ln -s /usr/local/bin/msedit /usr/local/bin/me
+cd ~
+rm -rf /tmp/msedit_tmp
+
+# clean up the initial process
+sudo updatedb 
+mkdir -p Share/project 
+cd Share 
+
+
+
+# \
+# && wget https://github.com/yt-dlp/yt-dlp/releases/download/2024.03.10/yt-dlp_linux_armv7l \
+# && mv yt-dlp_linux_armv7l /home/pi/Share/project/ \
+# && chmod +x /home/pi/Share/project/yt-dlp_linux_armv7l;
+
 
 cat <<EOF >> ~/.bashrc ;
 
@@ -20,7 +37,7 @@ alias cputemp='cat /sys/class/thermal/thermal_zone0/temp';
 alias rclone='/home/pi/Share/project/rclone/rclone'
 alias yt='/home/pi/Share/project/youtube/youtubeDownload/yt-dlp_linux_aarch64'
 alias sandisk='cd /mnt/sandisk'
-alias me='/usr/bin/msedit'
+# alias me='/usr/bin/msedit'
 
 
 
@@ -38,3 +55,6 @@ sed -i 's/HISTSIZE=1000/HISTSIZE=10000000/' /home/pi/.bashrc
 sed -i 's/HISTFILESIZE=2000/HISTFILESIZE=200000000/' /home/pi/.bashrc
 
 echo "Initialization is complete..."
+
+
+
