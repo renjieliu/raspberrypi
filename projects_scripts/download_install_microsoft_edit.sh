@@ -2,6 +2,8 @@
 
 set -e
 
+arch=$(uname -m)
+
 mkdir /tmp/msedit_download_tmp
 cd /tmp/msedit_download_tmp
 wget $(curl -s https://api.github.com/repos/microsoft/edit/releases/latest | grep "browser_download_url.*$arch.*zst" | awk 'BEGIN{FS=": "} {print $2}' | tr -d '"')
