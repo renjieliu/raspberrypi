@@ -13,6 +13,8 @@ sudo -u pi ./config.sh
 sudo ./fix_cleanup.sh
 
 
+
+echo "alias the sms_when_job_done from my tech journaling doc"
 echo "Initialization is complete..."
 
 
