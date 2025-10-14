@@ -2,8 +2,18 @@
 
 set -e
 
-sudo apt update && sudo apt-get install -y locate nano wget curl git net-tools iputils-ping gnupg2 pass xrdp zstd
+sudo chmod +x ./*.sh
 
+sudo ./apt_install.sh
+
+sudo ./download_and_install_apps.sh
+
+sudo -u pi ./config.sh
+
+sudo ./fix_cleanup.sh
+
+
+echo "Initialization is complete..."
 
 
 
