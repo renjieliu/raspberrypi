@@ -1,0 +1,5 @@
+cd /tmp 
+git clone https://github.com/renjieliu/raspberrypi.git
+cd raspberrypi/rpi_init
+chmod +x ./*.sh
+sudo ./init.sh
