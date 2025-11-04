@@ -29,3 +29,10 @@ cd /home/pi/Share;
 EOF
 
 
+cat <<EOF >>/home/pi/.nanorc 
+
+set mouse
+set indicator
+set linenumbers
+
+EOF
