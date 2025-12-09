@@ -384,7 +384,7 @@ chmod -R 777 /home/pi/Share/azsql/secrets
 ```
 docker run --restart always -e 'ACCEPT_EULA=Y'\
 							-e 'ACCEPT_EULA_ML=Y'\
-							-e 'MSSQL_SA_PASSWORD=<passwdxxxxxx>'\
+							-e 'MSSQL_SA_PASSWORD=password1!'\
 							-p 1434:1433\
 							-v /home/pi/Share/azsql/data:/var/opt/mssql/data\
 							-v /home/pi/Share/azsql/log:/var/opt/mssql/log\
